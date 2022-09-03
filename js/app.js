@@ -48,8 +48,8 @@
 
 		new WOW().init();
 
-		$('.site-footer').load('footer.html');
-		$('.site-header').load('header.html');
+		$('.site-footer').load('partials/footer.html');
+		$('.site-header').load('partials/header.html');
 	});
 
 	$(window).load(function(){
