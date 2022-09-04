@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.anushka.pro/sitemap.xml
+Sitemap: https://www.anushka.pro/sitemap.xml
