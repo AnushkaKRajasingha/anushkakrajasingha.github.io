@@ -22,9 +22,19 @@
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
 
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PP9XPGR');</script>
+		<!-- End Google Tag Manager -->
 	</head>
 	<body>
-		
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9XPGR"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 		<div class="site-content">
 			
 			<header class="site-header">
@@ -65,36 +75,16 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 
-		<!-- Messenger Chat Plugin Code -->
-		<div id="fb-root"></div>
-
-		<!-- Your Chat Plugin code -->
-		<div id="fb-customer-chat" class="fb-customerchat">
-		</div>
-
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135620747-1"></script>
 		<script>
-			var chatbox = document.getElementById('fb-customer-chat');
-			chatbox.setAttribute("page_id", "104976085691345");
-			chatbox.setAttribute("attribution", "biz_inbox");
-		</script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		<!-- Your SDK code -->
-		<script>
-			window.fbAsyncInit = function() {
-				FB.init({
-					xfbml            : true,
-					version          : 'v14.0'
-				});
-			};
-
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+			gtag('config', 'UA-135620747-1');
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 
 	</body>
 
