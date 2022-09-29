@@ -50,10 +50,30 @@
 
 		$('.site-footer').load('partials/footer.html');
 		$('.site-header').load('partials/header.html');
+		setTimeout(function(){jQuery('.section-title').addClass(' animate__animated animate__rubberBand')},1000);
 	});
 
 	$(window).load(function(){
 
 	});
 
+
+
 })(jQuery, document, window);
+
+function loadmore_portf(){
+	$.getJSON( "js/data/portfolio.json", function( data ) {
+		var items = [];
+		$.each( data, function( key, val ) {
+			$image = val.image != "" ? val.image : "https://image.thum.io/get/width/350/"+val.site;
+			items.push( "<div class='box'><div class=\"image\"> <img src=\""+ $image + "\" alt=\"\" /></div>" );
+			items.push( " <div class=\"content\">\n" +
+				"                            <h3>"+val.title+"</h3>\n" +
+				"                            <p>"+val.desc+"</p>\n" +
+				"                            <a href=\""+val.site+"\" class=\"btn\">View Site</a>\n" +
+				"                        </div></div>" );
+		});
+
+		 $(items.join( "" )).insertBefore( "#more-btn-cnt" );
+	});
+}

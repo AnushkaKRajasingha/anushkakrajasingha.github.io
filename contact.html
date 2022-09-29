@@ -14,6 +14,10 @@
 		<!-- loading tailwind -->
 		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
+		<!-- loading loading animation -->
+		<link rel="stylesheet"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
 		
@@ -36,9 +40,9 @@
 				<div class="container shrinked">
 					<h1 class="section-title">Have questions? <span>Contact me!</span></h1>
 
-					<div class="entry-content">
+					<div class="entry-content animate__animated animate__fadeInLeft">
 						<p>Call</p>
-						<p>Sri Lanka - <span>+94 71 273 4448</span></p>
+						<p >Sri Lanka - <span>+94 71 273 4448</span></p>
 						<p>USA - <span>+1 424 246 6829</span></p>
 						<p>Email</p>
 						<p>anushkakrajasingha@gmail.com</span></p>
@@ -85,6 +89,7 @@
 							}
 
 							function submisform() {
+								document.getElementById("contactform").classList.add("opacity-25");
 								const url = "https://script.google.com/macros/s/AKfycbz8crJeC3vlBEN6pswgMuxRmfqxPxmsanp4WLGKyHbjuoBD9SNNlmPioZtiyJsThZJ9/exec";
 								fetch(url, {
 									method: "POST",
