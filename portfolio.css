@@ -17,12 +17,36 @@
   position: relative;
   flex: 0 0 31%;
 }
+.box-container .box .image img {
+  max-width: fit-content;
+  height: 350px;
+}
 .box-container .box .content {
-  opacity: 0.75;
+  opacity: 0.85;
   height: 100%;
   background: #000;
   padding: 1em;
   position: absolute;
+}
+.box-container .box h3 {
+  color: #61d8ba;
+  padding: 5% 0 0;
+}
+.box-container .box p {
+  padding: 5% 0 0;
+}
+.box-container .box a {
+  left: 25%;
+  width: 50%;
+  bottom: 20px;
+  position: absolute;
+  border: #fff 2px solid;
+  border-radius: 5px;
+}
+.box-container .box a:hover {
+  background-color: #61d8ba;
+  color: #3e3742;
+  border-color: #61d8ba;
 }
 .box-container :hover .content {
   animation: slideup;

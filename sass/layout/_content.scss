@@ -77,6 +77,17 @@
 	}
 }
 
+#calandy-button{
+	&:hover{
+		background-color: #0a7cff;
+		color: #ffffff;
+	}
+	a{
+		&:hover{
+			color: #ffffff;
+		}
+	}
+}
 
 .contact-section{ margin-bottom: 50px }
 .contact-form{
