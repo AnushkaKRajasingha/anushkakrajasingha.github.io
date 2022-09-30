@@ -1518,6 +1518,14 @@ td.visible-print {
   text-transform: uppercase;
 }
 
+#calandy-button:hover {
+  background-color: #0a7cff;
+  color: #ffffff;
+}
+#calandy-button a:hover {
+  color: #ffffff;
+}
+
 .contact-section {
   margin-bottom: 50px;
 }

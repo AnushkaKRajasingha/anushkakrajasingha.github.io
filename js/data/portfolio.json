@@ -1,4 +1,16 @@
 [
-{"image":"","title":"ATHENASIA Consulting","desc":"This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .","site":"https://www.athenasia.com/"},
-{"image":"images/autoblogging.png","title":"Auto bloging Plugin","desc":"Custom wordpress plugin to Automated blogging","site":"#"}
+  {"image":"","title":"ATHENASIA Consulting","desc":"This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .","site":"https://www.athenasia.com/"},
+  {"image":"images/autoblogging.png","title":"Auto bloging Plugin","desc":"Custom wordpress plugin to Automated blogging","site":"/plugins/autoblogging"},
+  {"image":"","title":"Paraguay Residency","desc":"Development in Wordpress custom theme and bug fix on Google Search Console.","site":"https://paraguayresidency.com/"},
+  {"image":"","title":"The Housson Cente","desc":"Custom wordpress website development based on genisis framework","site":"https://thehoussoncenter.com/"},
+  {"image":"images/plumdrop.png","title":"E-commerce website based on Wordpress","desc":"Custom e-commerce website for sporting goods and rental service, This website build with WordPress and Woocommerce and custom woocommerce module integration.","site":"#"},
+  {"image":"","title":"EM Law | Commercial Lawyers in Central London","desc":"Website development based on Wordpress and custom theme development and also few custom plugins developments","site":"https://emlaw.co.uk/"},
+  {"image":"images/childcare.jpg","title":"PSD to WordPress website with Page customizer","desc":"client wanted to built a wordpress website according to his perspective with his given photoshop design .","site":"#"},
+  {"image":"images/adweber_pluginl.png","title":"Aweber Integration","desc":"Custom Wordpress plugin for Aweber Integration with additional features","site":"/plugins/wp-adweber"},
+  {"image":"","title":"Gomes Rocha Engenharia","desc":"This is a custom WordPress development project which is based on the premium porto theme, implement the website with a custom child theme, and luanch website through several modifications to the plugins.","site":"http://www.gre-angola.com/"},
+  {"image":"","title":"Amazon Web Services with the usage of Gumroad","desc":"Implement Amazon store services and gumroad.","site":"http://kelliottonline.com/"},
+  {"image":"","title":"Tavacon LLC official website","desc":"Revamp enfold theme based WordPress website which needs some serious modifications","site":"https://tavacon.com/"},
+  {"image":"","title":"Custom Real estate Website Development","desc":"Design and develop custom WordPress theme and page template. And also implement MLS API usage of  ACF","site":"https://atrianyc.com/"},
+  {"image":"images/pointsology.png","title":"WordPress with xpro theme","desc":"Customized wordpress website with xpro theme, with cornerstone integration.","site":"https://www.athenasia.com/"},
+  {"image":"","title":"Web site for The Institute for Interdisciplinary Research","desc":"Custom WordPress theme and  plugin development for Web site for The Institute for Interdisciplinary Research","site":"https://www.jis3.org"}
 ]
