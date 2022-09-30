@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Project_Name: Creativo
+ * Project_Name: Creative
  * Author: Themezy
  * Email: support@themezy.com
  * Url: http://themezy.com
@@ -318,7 +318,7 @@ form textarea {
 }
 
 .container.shrinked {
-  padding: 0 200px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
   .container.shrinked {
@@ -1362,7 +1362,8 @@ td.visible-print {
  */
 .site-header {
   text-align: center;
-  padding: 80px 0;
+  padding: 10px 0;
+  height: 200px !important;
 }
 @media screen and (max-width: 600px) {
   .site-header a.button {
@@ -1572,6 +1573,7 @@ td.visible-print {
 .subscribe-form {
   position: relative;
   margin-bottom: 70px;
+  margin-top: 60px;
 }
 .subscribe-form input[type=text], .subscribe-form input[type=email] {
   width: 100%;

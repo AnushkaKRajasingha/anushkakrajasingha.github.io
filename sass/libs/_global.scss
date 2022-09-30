@@ -65,7 +65,7 @@ form{
 .right-aligned{text-align: right}
 .container{
 	&.shrinked{
-		padding: 0 200px;
+		padding: 0 20px;
 		@media screen and (min-width: 991px) and (max-width: 1200px){ padding: 0 100px }
 		@media screen and (max-width: 990px){ padding: 0 20px }
 	}
