@@ -14,3 +14,21 @@ $body-color        : #fff;
 // Grid system
 $grid-columns      : 12 !default;
 $grid-gutter-width : 30px !default;
+
+$breakpoint-small: 414px;
+$breakpoint-tablet: 1024px;
+
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: $breakpoint-small) {
+      @content;
+    }
+  }
+}

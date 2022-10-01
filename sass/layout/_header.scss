@@ -5,13 +5,26 @@
 .site-header{
 	text-align: center;
 	padding: 10px 0;
-	height: 200px !important;
+	height: 200px;
+	@include devices(tablet) {
+		height: initial;
+	}
+	@include devices(mobile) {
+		height: initial;
+	}
 	a.button{
 		@media screen and (max-width:600px){
 			@include em(14);
 		}
 	}
-
+	.container{
+		@include devices(mobile) {
+			display: grid;
+			gap: 10px;
+			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+			grid-template-rows: masonry;
+		}
+	}
 	@media screen and (max-width:600px){
 		white-space: nowrap;
 		padding: 50px 0;
