@@ -18,6 +18,12 @@
     margin: 1%;
     position: relative;
     flex: 0 0 31%;
+    @include devices(tablet) {
+      flex: 0 0 48%;
+    }
+    @include devices(mobile) {
+      flex: 0 0 75%;
+    }
     .image{
       img{
         max-width: fit-content;

@@ -17,6 +17,16 @@
   position: relative;
   flex: 0 0 31%;
 }
+@media only screen and (max-width: 1024px) {
+  .box-container .box {
+    flex: 0 0 48%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .box-container .box {
+    flex: 0 0 75%;
+  }
+}
 .box-container .box .image img {
   max-width: fit-content;
   height: 350px;

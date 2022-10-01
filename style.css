@@ -1363,12 +1363,30 @@ td.visible-print {
 .site-header {
   text-align: center;
   padding: 10px 0;
-  height: 200px !important;
+  height: 200px;
+}
+@media only screen and (max-width: 1024px) {
+  .site-header {
+    height: initial;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .site-header {
+    height: initial;
+  }
 }
 @media screen and (max-width: 600px) {
   .site-header a.button {
     font-size: 14px;
     font-size: 0.7777777778em;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .site-header .container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: masonry;
   }
 }
 @media screen and (max-width: 600px) {
