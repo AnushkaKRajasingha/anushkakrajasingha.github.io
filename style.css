@@ -255,17 +255,47 @@ table {
 /*
  * Global Styles
  */
+html {
+  height: 100%;
+  /* max-height: 600px; */
+  background-color: hsla(200deg, 40%, 30%, 0.4);
+  background-image: url("images/bgs/tumblr_p7n8kqHMuD1uy4lhuo1_540.png"), url("images/bgs/tumblr_p7n908E1Jb1uy4lhuo1_1280.png"), url("images/bgs/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"), url("images/bgs/tumblr_p7n8on19cV1uy4lhuo1_1280.png"), url("images/bgs/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
+  background-repeat: repeat-x;
+  background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+  background-size: 2500px, 800px, 500px 200px, 1000px, 400px 260px;
+  animation: 120s para infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+  }
+}
 body {
   color: #fff;
   font-family: Museo, Raleway, "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: normal;
-  background-image: radial-gradient(circle, #39323e, #262029);
-  background-size: cover;
-  background-atachment: fixed;
+  /*	background-image: radial-gradient(circle, #39323e, #262029);
+  	background-size: cover;
+  	background-atachment: fixed;*/
+  background: linear-gradient(-45deg, #39323e, rgba(0, 0, 0, 0.95), rgba(40, 32, 46, 0.5), #262029);
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0 0 20px;
@@ -1426,11 +1456,11 @@ td.visible-print {
   }
 }
 .logo:hover {
-  box-shadow: inset 0 0 0 100px #61d8ba;
+  box-shadow: inset 0 0 0 100px #fff;
 }
 .logo a {
   display: block;
-  color: white;
+  color: #61d8ba;
 }
 
 .section-title {
