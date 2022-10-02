@@ -1548,6 +1548,9 @@ td.visible-print {
   box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.8), 0 1px 1px rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
 }
+.entry-content h3 span {
+  color: #61d8ba;
+}
 
 .team-section {
   padding: 30px 0;
