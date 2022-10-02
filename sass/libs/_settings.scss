@@ -11,6 +11,12 @@ $secondary-color   : #7d7482;
 $strong-color      : #222;
 $body-color        : #fff;
 
+$menu-btn-bgcolor : rgb(77 69 82 / 50%);
+$menu-btn-bgimage:linear-gradient(hwb(277deg 27% 68% / 50%), rgb(62 55 66 / 50%));
+$menu-btn-bgcolor-hover:rgba(255,255,255,0.5);
+
+$link-text-color-hover: $strong-color;
+
 // Grid system
 $grid-columns      : 12 !default;
 $grid-gutter-width : 30px !default;
