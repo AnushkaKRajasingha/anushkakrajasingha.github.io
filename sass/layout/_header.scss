@@ -13,6 +13,10 @@
 		height: initial;
 	}
 	a.button{
+		&:hover {
+			background-color: $menu-btn-bgcolor-hover;
+			color: $link-text-color-hover;
+		}
 		@media screen and (max-width:600px){
 			@include em(14);
 		}
@@ -40,8 +44,8 @@
 	border-radius: 50%;
 	text-align: center;
 	display: inline-block;
-	background-color: #4d4552;
-	background-image: linear-gradient(#4d4552, #3e3742);
+	background-color: $menu-btn-bgcolor;
+	background-image: $menu-btn-bgimage;
 	padding-top: 60px;
 	margin: 0 20px;
 	font-family: $secondary-font;
@@ -61,12 +65,17 @@
 	}
 
 	&:hover {
-		box-shadow: inset 0 0 0 100px #fff;
+		box-shadow: inset 0 0 0 100px $menu-btn-bgcolor-hover;
+		color: $link-text-color-hover;
 	}
 
 
 	a{
 		display: block;
 		color: $accent-color;
+		&:hover {
+
+			color: $link-text-color-hover;
+		}
 	}
 }
