@@ -83,13 +83,14 @@
 }
 
 #calandy-button{
+	background-color: $menu-btn-bgcolor;
 	&:hover{
-		background-color: #0a7cff;
+		background-color: $menu-btn-bgcolor-hover;
 		color: #ffffff;
 	}
 	a{
 		&:hover{
-			color: #ffffff;
+			color: #000;
 		}
 	}
 }
