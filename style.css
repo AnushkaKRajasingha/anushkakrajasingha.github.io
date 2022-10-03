@@ -1578,12 +1578,15 @@ td.visible-print {
   text-transform: uppercase;
 }
 
+#calandy-button {
+  background-color: rgba(77, 69, 82, 0.5);
+}
 #calandy-button:hover {
-  background-color: #0a7cff;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #ffffff;
 }
 #calandy-button a:hover {
-  color: #ffffff;
+  color: #000;
 }
 
 .contact-section {
