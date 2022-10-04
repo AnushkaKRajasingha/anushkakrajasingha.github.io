@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
     <title>Portfolio - Anushka K Rajasingha</title>
-    <meta name="description" content="Wordpress Developer | DIVI / Elementor Developer.">
+    <meta name="description" content="Fullstack WordPress Developer | DIVI Developer | Elementor Developer.">
+    <meta name="og:title" property="og:title" content="Portfolio Anushka K Rajasingha - Fullstack WordPress Developer">
+
+    <link rel="canonical" href="https://www.anushka.pro/">
 
     <!-- Loading third party fonts -->
     <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -14,8 +17,13 @@
     <!-- loading tailwind -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Loading main css file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="portfolio.css">
 
     <!--[if lt IE 9]>
     <script src="js/ie-support/html5.js"></script>
@@ -33,13 +41,20 @@
     </header> <!-- .site-header -->
 
     <main class="main-content">
-        <div class="container shrinked">
+        <div class="container">
             <h1 class="section-title">Portfolio</span></h1>
 
-            <div class="entry-content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+            <div class="portfolio-container">
+                <input type="hidden" id="data-load-count" value="0">
+                <input type="hidden" id="data-load-step" value="5">
+                <div class="box-container animate__animated animate__zoomIn flex justify-evenly" >
+                    <div class="col-md-12 center-aligned mt-10" id="more-btn-cnt">
+                    <button id="load-more" type="button" value="Load more" class="button hover:bg-sky-700 "   onclick="loadmore_portf();">More</button>
+                    </div>
+                </div>
             </div>
+
 
             <div class="team-section row hidden" >
                 <div class="team">

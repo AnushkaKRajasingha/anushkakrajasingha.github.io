@@ -5,14 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-		<title>Contact Anushka K Rajasingha</title>
-		<meta name="description" content="Wordpress Developer | DIVI / Elementor Developer.">
+		<title>Contact - Anushka K Rajasingha</title>
+		<meta name="description" content="Fullstack WordPress Developer | DIVI Developer | Elementor Developer.">
+		<meta name="og:title" property="og:title" content="Contact Anushka K Rajasingha - Fullstack WordPress Developer">
+
+		<link rel="canonical" href="https://www.anushka.pro/">
 
 		<!-- Loading third party fonts -->
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- loading tailwind -->
 		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+		<!-- loading loading animation -->
+		<link rel="stylesheet"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
@@ -33,47 +40,89 @@
 			</header> <!-- .site-header -->
 
 			<main class="main-content">
-				<div class="container shrinked">
-					<h1 class="section-title">Have questions? <span>Contact me!</span></h1>
+				<div class="container">
+					<div class="row">
+						<h1 class="section-title">Have questions? <span>Contact me!</span></h1>
+						<div class="col-md-5">
 
-					<div class="entry-content">
-						<p>Call</p>
-						<p>Sri Lanka - <span>+94 71 273 4448</span></p>
-						<p>USA - <span>+1 424 246 6829</span></p>
-						<p>Email</p>
-						<p>anushkakrajasingha@gmail.com</span></p>
-						<p>WhatsApp</p>
-						<p>+94 71 273 4448</span></p>
 
+							<div class="entry-content animate__animated animate__fadeInLeft">
+								<p>Call</p>
+								<p >Sri Lanka - <a>+94 71 273 4448</a></p>
+								<p>USA - <a>+1 424 246 6829</a></p>
+								<p>Email : <a>anushkakrajasingha@gmail.com</a></p>
+								<p>WhatsApp : <a>+94 71 273 4448</a></p>
+
+							</div>
+						</div>
+						<div class="col-md-2 center-aligned pt-20"><h1>Or</h1></div>
+						<div class="col-md-5 p-10">
+							<h3>Do you want to discuss about your <br/>project or website..</h3>
+							<!-- Calendly link widget begin -->
+							<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+							<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+							<h2 id="calandy-button" class="p-2 inline-block border border-indigo-200 rounded-md"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anushkapro?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=39323e&text_color=ffffff&primary_color=ffffff'});return false;">Schedule time with me</a></h2>
+							<!-- Calendly link widget end -->
+						</div>
 					</div>
 
+
 					<div class="row contact-section">
-						<form action="" class="contact-form">
+						<form  method="post" class="contact-form" id="contactform">
 							<div class="col-sm-6">
 								<div class="control">
-									<input type="text" placeholder="Name...">
+									<input name="Name" type="text" placeholder="Name...">
 									<i class="fa fa-user"></i>
 								</div>
 								<div class="control">
-									<input type="text" placeholder="Email...">
+									<input name="Email" type="email" placeholder="Email...">
 									<i class="fa fa-envelope"></i>
 								</div>
 								<div class="control">
-									<input type="text" placeholder="Website...">
+									<input name="Website" type="text" placeholder="Website...">
 									<i class="fa fa-link"></i>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="control">
-									<textarea placeholder="Message..."></textarea>
+									<textarea name="Message" placeholder="Message..."></textarea>
 									<i class="fa fa-pencil"></i>
 								</div>
 
 								<div class="right-aligned">
-									<input type="submit" value="Send Message">
+									<input type="button" value="Send Message" onclick="submisform();">
 								</div>
 							</div>
 						</form>
+						<script>
+
+							function tankyou(response){
+								if(response.result == 'success'){
+									window.location = window.location.origin+'/thankyou.html';
+									//alert('Thank you for contacting me..');
+									//document.getElementById("contactform").reset();
+								}
+							}
+
+							function submisform() {
+								document.getElementById("contactform").classList.add("opacity-25");
+								const url = "https://script.google.com/macros/s/AKfycbz8crJeC3vlBEN6pswgMuxRmfqxPxmsanp4WLGKyHbjuoBD9SNNlmPioZtiyJsThZJ9/exec";
+								fetch(url, {
+									method: "POST",
+									body: new FormData(document.getElementById("contactform")),
+									// -- or --
+									// body : JSON.stringify({
+									// user : document.getElementById('user').value,
+									// ...
+									// })
+								}).then(
+										response => response.json() // .json(), etc.
+										// same as function(response) {return response.text();}
+								).then(
+										html => tankyou(html)
+								);
+							}
+						</script>
 					</div>
 
 				</div>	<!-- .container -->

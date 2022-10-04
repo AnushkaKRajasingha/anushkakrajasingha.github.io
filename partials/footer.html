@@ -1,5 +1,5 @@
-    <div class="container shrinked">
-
+    <div class="container shrinked animate__animated animate__slideInUp">
+        <h2 class="center-aligned pt-10">I am preparing something new. <br> <span>Stay tuned!</span></h2>
         <form action="#" class="subscribe-form">
             <input type="text" placeholder="Enter your email to join our newsletter">
             <i class="fa fa-envelope"></i>
@@ -13,6 +13,51 @@
             <a href="#"><i class="fa fa-pinterest"></i></a>
         </div> <!-- .social-links -->
 
-        <div class="colophon">Copyright 2022 SCS. All right reserved</div>
+        <div class="colophon">Copyright 2022 AKR. All right reserved</div>
 
     </div>	<!-- .container -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135620747-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135620747-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "104976085691345");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v14.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Messenger Chat Plugin Code -->

@@ -53,6 +53,11 @@
 		box-shadow: 0 -1px 1px rgb(255 255 255 / 80%), 0 1px 1px rgb(0 0 0 / 60%);
 		margin-bottom: 10px;
 	}
+	h3{
+		span{
+			color: $accent-color;
+		}
+	}
 }
 
 .team-section{padding: 30px 0}
@@ -77,6 +82,18 @@
 	}
 }
 
+#calandy-button{
+	background-color: $menu-btn-bgcolor;
+	&:hover{
+		background-color: $menu-btn-bgcolor-hover;
+		color: #ffffff;
+	}
+	a{
+		&:hover{
+			color: #000;
+		}
+	}
+}
 
 .contact-section{ margin-bottom: 50px }
 .contact-form{

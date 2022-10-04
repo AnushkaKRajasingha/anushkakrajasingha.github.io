@@ -1,0 +1,72 @@
+/*
+* Portfolio Styles
+*/
+@import 	"../libs/settings";
+.portfolio-container{
+  text-align: center;
+  padding-bottom: 100px;
+
+}
+.box-container{
+  display:flex;
+  flex-wrap: wrap;
+
+
+  .box{
+    border-radius:50px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+    flex: 0 0 31%;
+    @include devices(tablet) {
+      flex: 0 0 48%;
+    }
+    @include devices(mobile) {
+      flex: 0 0 75%;
+    }
+    .image{
+      img{
+        max-width: fit-content;
+        height: 350px;
+      }
+    }
+    .content{
+      opacity: 0.85;
+      height: 100%;
+      background: #000;
+      padding: 1em;
+      position: absolute;
+    }
+    h3{color: #61d8ba;padding: 5% 0 0;}
+    h4{}
+    p{padding: 5% 0 0;}
+    a{left: 25%;
+      width: 50%;
+      bottom: 20px;
+      position: absolute;
+      border: #fff 2px solid;
+      border-radius: 5px;
+    &:hover{
+      background-color: $accent-color; color: #3e3742; border-color: $accent-color;
+    }
+    }
+
+  }
+  :hover .content {
+    animation: slideup;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes slideup {
+  0% {top: 100%;}
+  100% {top: 0px;}
+}
+
+@keyframes slidedown {
+  0% {top: 0%;}
+  100% {top: 100%;}
+}
+

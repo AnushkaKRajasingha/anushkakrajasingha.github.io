@@ -5,9 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
-		<title>Anushka K Rajasingha</title>
+		<title>Thank you - Anushka K Rajasingha</title>
 		<meta name="description" content="Fullstack WordPress Developer | DIVI Developer | Elementor Developer.">
-		<meta name="og:title" property="og:title" content="Anushka K Rajasingha - Fullstack WordPress Developer">
+		<meta name="og:title" property="og:title" content="Thank you Anushka K Rajasingha - Fullstack WordPress Developer">
 
 		<link rel="canonical" href="https://www.anushka.pro/">
 
@@ -16,10 +16,6 @@
 
 		<!-- loading tailwind -->
 		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-		<!-- loading loading animation -->
-		<link rel="stylesheet"
-			  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
@@ -36,23 +32,18 @@
 				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-PP9XPGR');</script>
 		<!-- End Google Tag Manager -->
-		<style>
-			canvas {
-				position: absolute;
-				display: block;
-				top: 0;
-				z-index: -1;
-			}
-			.dg.ac{display: none;}
-			.section-title , h3 {
-				border-radius: 25px;
-				backdrop-filter: blur(5px);
-				background-color: rgb(0 0 0 / 50%);
-				padding: 10px;
-			}
-		</style>
+<style>
+	canvas {
+		position: absolute;
+		display: block;
+		top: 0;
+		z-index: -1;
+	}
+	.dg.ac{display: none;}
+</style>
 	</head>
 	<body>
+
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9XPGR"
 					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -63,53 +54,8 @@
 			</header> <!-- .site-header -->
 
 			<main class="main-content">
-
-				<div class="container ">
-					<h1 class="section-title center-aligned">Experienced Fullstack <a href="https://profiles.wordpress.org/anushkakr/"><span>WordPress</span></a> Developer based in <a href="https://en.wikipedia.org/wiki/Sri_Lanka"><span>Sri Lanka</span></a> , Providing <span>world wide</span> service for <span>web</span> and <span>mobile</span> application development .</h1>
-					<h3 class="font-thin center-aligned">Maybe you have been in business for years. Or you just started a new business. Either way, every company needs a professional website to stay competitive. If your current site needs a refresh or you are starting from scratch. My job is to elevate YOUR company with a website that is secure, beautiful, loads fast and represents your brand.</h3>
-					<div class="slider-container">
-						<h1 class="center-aligned">Clients who achieve their goals with me! </h1>
-						<div class="slider">
-							<div class="slide-track-1">
-								<div class="slide">
-									<img src="images/clients/atria-logo-2.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/gre-angola.png" alt="">
-								</div>
-
-								<div class="slide">
-									<img src="images/clients/kevin-elliot.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/plumdrop.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/Tavacon.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/logo.svg" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/jis.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/exrva-logo.png" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/tribes.svg" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/logo-smashtap.svg" alt="">
-								</div>
-								<div class="slide">
-									<img src="images/clients/pypestream.png" alt="">
-								</div>
-
-							</div>
-						</div>
-
-					</div>
+				<div class="container shrinked">
+					<h1  class="section-title center-aligned pt-20 pb-20"><span>Thank you </span><br/>for getting in touch with me.</h1>
 
 
 
@@ -124,7 +70,6 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-
 	<canvas id="canvas"></canvas>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js" type="text/javascript"></script>
 
@@ -195,7 +140,7 @@
 
 		p.initialize = function (index) {
 			this.x = -50;
-			this.y = height ;
+			this.y = height;
 			this.id = index + 1;
 			this.angleX = Math.PI * 2 * Math.random();
 			this.angleY = Math.PI * 2 * Math.random();
@@ -237,31 +182,23 @@
 			}
 
 			angle = Math.atan2(dy, dx);
-			scale = Math.cos(Math.PI / 0.5 * (this.id / total*20));
+			scale = Math.cos(Math.PI / 2 * (this.id / total));
 
 			context.save();
 			context.translate(this.x, this.y);
-			context.rotate(angle+90);
-			context.scale(scale*3, scale*3);
+			context.rotate(angle);
+			context.scale(scale, scale);
 
 			context.beginPath();
 			context.moveTo(-size / 2 * 1.732, -size / 2);
 			context.lineTo(0, 0);
 			context.lineTo(-size / 2 * 1.732, size / 2);
 			context.lineTo(-size / 2 * 1.2, 0);
-			context.fillStyle = getRandomRgb();
+			context.fillStyle = 'white';
 			context.fill();
 
 			context.restore();
 		};
-
-		function getRandomRgb() {
-			var num = Math.round(0xffffff * Math.random());
-			var r = num >> 16;
-			var g = num >> 8 & 255;
-			var b = num & 255;
-			return 'rgba(' + r + ', ' + g + ', ' + b + ',0.5)';
-		}
 
 		// control bar
 		var ControlBar = function () {

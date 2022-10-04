@@ -11,6 +11,30 @@ $secondary-color   : #7d7482;
 $strong-color      : #222;
 $body-color        : #fff;
 
+$menu-btn-bgcolor : rgb(77 69 82 / 50%);
+$menu-btn-bgimage:linear-gradient(hwb(277deg 27% 68% / 50%), rgb(62 55 66 / 50%));
+$menu-btn-bgcolor-hover:rgba(255,255,255,0.5);
+
+$link-text-color-hover: $strong-color;
+
 // Grid system
 $grid-columns      : 12 !default;
 $grid-gutter-width : 30px !default;
+
+$breakpoint-small: 414px;
+$breakpoint-tablet: 1024px;
+
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: $breakpoint-small) {
+      @content;
+    }
+  }
+}
