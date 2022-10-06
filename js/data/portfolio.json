@@ -1,21 +1,1048 @@
 [
-  {"image":"","title":"ATHENASIA Consulting","desc":"This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .","site":"https://www.athenasia.com/"},
-  {"image":"images/autoblogging.png","title":"Auto bloging Plugin","desc":"Custom wordpress plugin to Automated blogging","site":"/plugins/autoblogging"},
-  {"image":"","title":"Paraguay Residency","desc":"Development in Wordpress custom theme and bug fix on Google Search Console.","site":"https://paraguayresidency.com/"},
-  {"image":"","title":"The Housson Cente","desc":"Custom wordpress website development based on genisis framework","site":"https://thehoussoncenter.com/"},
-  {"image":"images/plumdrop.png","title":"E-commerce website based on Wordpress","desc":"Custom e-commerce website for sporting goods and rental service, This website build with WordPress and Woocommerce and custom woocommerce module integration.","site":"#"},
-  {"image":"","title":"EM Law | Commercial Lawyers in Central London","desc":"Website development based on Wordpress and custom theme development and also few custom plugins developments","site":"https://emlaw.co.uk/"},
-  {"image":"images/childcare.jpg","title":"PSD to WordPress website with Page customizer","desc":"client wanted to built a wordpress website according to his perspective with his given photoshop design .","site":"#"},
-  {"image":"images/adweber_pluginl.png","title":"Aweber Integration","desc":"Custom Wordpress plugin for Aweber Integration with additional features","site":"/plugins/wp-adweber"},
-  {"image":"","title":"Gomes Rocha Engenharia","desc":"This is a custom WordPress development project which is based on the premium porto theme, implement the website with a custom child theme, and luanch website through several modifications to the plugins.","site":"http://www.gre-angola.com/"},
-  {"image":"","title":"Amazon Web Services with the usage of Gumroad","desc":"Implement Amazon store services and gumroad.","site":"http://kelliottonline.com/"},
-  {"image":"","title":"Tavacon LLC official website","desc":"Revamp enfold theme based WordPress website which needs some serious modifications","site":"https://tavacon.com/"},
-  {"image":"","title":"Custom Real estate Website Development","desc":"Design and develop custom WordPress theme and page template. And also implement MLS API usage of  ACF","site":"https://atrianyc.com/"},
-  {"image":"images/pointsology.png","title":"WordPress with xpro theme","desc":"Customized wordpress website with xpro theme, with cornerstone integration.","site":"https://www.athenasia.com/"},
-  {"image":"","title":"Web site for The Institute for Interdisciplinary Research","desc":"Custom WordPress theme and  plugin development for Web site for The Institute for Interdisciplinary Research","site":"https://www.jis3.org"},
-  {"image":"","title":"Web site for a RV-based travel company","desc":"Custom WordPress Web site for The Extreme RV Adventure","site":"http://www.exrva.com/","theme": "Extra"},
-  {"image":"","title":"InteliVideo is aplatform for class video subscriptions","desc":"Web site development for Online Fitness Class Platform for Video Subscription, And used avada premium theme for this","site":"https://www.intelivideo.com/","theme": "Avada","type": "Web Development"},
-  {"image":"","title":"Web site for brisbane’s leading bookkeeping experts and\ncertified specialists in xero","desc":"Create modern WordPress multi-site with DIVI theme. Developed a DIVI child theme according to the client requirement .","site":"http://businessinmind.com.au/","theme": "Divi","type": "Web Development"},
-  {"image":"images/erosscia.png","title":"WordPress based website with Elementor support","desc":"Official website for the Erosscia product , so  maintain and optimize the website for security issues as well .","site":"http://businessinmind.com.au/","theme": "Airi","type": "Web Development", "plugins": "Elementor"},
-  {"image":"","title":"WordPress based website with Elementor support","desc":"Figma to WordPress implementation with the usage of Elemntor Pro plugin.","site":"https://cloudassess.co/au/","theme": "Custom","type": "Web Development", "plugins": "Elementor"}
+  {
+    "image": "",
+    "title": "ATHENASIA Consulting",
+    "desc": "This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .",
+    "site": "https://www.athenasia.com/"
+  },
+  {
+    "image": "images/autoblogging.png",
+    "title": "Auto bloging Plugin",
+    "desc": "Custom wordpress plugin to Automated blogging",
+    "site": "/plugins/autoblogging"
+  },
+  {
+    "image": "",
+    "title": "Paraguay Residency",
+    "desc": "Development in Wordpress custom theme and bug fix on Google Search Console.",
+    "site": "https://paraguayresidency.com/"
+  },
+  {
+    "image": "",
+    "title": "The Housson Cente",
+    "desc": "Custom wordpress website development based on genisis framework",
+    "site": "https://thehoussoncenter.com/"
+  },
+  {
+    "image": "images/plumdrop.png",
+    "title": "E-commerce website based on Wordpress",
+    "desc": "Custom e-commerce website for sporting goods and rental service, This website build with WordPress and Woocommerce and custom woocommerce module integration.",
+    "site": "#"
+  },
+  {
+    "image": "",
+    "title": "EM Law | Commercial Lawyers in Central London",
+    "desc": "Website development based on Wordpress and custom theme development and also few custom plugins developments",
+    "site": "https://emlaw.co.uk/"
+  },
+  {
+    "image": "images/childcare.jpg",
+    "title": "PSD to WordPress website with Page customizer",
+    "desc": "client wanted to built a wordpress website according to his perspective with his given photoshop design .",
+    "site": "#"
+  },
+  {
+    "image": "images/adweber_pluginl.png",
+    "title": "Aweber Integration",
+    "desc": "Custom Wordpress plugin for Aweber Integration with additional features",
+    "site": "/plugins/wp-adweber"
+  },
+  {
+    "image": "",
+    "title": "Gomes Rocha Engenharia",
+    "desc": "This is a custom WordPress development project which is based on the premium porto theme, implement the website with a custom child theme, and luanch website through several modifications to the plugins.",
+    "site": "http://www.gre-angola.com/"
+  },
+  {
+    "image": "",
+    "title": "Amazon Web Services with the usage of Gumroad",
+    "desc": "Implement Amazon store services and gumroad.",
+    "site": "http://kelliottonline.com/"
+  },
+  {
+    "image": "",
+    "title": "Tavacon LLC official website",
+    "desc": "Revamp enfold theme based WordPress website which needs some serious modifications",
+    "site": "https://tavacon.com/"
+  },
+  {
+    "image": "",
+    "title": "Custom Real estate Website Development",
+    "desc": "Design and develop custom WordPress theme and page template. And also implement MLS API usage of  ACF",
+    "site": "https://atrianyc.com/"
+  },
+  {
+    "image": "images/pointsology.png",
+    "title": "WordPress with xpro theme",
+    "desc": "Customized wordpress website with xpro theme, with cornerstone integration.",
+    "site": "http://pointsology.com/"
+  },
+  {
+    "image": "",
+    "title": "Web site for The Institute for Interdisciplinary Research",
+    "desc": "Custom WordPress theme and  plugin development for Web site for The Institute for Interdisciplinary Research",
+    "site": "https://www.jis3.org"
+  },
+  {
+    "image": "",
+    "title": "Web site for a RV-based travel company",
+    "desc": "Custom WordPress Web site for The Extreme RV Adventure",
+    "site": "http://www.exrva.com/",
+    "theme": "Extra"
+  },
+  {
+    "image": "",
+    "title": "InteliVideo is aplatform for class video subscriptions",
+    "desc": "Web site development for Online Fitness Class Platform for Video Subscription, And used avada premium theme for this",
+    "site": "https://www.intelivideo.com/",
+    "theme": "Avada",
+    "type": "Web Development"
+  },
+  {
+    "image": "",
+    "title": "Web site for brisbane’s leading bookkeeping experts and\ncertified specialists in xero",
+    "desc": "Create modern WordPress multi-site with DIVI theme. Developed a DIVI child theme according to the client requirement .",
+    "site": "http://businessinmind.com.au/",
+    "theme": "Divi",
+    "type": "Web Development"
+  },
+  {
+    "image": "images/erosscia.png",
+    "title": "WordPress based website with Elementor support",
+    "desc": "Official website for the Erosscia product , so  maintain and optimize the website for security issues as well .",
+    "site": "http://businessinmind.com.au/",
+    "theme": "Airi",
+    "type": "Web Development",
+    "plugins": "Elementor"
+  },
+  {
+    "image": "",
+    "title": "WordPress based website with Elementor support",
+    "desc": "Figma to WordPress implementation with the usage of Elemntor Pro plugin.",
+    "site": "https://cloudassess.co/au/",
+    "theme": "Custom",
+    "type": "Web Development",
+    "plugins": "Elementor"
+  },
+  {
+    "image": "",
+    "title": "WordPress based website Optimizing",
+    "desc": "optimized pagespeed by optimizing score (page speed insights) 59/100 to 95/100  .",
+    "site": "https://cloudkb.co.uk",
+    "theme": "",
+    "type": "Web optimization",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb.png",
+    "title": "Wordpress plugin for DIVI theme",
+    "desc": "Developed a wordpress plugin for DIVI theme to extend the feature of the DIVI contact form module.",
+    "site": "https://github.com/AnushkaKRajasingha/divi-contactform-extender",
+    "theme": "Divi",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/Day Hiking Plumdrop.png",
+    "title": "Wordpress theme development and Woocomerce customization ",
+    "desc": "Several modification to the ecommerce website which has been developed with woocommerce .",
+    "site": "http://www.plumdrop.co",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": "Woocomerce"
+  },
+  {
+    "image": "images/thumb2.png",
+    "title": "Tutoring and Consulting for the web application development",
+    "desc": "My client need consultation for his ongoing application development process which is conducted by him self",
+    "site": "https://anushka.pro/contact.html",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "WordPress Web site optimization",
+    "desc": "Improve the speed rating of the wordpress website /score 73/100 to 99/100",
+    "site": "http://paraguayresidency.com/",
+    "theme": "",
+    "type": "Web optimization",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Wordpress website modification ",
+    "desc": "My client had a enfold theme based wordpress website which needs some serious modifications  but the website core is having some bugs . and also the wp core is out dated.So I had to fix the bugs of the theme before do any modification and also update the theme without getting any issues to the current system.So I was able to deliver the project successfully and also I was able to improve the site performance about 50% by just doing that.",
+    "site": "http://www.tavacon.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb3.png",
+    "title": "Website for research journal publish",
+    "desc": "Developed a wordpress based custom website with custom theme implementation .",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb4.png",
+    "title": "Travel website with Woocommerce ",
+    "desc": "Develop a travel website with woocomerce integration.This project needs additional woocommerce customization according to the client requirement . And also implemented custom post types according to the client requirement .",
+    "site": "https://www.exrva.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Setup wordpress website on Amazon Web Service ",
+    "desc": "According to a client custom requirement Setup wordpress website on Amazon Web Service with apache and mysql And also configure the website to a landing page for lead conversion.",
+    "site": "https://web.archive.org/web/20170215112113/http://cromwellgallery.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Create Modern website with DIVI theme",
+    "desc": "Create modern WordPress multi-site with DIVI theme.Developed a DIVI child theme according to the client requirement .",
+    "site": "http://businessinmind.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb5.png",
+    "title": "Wordpress uplift theme customization",
+    "desc": "Customize wordpress uplift theme according to the clients requirement. And fixed some issues along with it .",
+    "site": "http://new.cpeconferences.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb6.png",
+    "title": "Wordpress Theme Setup",
+    "desc": "Setup and configure wordpress theme",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Landing Page Development ",
+    "desc": "Custom design for mobile landing page and optimize it",
+    "site": "http://www.dengoderygg.no",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb7.jpg",
+    "title": "Wordpress Bug Fix",
+    "desc": "Fix errors on wordpress website",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb8.jpg",
+    "title": "Linux shell scripting",
+    "desc": "Write linux shell scripting to accomplish custom user requirement",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb9.png",
+    "title": "Develop a wordpress theme ",
+    "desc": "Develop custom wordpress theme according to the client requirement.The project is more convertion of the static website to wordpress theme",
+    "site": "http://mats.energy/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb10.jpg",
+    "title": "Custom DIVI theme module development",
+    "desc": "Develop a custom module for the  divi theme .",
+    "site": "http://www.anushkar.com/divi-module",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb11.png",
+    "title": "Develop wordpress multi-site theme",
+    "desc": "Develop wordpress multi-site theme and implement it on two identical websites and main parent website that offer two different services.",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb12.jpg",
+    "title": "Developer Aweber form integration plugin with InstaBuilder",
+    "desc": "Develop a custom wordpress pluginto integrate Aweber form with extra features in to wordpress InstaBuilder",
+    "site": "https://github.com/AnushkaKRajasingha/SWF",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb13.jpg",
+    "title": "Woocommerce Customization",
+    "desc": "Woocommerce Customization for multi language site .",
+    "site": "https://airport-munich-transfer.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Rich & Co Pty ",
+    "desc": "Rich & Co Pty specialises in business valuation, succession planning, and buy/sell transactions.Ken Rich is a senior specialist motor industry services director with over 35 years experience in the retail motor vehicle industry and 24 years experience in practice providing professional services to clients. He recommenced Rich & Co Pty in 2007 having previously been a specialist director with Horwath.",
+    "site": "http://richandco.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb14.png",
+    "title": "YourDriver24 Website Modification ",
+    "desc": "Wocommerce and Wordpress Theme modification for YourDriver24",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb15.png",
+    "title": "Three Leaf Cannabis Logistics ",
+    "desc": "Official website of the Three Leaf Cannabis Logistics , doveloped by using wordpress",
+    "site": "http://threeleafglobal.anushkar.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Official Website of Institute for Interdisciplinary Research",
+    "desc": "Design and Develop the official website of the  Institute for Interdisciplinary Research which is  founded in 1983.",
+    "site": "http://www.jis3.org/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb16.png",
+    "title": "InAppBI Documentation ",
+    "desc": "Integrate Documentation framework with the existing wordpress by customizing the  'Manual' wordpress theme using wordpress child theme.",
+    "site": "https://goo.gl/8QdZEJ",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb17.png",
+    "title": "NoTriangleStudio.com",
+    "desc": "NoTriangle is a 3D rendering studio dedicated to the fine art of building architectural visualization stories. We specialize in developing renderings, which facilitate the communication of designs, concepts, and ideas between architectural companies, interior designers, real estate developers, and marketing agencies.",
+    "site": "http://dev.notrianglestudio.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb18.jpg",
+    "title": "Wordpress Plugin For Visitir Tracking",
+    "desc": "The custom visiter tracking by ip , cookiea  and settion and notify to the given email address about the user visit history when visitor reach to thr spesific page previously defined.",
+    "site": "https://github.com/AnushkaKRajasingha/henrytrack",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb19.jpg",
+    "title": "Wordpress Website Responsive Redesign",
+    "desc": "Customize and make responsive existing web site according to the client requirement",
+    "site": "http://elizabethlaroseart.com/#mobile",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb20.png",
+    "title": "Contact Form 7 Modification to Premium Wordpress Theme ",
+    "desc": "Customization and Configuration to a Contact form 7 plugin to achieve the client target .",
+    "site": "http://www.fliteairtaxi.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb21.jpg",
+    "title": "Custom IDX API implementation for SEO ",
+    "desc": "According to the client requirement , customize the IDX API inquiry and results.",
+    "site": "http://findwinehomes.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb22.png",
+    "title": "Avada wordpress theme customization",
+    "desc": "Config and Customize Avada premium wordpress theme according to the client requirement .",
+    "site": "http://jcurveshop.site/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb23.png",
+    "title": "Slider Revolution Customization ",
+    "desc": "Setup , configure and Customize the Avada wordpress theme with slider revolution according to the client need .",
+    "site": "http://jcurveshop.site/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb24.png",
+    "title": "Two Wordpress Websites",
+    "desc": "Two private jet booking website s",
+    "site": "http://www.flitejets.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb25.png",
+    "title": "IDX Widget Customization",
+    "desc": "Customize IDX search widget according to the client requirement.",
+    "site": "http://www.findwinehomes.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb26.png",
+    "title": "Art Gallery Web Site",
+    "desc": "Make few changes to the art gallery web site.  and modification to the plugin NextGEN Gallery .",
+    "site": "http://elizabethlaroseart.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Wordpress Mobile Frontend integration ",
+    "desc": "Integrate mobile plugin with customized wordpress theme and bug fix",
+    "site": "https://www.spursdynasty.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb27.png",
+    "title": "Wordpress Modification",
+    "desc": "Wordpress theme modification for a custom theme",
+    "site": "http://development.lauterbachgroup.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb28.png",
+    "title": "Wordpress Whoa theme Customization",
+    "desc": "Start with bug fixing for 1) CSS issues, 2) image web size (for faster download), 3) changing references to the old server on the code (And replacing the hard coded values),4) Plugin parameters changing",
+    "site": "http://illumineto.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb29.png",
+    "title": "MaidQuote",
+    "desc": "",
+    "site": "http://www.mymaidquote.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb30.png",
+    "title": "Strategic Insurance Agency ",
+    "desc": "Wordpres custom theme development and setup and plugin configuration",
+    "site": "http://www.need-insurance.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Spurs Dynasty",
+    "desc": "Wordpress Bug fix and theme / plugin customization",
+    "site": "https://www.spursdynasty.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Soolmaz Entrepreneurship hub",
+    "desc": "Wordpress theme and plugin customization with content management .",
+    "site": "http://www.soolmaz.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "KB Realty Inc",
+    "desc": "Wordpress installation and theme customization.",
+    "site": "https://kbbrokerage.ca/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Business in Mind Computer Repairs & Bookkeeping ",
+    "desc": "Wordpress theme development and web site optimization.",
+    "site": "http://businessinmind.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Becky Bacon Certified Life Coach ",
+    "desc": "Wordpress optimization and theme / plugin customization",
+    "site": "https://beckybacon.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Brier & Dunn ",
+    "desc": "Wordpress optimization and theme customization .",
+    "site": "http://www.brierdunn.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Attlee Realty ",
+    "desc": "Wordpress theme customization and IDX integration",
+    "site": "https://attleerealty.com/index.html",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Big Bash Entertainment ",
+    "desc": "Wordpress theme modification and plugin modification",
+    "site": "https://www.afternic.com/forsale/BIGBASHENTERTAINMENT.COM?utm_source=TDFS&utm_medium=sn_affiliate_click&utm_campaign=TDFS_GoDaddy_DLS&traffic_type=TDFS&traffic_id=GoDaddy_DLS",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Confused Girl in the City ",
+    "desc": "Client wanted to customize the default theme and integrated with woocommerce and amazon store.",
+    "site": "https://confusedgirlinthecity.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Wesellkingstonhomes.com ",
+    "desc": "Official web site of Danielle Ambrose and Mary Ambrose who are the real estate agents in Canada",
+    "site": "https://wesellkingstonhomes.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb31.png",
+    "title": "PortandManor.com",
+    "desc": "New design of the web site PortandManor.com",
+    "site": "PortandManor.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb32.png",
+    "title": "Conservativesupport.com ",
+    "desc": "I did few modifications to the web site to speedup the web site , so I had to do integrate a compression method manually due to the use of other plugins. ",
+    "site": "http://conservativesupport.com/home/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb33.png",
+    "title": "4urage",
+    "desc": "I designed the application architecture , and database with MySql .And I used  CodeIgniter as a latest MVC framework in PHP. For the front end I used HTML5 with the CSS3 and jQuery javascript framework.",
+    "site": "http://4urage.b1connect.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Godfirst.co.za",
+    "desc": "I contribute to develop this wordpress website and continue the development and modifications.",
+    "site": "http://godfirst.co.za/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Usdardloan.com ",
+    "desc": "I contribute to implement most of the important part of this wordpress web site , So I used PHP, MySql, HTML5, CSS3 and jQuery for the development .",
+    "site": "https://usdardloan.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Stickypod.com",
+    "desc": "Develop the woocomerce based wordpress web site",
+    "site": "https://portfolio.static-upwork.com/agora.profile.projects%3A617950587975602176%3A617950588688633856",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Bigmanwashes.com ",
+    "desc": "I did designed and develop this web site using PHP,MySql, HTML, CSS and jQuery",
+    "site": "https://bigmanwashes.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb34.png",
+    "title": "Allimcwhinney.com ",
+    "desc": "I designed tand developed his web site with ColdFusion , HTML, CSS with jQuery  ",
+    "site": "http://www.allimcwhinney.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb35.png",
+    "title": "Astoriasport.ma",
+    "desc": "I did designed and develop this web site using zen cart framework . so I used PHP, MySql, HTML,CSS and jQuery",
+    "site": "http://www.astoriasport.ma",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "bmgcommercial.com",
+    "desc": "I did most of important modifications to this site , So I used PHP, MySql, HTML, CSS and jQuery",
+    "site": "http://bmgcommercial.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "eimacs.com",
+    "desc": "Wordpress theme design",
+    "site": "https://www.eimacs.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Showtimecaraudio.net",
+    "desc": "Designed and developed Woocommerce based wordpress web site",
+    "site": "https://showtimeelectronics.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb36.png",
+    "title": "Erikhornung.com ",
+    "desc": "I did design and develp this web site with ColdFusion , MySql, HTML, CSS and jQuery",
+    "site": "http://www.erikhornung.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Goldenappleorganics.com",
+    "desc": "This is a Volusion baesd classic asp web site , I did modification to the template using Classic ASP, VBScript, HTML5, CSS3 and jQuery",
+    "site": "https://www.goldenappleorganics.com/Default.asp",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Apriloharephotography.com ",
+    "desc": "I designed and develop this web site for a us photograper by using ColdFusion, MySql, HTML, CSS and jQuery",
+    "site": "https://apriloharephotography.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Naturopathaustralia.com ",
+    "desc": "Develop a simple wordpress web site",
+    "site": "https://www.naturopathaustralia.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Advance.org.za",
+    "desc": "Did some modifications to the wordpress web site ",
+    "site": "https://www.advancemovement.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb37.png",
+    "title": "Renewreview ",
+    "desc": "Wordpress theme for review web site",
+    "site": "http://renewreview.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb39.png",
+    "title": "Mypetappointments.com",
+    "desc": "Online veterinarians and pet professionals finder, and book appointments.",
+    "site": "http://mypetappointments.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb40.png",
+    "title": "brambleco.com",
+    "desc": "Revamp the brambleco.com web site",
+    "site": "http://anushkar.com/brambleco.com_rev1/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "Mohammed Imran Alam's blog ",
+    "desc": "Mohammed Imran Alam's official blog",
+    "site": "http://reportgurus.com/imran/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "thepartyconnect.com ",
+    "desc": "I design this web site for one of my elance client",
+    "site": "https://www.thepartyconnect.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb41.png",
+    "title": "Superroofer.net",
+    "desc": "Official web site of Roofing company in Texas",
+    "site": "http://www.superroofer.net/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb42.jpg",
+    "title": "howtobuildsolarpanelinfo.com ",
+    "desc": "",
+    "site": "http://howtobuildsolarpanelinfo.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+  "image": "images/thumb43.png",
+  "title": "Sri Lankan Great Musician Rohana Weerasinghe",
+  "desc": "Official web site of Sri Lankan Great Musician Rohana Weerasinghe",
+  "site": "http://rohanaweerasingheonline.com",
+  "theme": "",
+  "type": "Web Development",
+  "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "startmychildcarebusiness.com ",
+    "desc": "Official web site of Sri Lankan Great Musician Rohana Weerasinghe",
+    "site": "https://www.startmychildcarebusiness.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb44.jpg",
+    "title": "llc.com",
+    "desc": "",
+    "site": "http://wpdemo.silvercodesolutions.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb45.png",
+    "title": "sneakerfield.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://sneakerfield.com/clean/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "expertinsights.net ",
+    "desc": "Theme design",
+    "site": "https://www.expertinsights.net/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb46.png",
+    "title": "organicseoranking.com ",
+    "desc": "Wordpress",
+    "site": "http://organicseoranking.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "bullandhorse.com",
+    "desc": "Wordpress theme design",
+    "site": "http://bullandhorse.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "broadwayexterminating.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://broadwayexterminating.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb47.png",
+    "title": "mysticwatergardensblog.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://mysticwatergardensblog.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb48.png",
+    "title": "fmsimplified.co",
+    "desc": "Wordpress theme design",
+    "site": "http://www.fmsimplified.co/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb49.png",
+    "title": "limosetc.net ",
+    "desc": "Wordpress theme design",
+    "site": "http://www.limosetc.net/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
+    "title": "mission maids.com ",
+    "desc": "Wordpress theme design",
+    "site": "https://mission-maids.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb51.png",
+    "title": "bigbeardreamcabinsblog.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://bigbeardreamcabinsblog.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb52.png",
+    "title": "fixautowhittierblog.com",
+    "desc": "Wordpress theme design",
+    "site": "http://fixautowhittierblog.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb53.png",
+    "title": "westernloanblog.com",
+    "desc": "Wordpress theme design",
+    "site": "http://www.westernloanblog.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb54.png",
+    "title": "harmonymaids.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://harmonymaids.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb55.png",
+    "title": "Child Rights ",
+    "desc": "Child Rights",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb56.jpg",
+    "title": "Fibre Container ",
+    "desc": "Fibre Container",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb57.jpg",
+    "title": "JD Consultant",
+    "desc": "JD Consultant ",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb58.jpg",
+    "title": "Small Business",
+    "desc": "Small Business",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb59.jpg",
+    "title": "Discount web",
+    "desc": "Discount",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb60.jpg",
+    "title": "Easy Time Share ",
+    "desc": "Easy Time Share ",
+    "site": "",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb61.png",
+    "title": "priority1electricandservice.com ",
+    "desc": "Modifications",
+    "site": "http://priority1electricandservice.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb62.png",
+    "title": "aftondental.com",
+    "desc": "Modifications",
+    "site": "http://aftondental.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb63.png",
+    "title": "efficientelectricinc.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://www.efficientelectricinc.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb64.png",
+    "title": "innontheblvd.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://www.innontheblvd.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb65.png",
+    "title": "hixsonlawfirm.com ",
+    "desc": "Wordpress theme design",
+    "site": "http://www.hixsonlawfirm.com/blog/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "images/thumb66.png",
+    "title": "Tier1air.com ",
+    "desc": "tier1air.com",
+    "site": "http://tier1air.com",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  }
+
+
+
 ]
