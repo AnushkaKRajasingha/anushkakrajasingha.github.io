@@ -18,6 +18,7 @@
     margin: 1%;
     position: relative;
     flex: 0 0 31%;
+    min-height: 300px;
     @include devices(tablet) {
       flex: 0 0 48%;
     }
@@ -25,14 +26,22 @@
       flex: 0 0 75%;
     }
     .image{
+      background-color: $container-bg-color;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img{
-        max-width: fit-content;
-        height: 350px;
+        width: 100%;
+        max-width: 98%;
+        height: fit-content;
+        max-height: 98%;
       }
     }
     .content{
       opacity: 0.85;
       height: 100%;
+      width: 100%;
       background: #000;
       padding: 1em;
       position: absolute;

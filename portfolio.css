@@ -16,6 +16,7 @@
   margin: 1%;
   position: relative;
   flex: 0 0 31%;
+  min-height: 300px;
 }
 @media only screen and (max-width: 1024px) {
   .box-container .box {
@@ -27,13 +28,23 @@
     flex: 0 0 75%;
   }
 }
+.box-container .box .image {
+  background-color: rgba(255, 255, 255, 0.6509803922);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .box-container .box .image img {
-  max-width: fit-content;
-  height: 350px;
+  width: 100%;
+  max-width: 98%;
+  height: fit-content;
+  max-height: 98%;
 }
 .box-container .box .content {
   opacity: 0.85;
   height: 100%;
+  width: 100%;
   background: #000;
   padding: 1em;
   position: absolute;

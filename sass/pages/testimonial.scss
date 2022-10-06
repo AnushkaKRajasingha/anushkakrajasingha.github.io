@@ -1,0 +1,29 @@
+.tm-item{
+  display: flex;
+  .tm-image{
+    max-width: 25%;
+  }
+  .tm{
+    .tm-word{
+
+    }
+    .tm-client{}
+  }
+  &:nth-child(2n+1){
+    margin-right: 25%;
+    .tm-image{
+      float: left;
+      display: inline-block;
+    }
+    .tm{
+     padding-right: 25%;
+    }
+  }
+  &:nth-child(2n){
+    margin-left: 25%;
+    .tm-image{
+      float: right;
+      display: inline-block;
+    }
+  }
+}
