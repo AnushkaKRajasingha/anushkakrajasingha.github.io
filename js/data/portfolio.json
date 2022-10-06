@@ -12,6 +12,12 @@
     "site": "/plugins/autoblogging"
   },
   {
+  "image": "",
+  "title": "Elementor based website Development",
+  "desc": "Custom Elementor module development plus integration with JETBlocks",
+  "site": "https://thementalhealthdirectory.com"
+},
+  {
     "image": "",
     "title": "Paraguay Residency",
     "desc": "Development in Wordpress custom theme and bug fix on Google Search Console.",
