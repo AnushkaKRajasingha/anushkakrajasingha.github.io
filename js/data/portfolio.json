@@ -25,6 +25,15 @@
   },
   {
     "image": "",
+    "title": "The Jhonnys.",
+    "desc": "Custom WordPress website development by using Elementor Pro",
+    "site": "https://www.thejhonnys.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": "Elementor, Contact Form 7,JetPack"
+  },
+  {
+    "image": "",
     "title": "The Housson Cente",
     "desc": "Custom wordpress website development based on genisis framework",
     "site": "https://thehoussoncenter.com/"
@@ -221,10 +230,10 @@
     "plugins": ""
   },
   {
-    "image": "images/thumb5.png",
+    "image": "",
     "title": "Wordpress uplift theme customization",
     "desc": "Customize wordpress uplift theme according to the clients requirement. And fixed some issues along with it .",
-    "site": "http://new.cpeconferences.com/",
+    "site": "https://www.cpeconferences.com/",
     "theme": "",
     "type": "Web Development",
     "plugins": ""
