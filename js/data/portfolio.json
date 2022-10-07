@@ -25,6 +25,15 @@
   },
   {
     "image": "",
+    "title": "The Jhonnys.",
+    "desc": "Custom WordPress website development by using Elementor Pro",
+    "site": "https://www.thejhonnys.com.au/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": "Elementor, Contact Form 7,JetPack"
+  },
+  {
+    "image": "",
     "title": "The Housson Cente",
     "desc": "Custom wordpress website development based on genisis framework",
     "site": "https://thehoussoncenter.com/"
