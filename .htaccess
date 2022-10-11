@@ -1,1 +1,6 @@
+Redirect /about.html /about/
+Redirect /contact.html /contact/
+Redirect /portfolio.html /portfolio/
+Redirect /testimonials.html /testimonials/
 ErrorDocument 404 https://anushka.pro/contact.html
+ErrorDocument 404 /

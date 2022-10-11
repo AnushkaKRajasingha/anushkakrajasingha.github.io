@@ -1,5 +1,62 @@
 [
   {
+    "tm_title" : "very skilled",
+    "tm_word" : "Absolutely fantastic! Anushka is very skilled in a variety of Woocommerce and WordPress tasks. Will rehire right away, actually",
+    "tm_client" : "Anastasia Visotsky",
+    "tm_image" : "av.jfif",
+    "tm_client_title" : "Founder at ZERO TABOOS"
+  },
+  {
+    "tm_title" : "good at getting the idea and implementing",
+    "tm_word" : "A very good experience with Anushka to develop/adapt a wordpress plugin, he's been very good at getting the idea and implementing it.Looking forward to the next step!",
+    "tm_client" : "Luc Jonveaux",
+    "tm_image" : "lj.jfif",
+    "tm_client_title" : "Independant consultant / Upwork client"
+  },
+  {
+    "tm_title" : "promptly and professionally!",
+    "tm_word" : "Developer delivered promptly and professionally!",
+    "tm_client" : "Von Mwen",
+    "tm_image" : "",
+    "tm_client_title" : "Upwork client"
+  },
+  {
+  "tm_title" : "really good, fast, effective",
+  "tm_word" : "really good, fast, effective. nice to work with !",
+  "tm_client" : "Francois Dubreuil",
+  "tm_image" : "fd.jfif",
+  "tm_client_title" : "Québec inc / Upwork client"
+},
+  {
+  "tm_title" : "satisfactorily and on time",
+  "tm_word" : "Anushka was very responsive and completed the word press project satisfactorily and on time.",
+  "tm_client" : "Chuma Chukwujama",
+  "tm_image" : "cc.jfif",
+  "tm_client_title" : "Founder  - Xceed365 Limited"
+},
+  {
+  "tm_title" : "Exactly what I wanted",
+  "tm_word" : "Did an amazing job. Exactly what I wanted.",
+  "tm_client" : "Ryan Persad",
+  "tm_image" : "rp.jfif",
+  "tm_client_title" : "Founder & Chief Executive Officer  - Stock Brew"
+},
+  {
+  "tm_title" : "quickly and efficiently",
+  "tm_word" : "Anushka did a great job on a project that was puzzling us for some time. And better yet he did it quickly and efficiently, we would recommend him to anyone looking for a talented developer.",
+  "tm_client" : "Thomas Corbin",
+  "tm_image" : "tc.jfif",
+  "tm_client_title" : "RH-Software - / Upwork client"
+},
+  {
+  "tm_title" : "Most important quality",
+  "tm_word" : "I have been working with Anushka for many years now. What about him? Competant, professional, good communicator, the list goes on. Most important quality. You can contact Anushka anytime even month or year after he finished your work and he will help you. That is customer service at it's best. Highly recoomended.",
+  "tm_client" : "Edouard Alleman",
+  "tm_image" : "bim-edouard.jpg",
+  "tm_client_title" : "Business in Mind - / Upwork client"
+},
+
+  {
     "tm_title" : "lucky to have him as part of our team!",
     "tm_word" : "Anushka is a great Wordpress developer and super responsive to all our requests. Highly recommended and we're lucky to have him as part of our team!",
     "tm_client" : "Janeece Keller",
@@ -41,5 +98,6 @@
     "tm_image" : "js.jfif",
     "tm_client_title" : "Founder - Confused Girl in the City"
   }
+
 
 ]
