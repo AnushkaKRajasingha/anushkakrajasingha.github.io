@@ -22,6 +22,42 @@ function loadmore_portf(){
 	});
 }
 
+function loadmore_testimonials(){
+	$.getJSON( "../js/data/testimonials.json", function( data ) {
+		var items = [];
+		$counter = 0;
+		$.each( data, function( key, val ) {
+			if(key < $('#data-load-count').val()) return;
+
+			$image = val.tm_image != "" ? "../images/clients/"+val.tm_image : "../images/clients/avatar.png";
+
+			$animateddirection = (key % 2 == 1) ?"animate__backInLeft" : "animate__backInRight";
+			$clienttitle = val.tm_client_title == undefined ? "Upwork client" :  val.tm_client_title;
+
+			items.push("<div class=\"tm-item animate__animated "+$animateddirection+"\">\n" +
+				"<img alt=\"Client Name\" class=\"tm-image\" src=\""+$image+"\" />\n" +
+				"<div class=\"tm\">\n" +
+				"<h4 class=\"tm-title\">"+val.tm_title+"</h4>\n" +
+				"<p class=\"tm-word\">\n" +val.tm_word+
+				"</p>\n" +
+				"<div class=\"tm-client\">\n" +
+				"<span class=\"singature\">"+val.tm_client+"</span>\n" +
+				"<span class=\"name\">"+val.tm_client+"</span>\n" +
+				"<span class=\"title\">"+$clienttitle+"</span>\n" +
+				"</div>\n" +
+				"</div>\n" +
+				"</div>");
+			
+			$('#data-load-count').val(key + 1);
+			if($counter == $('#data-load-step').val()){ return false;}
+			$counter++;
+
+		});
+
+		$(items.join( "" )).insertBefore( "#more-btn-cnt" );
+	});
+}
+
 (function($, document, window){
 
 	function infocontent(param)
