@@ -2,7 +2,7 @@
  * Header Styles
  */
 
-.site-header{
+.site-header,header[class^="site-header"]{
 	text-align: center;
 	padding: 10px 0;
 	height: 200px;

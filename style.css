@@ -1391,33 +1391,33 @@ td.visible-print {
 /*
  * Header Styles
  */
-.site-header {
+.site-header, header[class^=site-header] {
   text-align: center;
   padding: 10px 0;
   height: 200px;
 }
 @media only screen and (max-width: 1024px) {
-  .site-header {
+  .site-header, header[class^=site-header] {
     height: initial;
   }
 }
 @media only screen and (max-width: 414px) {
-  .site-header {
+  .site-header, header[class^=site-header] {
     height: initial;
   }
 }
-.site-header a.button:hover {
+.site-header a.button:hover, header[class^=site-header] a.button:hover {
   background-color: rgba(255, 255, 255, 0.5);
   color: #222;
 }
 @media screen and (max-width: 600px) {
-  .site-header a.button {
+  .site-header a.button, header[class^=site-header] a.button {
     font-size: 14px;
     font-size: 0.7777777778em;
   }
 }
 @media only screen and (max-width: 414px) {
-  .site-header .container {
+  .site-header .container, header[class^=site-header] .container {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -1425,7 +1425,7 @@ td.visible-print {
   }
 }
 @media screen and (max-width: 600px) {
-  .site-header {
+  .site-header, header[class^=site-header] {
     white-space: nowrap;
     padding: 50px 0;
   }
@@ -1729,7 +1729,7 @@ td.visible-print {
 /*
  * Footer Styles
  */
-.site-footer {
+.site-footer, footer[class^=site-footer] {
   text-align: center;
   padding-bottom: 80px;
 }

@@ -2,7 +2,7 @@
  * Footer Styles
  */
 
-.site-footer{
+.site-footer, footer[class^="site-footer"]{
 	text-align: center;
 	padding-bottom: 80px;
 }
