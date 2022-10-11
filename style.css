@@ -386,6 +386,12 @@ form textarea {
   font-style: normal;
   src: url("fonts/Museo700-Regular.otf");
 }
+@font-face {
+  font-family: "Signatrue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/Signatrue.ttf") format("truetype");
+}
 /*
  * Reusable Components Style
  */

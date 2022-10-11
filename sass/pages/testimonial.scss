@@ -1,29 +1,112 @@
+@import 	"../libs/settings";
+@font-face{
+  font-family: "Signatrue";
+  src: url("../../fonts/Signatrue.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Janelotus";
+  font-size: 10rem;
+  src: url("../../fonts/Janelotus.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Miama";
+  src: url("../../fonts/Miama.ttf") format("truetype");
+}
+@mixin random-color(){
+  color: rgb(97 145 216);
+}
+@mixin getrandomnum(){
+  &:nth-child(#{random(10)}n+1){
+    .tm{
+     .tm-client{
+        .name{
+        }
+        .singature{
+          font-family: "Janelotus";
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
 .tm-item{
+  margin-top: 10px;
   display: flex;
+  align-items: center;
   .tm-image{
     max-width: 25%;
+    max-height: 250px;
   }
   .tm{
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(0 0 0 / 50%);
+    padding: 50px;
+    padding:2em;
+    .tm-title{
+      font-family: "Miama";
+      font-size: 4rem;
+      font-weight: normal;
+      &:first-letter {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
     .tm-word{
+      &:first-letter {
+      text-transform: uppercase;
+        font-size: 120%;
+        font-weight: bold;
+        margin-right: 2px;
+      }
+    }
+    .tm-client{
+      text-align: right;
+      text-transform: capitalize;
+      font-style: italic;
+      .name{
+        line-height: 0.5em;
+        display: block;
+        font-size: 80%;
+      }
+      .singature{
+        line-height: 3em;
+        font-family: "Signatrue";
+        @include random-color();
+      }
+      .title{
+        line-height: 0.5em;
+        font-style: normal;
+        font-size: 75%;
+        font-weight: 100;
+      }
+    }
+  }
+
+
+
+  &:nth-child(2n+1){
+
+    flex-direction: row-reverse;
+    .tm-image{
 
     }
-    .tm-client{}
-  }
-  &:nth-child(2n+1){
-    margin-right: 25%;
-    .tm-image{
-      float: left;
-      display: inline-block;
-    }
     .tm{
-     padding-right: 25%;
+      padding:2em;
+
+      .tm-client{
+
+        .name{
+
+        }
+        .singature{
+
+        }
+      }
     }
   }
-  &:nth-child(2n){
-    margin-left: 25%;
-    .tm-image{
-      float: right;
-      display: inline-block;
-    }
-  }
+
+  @include getrandomnum();
+
 }
