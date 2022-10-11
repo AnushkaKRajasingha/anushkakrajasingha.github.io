@@ -41,12 +41,12 @@
   .tm{
     border-radius: 50px;
     backdrop-filter: blur(5px);
-    background-color: rgb(0 0 0 / 50%);
-    padding: 50px;
-    padding:2em;
+    background-color: rgb(0 0 0 / 75%);
+    padding:1.5em;
+    width: -webkit-fill-available;
     .tm-title{
       font-family: "Miama";
-      font-size: 4rem;
+      font-size: 2.2rem;
       font-weight: normal;
       &:first-letter {
         font-weight: bold;
@@ -54,6 +54,8 @@
       }
     }
     .tm-word{
+      line-height: 1.3rem;
+      font-weight: 100;
       &:first-letter {
       text-transform: uppercase;
         font-size: 120%;
@@ -71,7 +73,7 @@
         font-size: 80%;
       }
       .singature{
-        line-height: 3em;
+        line-height: 2.4em;
         font-family: "Signatrue";
         @include random-color();
       }
@@ -93,7 +95,7 @@
 
     }
     .tm{
-      padding:2em;
+      padding:1.5em;
 
       .tm-client{
 

@@ -23,18 +23,22 @@
 .tm-item .tm {
   border-radius: 50px;
   backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1.5em;
+  width: -webkit-fill-available;
 }
 .tm-item .tm .tm-title {
   font-family: "Miama";
-  font-size: 4rem;
+  font-size: 2.2rem;
   font-weight: normal;
 }
 .tm-item .tm .tm-title:first-letter {
   font-weight: bold;
   text-transform: uppercase;
+}
+.tm-item .tm .tm-word {
+  line-height: 1.3rem;
+  font-weight: 100;
 }
 .tm-item .tm .tm-word:first-letter {
   text-transform: uppercase;
@@ -53,7 +57,7 @@
   font-size: 80%;
 }
 .tm-item .tm .tm-client .singature {
-  line-height: 3em;
+  line-height: 2.4em;
   font-family: "Signatrue";
   color: rgb(97, 145, 216);
 }
@@ -67,9 +71,9 @@
   flex-direction: row-reverse;
 }
 .tm-item:nth-child(2n+1) .tm {
-  padding: 2em;
+  padding: 1.5em;
 }
-.tm-item:nth-child(6n+1) .tm .tm-client .singature {
+.tm-item:nth-child(2n+1) .tm .tm-client .singature {
   font-family: "Janelotus";
   font-size: 2rem;
 }
