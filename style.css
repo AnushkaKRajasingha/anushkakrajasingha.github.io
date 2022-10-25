@@ -8,6 +8,19 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
+@font-face {
+  font-family: "Signatrue";
+  src: url("../../fonts/Signatrue.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Janelotus";
+  font-size: 10rem;
+  src: url("../../fonts/Janelotus.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Miama";
+  src: url("../../fonts/Miama.ttf") format("truetype");
+}
 article,
 aside,
 details,
@@ -1463,6 +1476,7 @@ td.visible-print {
 }
 
 .logo {
+  position: relative;
   width: 170px;
   height: 170px;
   border-radius: 50%;
@@ -1481,6 +1495,19 @@ td.visible-print {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
+.logo:before {
+  opacity: 0.3;
+  backdrop-filter: blur(5px);
+  background-image: url(https://anushka.pro/images/profile.png);
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 600px) {
   .logo {
     width: 130px;
@@ -1495,12 +1522,23 @@ td.visible-print {
   box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.5);
   color: #222;
 }
+.logo:hover a {
+  color: black;
+}
 .logo a {
+  font-family: "Janelotus";
   display: block;
-  color: #61d8ba;
+  color: white;
 }
 .logo a:hover {
-  color: #222;
+  color: black;
+}
+
+.about .menu {
+  margin-top: 70px;
+}
+.about .logo {
+  display: none;
 }
 
 .section-title {

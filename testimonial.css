@@ -73,7 +73,7 @@
 .tm-item:nth-child(2n+1) .tm {
   padding: 1.5em;
 }
-.tm-item:nth-child(2n+1) .tm .tm-client .singature {
+.tm-item:nth-child(7n+1) .tm .tm-client .singature {
   font-family: "Janelotus";
   font-size: 2rem;
 }

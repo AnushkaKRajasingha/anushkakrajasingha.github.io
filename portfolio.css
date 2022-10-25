@@ -1,6 +1,19 @@
 /*
 * Portfolio Styles
 */
+@font-face {
+  font-family: "Signatrue";
+  src: url("../../fonts/Signatrue.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Janelotus";
+  font-size: 10rem;
+  src: url("../../fonts/Janelotus.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Miama";
+  src: url("../../fonts/Miama.ttf") format("truetype");
+}
 .portfolio-container {
   text-align: center;
   padding-bottom: 100px;

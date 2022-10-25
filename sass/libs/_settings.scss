@@ -1,6 +1,23 @@
 // Font family
+
+@font-face{
+  font-family: "Signatrue";
+  src: url("../../fonts/Signatrue.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Janelotus";
+  font-size: 10rem;
+  src: url("../../fonts/Janelotus.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Miama";
+  src: url("../../fonts/Miama.ttf") format("truetype");
+}
+
 $primary-font      : Museo, Raleway, "Open Sans", sans-serif;
 $secondary-font    : "Deftone Stylus", Georgia, serif;
+$signaturefont1 : "Signatrue";
+$signaturefont2 : "Janelotus";
 
 
 // Color Variables
