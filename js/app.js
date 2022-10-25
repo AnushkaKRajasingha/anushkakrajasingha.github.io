@@ -73,6 +73,11 @@ function loadmore_testimonials(){
 	
 	$(document).ready(function(){
 
+		var canvas = document.getElementById("stars");
+		var parent = document.getElementsByClassName("site-content");
+		canvas.width = parent[0].offsetWidth;
+		canvas.height = parent[0].offsetHeight + 200;
+
 		function setCountDown(){
 
             // set the date we're counting down to
