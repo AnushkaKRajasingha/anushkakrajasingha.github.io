@@ -77,6 +77,10 @@
 		margin: 0 10px;
 		padding-top: 40px;
 		@include em(40);
+		&:before {
+			width: 130px;
+			height: 130px;
+		}
 	}
 
 	&:hover {
