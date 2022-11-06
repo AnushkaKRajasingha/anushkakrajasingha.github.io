@@ -137,50 +137,50 @@
   {
     "tm_title" : "exactly as requested",
     "tm_word" : "Anushka K Rajasingha completed the task exactly as requested, and in good time.",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Marcus Matthews",
+    "tm_image" : "mm.jfif",
     "tm_client_title" : "Upwork client"
   },
   {
     "tm_title" : "High quality work",
     "tm_word" : "High quality work, we always like working with Anushka",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Kevin Bird",
+    "tm_image" : "kb.jpg",
     "tm_client_title" : "Upwork client"
   },
   {
     "tm_title" : "Very happy",
     "tm_word" : "Very happy with the work that Anushka did for us.",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Neil Williamson",
+    "tm_image" : "nw.jpg",
     "tm_client_title" : "Upwork client"
   },
   {
     "tm_title" : "tight deadline. Good job.",
     "tm_word" : "Hard worker. Really appreciate him working to meet a tight deadline. Good job.",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Shaun Winn",
+    "tm_image" : "sw.jpg",
     "tm_client_title" : "Upwork client"
   },
   {
     "tm_title" : "Very impressed",
     "tm_word" : "Very impressed with the results from our web optimization. Anushka brought our desktop speed results on Google from a 48 to a 90! I would highly recommend him and will be using him again in the future.",
-    "tm_client" : "",
-    "tm_image" : "",
-    "tm_client_title" : "Upwork client"
+    "tm_client" : "Laura Hamrick",
+    "tm_image" : "lh.jpg",
+    "tm_client_title" : "Owner of the lhwebdesigns"
   },
   {
     "tm_title" : "quality is phenomenal",
     "tm_word" : "Anushka is an excellent individual to work with. I enjoyed working with him on the project I hired him for. His customer service, communication, skills, and quality of work he produces is phenomenal. I will 100% be hiring Anushka in future for future projects.",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Chris Pambos",
+    "tm_image" : "cp.jpg",
     "tm_client_title" : "Upwork client"
   },
   {
     "tm_title" : "excellent at coding",
     "tm_word" : "Anushka is excellent at coding. Nothing is too much trouble is only weakness is that he is not an artist making a website design difficult. However I have been working with him before and will again.",
-    "tm_client" : "",
-    "tm_image" : "",
+    "tm_client" : "Edouard Alleman",
+    "tm_image" : "bim-edouard.jpg",
     "tm_client_title" : "Upwork client"
   },
   {
@@ -198,10 +198,17 @@
     "tm_client_title" : "Upwork client"
   },
   {
+    "tm_title" : "amazing job!",
+    "tm_word" : "He did an amazing job! Highly recommended!",
+    "tm_client" : "Daryl Lawson",
+    "tm_image" : "dl.jfif",
+    "tm_client_title" : "Upwork client"
+  },
+  {
     "tm_title" : "very satisfied with it",
     "tm_word" : "I had a very technical developer in San Francisco review Anushka's work and was very satisfied with it. Anushka did a fantastic job and we were able to work together in a cooperative manner. Hopefully this project will pay off and in that case I will hire Anushka again.",
     "tm_client" : "Tyler Rustin",
-    "tm_image" : "",
+    "tm_image" : "tr.jfif",
     "tm_client_title" : "Upwork client"
   },
   {
@@ -226,20 +233,6 @@
     "tm_client_title" : "Upwork client"
   },
   {
-    "tm_title" : "",
-    "tm_word" : "I had a great experience with Anushka, he was able to deal with my frustrations and assist me in understanding what he did to improve my website.",
-    "tm_client" : "",
-    "tm_image" :"",
-    "tm_client_title" : "Upwork client"
-  },
-  {
-    "tm_title": "",
-    "tm_word": "I had a very technical developer in San Francisco review Anushka's work and was very satisfied with it. Anushka did a fantastic job and we were able to work together in a cooperative manner. Hopefully this project will pay off and in that case I will hire Anushka again.",
-    "tm_client": "",
-    "tm_image": "",
-    "tm_client_title": "Upwork client"
-  },
-  {
     "tm_title":"",
     "tm_word":"The second time i am working with Anushka . And i am looking forward for the next times. Very good work.",
     "tm_client":"",
@@ -254,10 +247,10 @@
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"deal with my frustrations",
     "tm_word":"I had a great experience with Anushka, he was able to deal with my frustrations and assist me in understanding what he did to improve my website.",
-    "tm_client":"",
-    "tm_image":"",
+    "tm_client":"Courtenay Rufus",
+    "tm_image":"cr.jpg",
     "tm_client_title":"Upwork client"
   },
   {
@@ -268,60 +261,60 @@
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"task was done smoothly",
     "tm_word":"Anushka improved out website as we requested and the whole task was done smoothly and without any problems. Highly Recommend. \\r\\nI look forward to work with him in the future.",
-    "tm_client":"",
-    "tm_image":"",
+    "tm_client":"lukas berezowiec",
+    "tm_image":"lb.jfif",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"very committed",
     "tm_word":"Great dev, very committed and delivered what we needed in time.",
-    "tm_client":"",
+    "tm_client":"Amit Gupta",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"hard worker who has a lot of technical knowledge",
     "tm_word":"Anushka is a hard worker who has a lot of technical knowledge. He is friendly, helpful and reliable. I am very pleased with the job he has done.",
-    "tm_client":"",
-    "tm_image":"",
+    "tm_client":"Jeff Davis",
+    "tm_image":"jd.jpg",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"listened to direction well",
     "tm_word":"Anushka did a great job and listened to direction well.  He is patient when changes are needed and executes.",
-    "tm_client":"",
-    "tm_image":"",
+    "tm_client":"Veronica A",
+    "tm_image":"va.jfif",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"did amazing",
     "tm_word":"Anushka did amazing with our project, and we would recommend him for other jobs.",
-    "tm_client":"",
-    "tm_image":"",
+    "tm_client":"Veronica Attleer",
+    "tm_image":"va.jfif",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"Fast and quality work!",
     "tm_word":"Did more then expected. Fast and quality work! Very nice. Looking forward to hire him again",
-    "tm_client":"",
+    "tm_client":"navid Ehre",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"great work",
     "tm_word":"Anushka did great work in taking in a mock from us and building out an entire wordpress site using a wordpress template. He was quick, responsive as well as willing and listen and accomodate any changes. Great work!",
-    "tm_client":"",
+    "tm_client":"Amit Guptha",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"completed on time",
     "tm_word":"Job was completed on time and successfully with great communication. I will definitely use again.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Michael Holvoet",
+    "tm_image":"mh.jfif",
+    "tm_client_title":"Out Of The Box Consultants"
   },
   {
     "tm_title":"",
@@ -331,25 +324,25 @@
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"Fabulous experience",
     "tm_word":"Fabulous experience working with Anushka. Did the job very quickly and with minimal attention required by us. All done with minimal input from us, fantastic experience, highly recommended",
-    "tm_client":"",
+    "tm_client":"David Imrie",
     "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client_title":"Owner of Pistachio Media"
   },
   {
     "tm_title":"speedy and efficient services",
     "tm_word":"excellent experience, without us knowing Anushka found additional issues within the project, identified them and brought them to the surface for management to consult on and Anushka provided the end solution for items that were lacking in the brief and also components that were necessary in the application. for someone to do this off their own back demonstrates willingness to attend to not only the task at hand, but also to ensure that the job is done efficiently and correctly the first time round. We dont see this too much here on upWork, so Im very greatful for the speedy and efficient services provided.",
-    "tm_client":"",
+    "tm_client":"David Imrie",
     "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client_title":"Owner of Pistachio Media"
   },
   {
-    "tm_title":"",
+    "tm_title":"Very happy",
     "tm_word":"Very happy with search bar and real estate website, we will definitely use again.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Michael Holvoet",
+    "tm_image":"mh.jfif",
+    "tm_client_title":"Out Of The Box Consultants"
   },
   {
     "tm_title":"",
@@ -359,137 +352,116 @@
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"joy to work with",
     "tm_word":"Anushka again was a joy to work with. All work was well done and on time, actually done right away. I'd highly recommend him and plan to work with him again in the future. He's great.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Elizabeth Larose",
+    "tm_image":"el.jpg",
+    "tm_client_title":"Upwork client - Elizabeth Larose Art"
   },
   {
-    "tm_title":"",
+    "tm_title":"IDX search bar!",
     "tm_word":"Great work and communication. Thank you for the IDX search bar!",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Michael Holvoet",
+    "tm_image":"mh.jfif",
+    "tm_client_title":"Out Of The Box Consultants"
   },
   {
-    "tm_title":"",
+    "tm_title":"job beautifully",
     "tm_word":"AnushkA did my job beautifully. He was patient and steady even when I changed things. He worked quickly and accurately and made my website much better. I would definitely work with him again. Thank you AnushkA!",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Elizabeth Larose",
+    "tm_image":"el.jpg",
+    "tm_client_title":"Upwork client - Elizabeth Larose Art"
   },
   {
-    "tm_title":"",
+    "tm_title":"efficiently",
     "tm_word":"He did a great job even though we had a lot of changes.  He handled them all efficiently.",
-    "tm_client":"",
+    "tm_client":"Melissa Croll ",
     "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client_title":"Upwork client - ATTLEE REALTY, LLC."
   },
   {
     "tm_title":"Very communicative",
     "tm_word":"It was a pleasure working with Anushka. The project was not a simple project and he did a great job with it. I checked his coding and it appears to be very commented and follow the standards I asked him to follow. Quality programmer. Very communicative. I will use him again.",
-    "tm_client":"Nelson Miller",
-    "tm_image":"nm.jfif",
-    "tm_client_title":"Owner & Designer | Pee-Aye Creative | The Divi Teacher"
+    "tm_client":"Devon Watkins",
+    "tm_image":"dw.jpg",
+    "tm_client_title":"Owner of Watkins Home Sales"
   },
   {
-    "tm_title":"",
+    "tm_title":"timely manner",
     "tm_word":"Anushka takes direction well and completes tasks in a timely manner.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Veronica Attleer",
+    "tm_image":"va.jfif",
+    "tm_client_title":"Upwork client - Owner of Attlee Realty"
   },
   {
-    "tm_title":"",
+    "tm_title":"Great work",
     "tm_word":"Great work, and does it in a timely manner.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Veronica Attleer",
+    "tm_image":"va.jfif",
+    "tm_client_title":"Upwork client - Owner of Attlee Realty"
   },
   {
-    "tm_title":"",
-    "tm_word":"Very happy with search bar and real estate website, we will definitely use again.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
-  },
-  {
-    "tm_title":"",
-    "tm_word":"Great and fast work! Thanks!",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
-  },
-  {
-    "tm_title":"",
-    "tm_word":"Anushka again was a joy to work with. All work was well done and on time, actually done right away. I'd highly recommend him and plan to work with him again in the future. He's great.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
-  },
-  {
-    "tm_title":"",
+    "tm_title":"As always",
     "tm_word":"As always, Anushka does great work, on time and beyond our expectations. We look forward to working together again soon.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Daniel Strickland ",
+    "tm_image":"ds.jfif",
+    "tm_client_title":"Creative Event Producer & Artist Manager"
   },
   {
-    "tm_title":"",
+    "tm_title":"He does exceptional work",
     "tm_word":"We couldn't be happier with Anushka. He does exceptional work, on time and on budget. His professionalism, communication and attention to detail make us look forward to working with him. Highly recommended!",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Daniel Strickland ",
+    "tm_image":"ds.jfif",
+    "tm_client_title":"Creative Event Producer & Artist Manager"
   },
   {
-    "tm_title":"",
+    "tm_title":"exceeded expectations",
     "tm_word":"Once again, Anushka has exceeded expectations. He always does great work for us. We look forward to continuing our business relationship for many years to come.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Daniel Strickland ",
+    "tm_image":"ds.jfif",
+    "tm_client_title":"Creative Event Producer & Artist Manager"
   },
   {
-    "tm_title":"",
+    "tm_title":"awesome !",
     "tm_word":"Anushka is awesome! We always enjoy working with him because he is attentive, professional and willing to work with our schedules and budgets. Highly recommended!",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Daniel Strickland ",
+    "tm_image":"ds.jfif",
+    "tm_client_title":"Creative Event Producer & Artist Manager"
   },
   {
-    "tm_title":"",
+    "tm_title":"As always",
     "tm_word":"As always, Anushka delivers, on time and above expectations. We look forward to working together again soon.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Daniel Strickland ",
+    "tm_image":"ds.jfif",
+    "tm_client_title":"Creative Event Producer & Artist Manager"
   },
   {
     "tm_title":"",
     "tm_word":"I highly recommend him.Thank you",
-    "tm_client":"",
+    "tm_client":"solmaz mch",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
     "tm_title":"",
     "tm_word":"Good job.thank you",
-    "tm_client":"",
+    "tm_client":"solmaz mch",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"great",
     "tm_word":"Anushka did a great job.",
-    "tm_client":"",
+    "tm_client":"solmaz mch",
     "tm_image":"",
     "tm_client_title":"Upwork client"
   },
   {
-    "tm_title":"",
+    "tm_title":"quality work in a timely fashion",
     "tm_word":"Once again, Anushka delivers quality work in a timely fashion. If you're looking for a developer, I highly recommend Anushka.",
-    "tm_client":"",
-    "tm_image":"",
-    "tm_client_title":"Upwork client"
+    "tm_client":"Tom Hicks",
+    "tm_image":"th.jpg",
+    "tm_client_title":"Attorney at Law"
   },
   {
     "tm_title":"",

@@ -61,11 +61,13 @@ async function loadmore_testimonials(){
 	if(local_cache['data'] == undefined)
 		var resulr = await $.getJSON( "../js/data/testimonials.json", function( data ) {
 			data.sort(function(a,b){
-				if(a['tm_word'].split(' ').length > 3)
+				//if(a['tm_word'].split(' ').length > 5 && b['tm_word'].split(' ').length > 5)
 				return b['tm_word'].length - a['tm_word'].length;
 				//return b['tm_word'].length - a['tm_word'].length;
 			})
-			local_cache['data'] = data;
+			local_cache['data'] = data.filter(function(item){
+				return item['tm_word'].split(' ').length > 5;
+			});
 		});
 	insertTestimonialItem(local_cache['data'])
 }
