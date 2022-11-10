@@ -76,6 +76,7 @@ async function loadmore_testimonials(){
 
 	function infocontent(param)
 	{
+		if(param.length <= 0 ) return ;
 		var contentViewTop = $(window).scrollTop();
 		var contentViewBottom = contentViewTop + $(window).height();
 
