@@ -19,6 +19,7 @@
     position: relative;
     flex: 0 0 31%;
     min-height: 300px;
+    background-color: $container-bg-colorv1;
     @include devices(tablet) {
       flex: 0 0 48%;
     }
@@ -26,7 +27,7 @@
       flex: 0 0 75%;
     }
     .image{
-      background-color: $container-bg-color;
+      /*background-color: $container-bg-color;*/
       height: 100%;
       display: flex;
       justify-content: center;
@@ -42,11 +43,14 @@
       opacity: 0.85;
       height: 100%;
       width: 100%;
-      background: #000;
+      background: $accent-color;
       padding: 1em;
       position: absolute;
     }
-    h3{color: #61d8ba;padding: 5% 0 0;}
+    h3{
+      color:$body-color;
+      padding: 5% 0 0;
+    }
     h4{}
     p{padding: 5% 0 0;}
     a{left: 25%;
@@ -55,6 +59,7 @@
       position: absolute;
       border: #fff 2px solid;
       border-radius: 5px;
+      color: $body-color;
     &:hover{
       background-color: $accent-color; color: #3e3742; border-color: $accent-color;
     }

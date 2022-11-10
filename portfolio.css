@@ -30,6 +30,7 @@
   position: relative;
   flex: 0 0 31%;
   min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 @media only screen and (max-width: 1024px) {
   .box-container .box {
@@ -42,7 +43,7 @@
   }
 }
 .box-container .box .image {
-  background-color: rgba(255, 255, 255, 0.6509803922);
+  /*background-color: $container-bg-color;*/
   height: 100%;
   display: flex;
   justify-content: center;
@@ -58,12 +59,12 @@
   opacity: 0.85;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: hsl(132.9949202467deg, 50%, 50%);
   padding: 1em;
   position: absolute;
 }
 .box-container .box h3 {
-  color: #61d8ba;
+  color: #000;
   padding: 5% 0 0;
 }
 .box-container .box p {
@@ -76,11 +77,12 @@
   position: absolute;
   border: #fff 2px solid;
   border-radius: 5px;
+  color: #000;
 }
 .box-container .box a:hover {
-  background-color: #61d8ba;
+  background-color: hsl(132.9949202467deg, 50%, 50%);
   color: #3e3742;
-  border-color: #61d8ba;
+  border-color: hsl(132.9949202467deg, 50%, 50%);
 }
 .box-container :hover .content {
   animation: slideup;

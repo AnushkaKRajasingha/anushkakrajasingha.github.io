@@ -5,7 +5,7 @@
 .site-header,header[class^="site-header"]{
 	text-align: center;
 	padding: 10px 0;
-	height: 200px;
+	height: 5vh;
 	@include devices(tablet) {
 		height: initial;
 	}
@@ -31,7 +31,7 @@
 	}
 	@media screen and (max-width:600px){
 		white-space: nowrap;
-		padding: 50px 0;
+		padding: 30px 0;
 		a.button,.logo{
 
 		}
@@ -103,7 +103,7 @@
 }
 .about{
 	.menu{
-		margin-top:70px;
+		/*margin-top:70px;*/
 	}
 	.logo{
 		display: none;

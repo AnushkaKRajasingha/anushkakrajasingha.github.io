@@ -1,5 +1,23 @@
 [
   {
+    "image": "images/bricks-bubbles.png",
+    "title": "Bricks and Bubbles",
+    "desc": "WP Form Implementation on Siteground hosted , Astra Theme Based WordPress Website",
+    "site": "https://www.bricksandbubbles.com/"
+  },
+  {
+    "image": "images/speedcomputers.ca.png",
+    "title": "Speed Computers",
+    "desc": "Digi theme based WordPress website bug fix and Optimization , Ajax base theme",
+    "site": "https://speedcomputers.ca/"
+  },
+  {
+    "image": "images/car-wash-traders.png",
+    "title": "Car Wash Traders",
+    "desc": "Custom WordPress theme development and Custom Plugin Development",
+    "site": "https://carwashtraders.com/"
+  },
+  {
     "image": "",
     "title": "The Housson Cente",
     "desc": "Custom wordpress website development based on genisis framework",
