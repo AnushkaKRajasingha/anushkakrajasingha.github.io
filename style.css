@@ -437,6 +437,13 @@ form textarea {
   z-index: 1;
 }
 
+.hp-services ul {
+  margin-left: 3rem;
+}
+.hp-services ul li {
+  list-style: disc;
+}
+
 @font-face {
   font-family: "Deftone Stylus";
   font-weight: normal;
@@ -2005,6 +2012,9 @@ td.visible-print {
   max-width: 100%;
   height: auto;
   max-height: 150px;
+}
+.slider .slide em {
+  display: none;
 }
 
 /*
