@@ -3,8 +3,19 @@
 	font-weight: 300;
 
 	span{
+		padding: 0 10px;
 		color: $accent-color;
+		border-radius: 1rem;
 	}
+	a{
+		&:hover{
+			span{
+				background-color: $accent-color;
+				color: $body-color;
+			}
+		}
+	}
+
 }
 
 .counter-wrap{
@@ -83,16 +94,22 @@
 }
 
 #calandy-button{
-	/*background-color: $menu-btn-bgcolor;*/
-	&:hover{
-		background-color: $menu-btn-bgcolor-hover;
-		color: #ffffff;
-	}
+
+	background-color: $accent-color;
 	a{
-		&:hover{
-			color: #000;
+		color: $body-color !important;
+	}
+	&:hover{
+		background-color: #fff;
+		a{
+			color: $accent-color;
+
+			&:hover{
+
+			}
 		}
 	}
+
 }
 
 .contact-section{ margin-bottom: 50px }

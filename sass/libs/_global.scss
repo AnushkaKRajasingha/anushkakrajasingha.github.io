@@ -98,6 +98,26 @@ a {
 	text-decoration: none;
 	color: $accent-color;
 }
+a:hover{color:$link-text-color-hover;}
+
+h1,h2,h3,h4{
+	span{
+		padding: 0 5px;
+		color: $accent-color;
+		border-radius: 0.5rem;
+	}
+	a{
+		text-decoration: none;
+		color: $accent-color;
+		&:hover{
+			span{
+				background-color: $accent-color;
+				color: $body-color;
+			}
+		}
+	}
+
+}
 
 address { font-style: normal }
 
