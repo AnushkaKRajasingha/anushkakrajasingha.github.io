@@ -153,6 +153,20 @@ async function loadmore_testimonials(){
 			}
 		})
 
+
+		/*const settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": "https://type.fit/api/quotes",
+			"method": "GET"
+		}
+
+		jQuery.ajax(settings).done(function (response) {
+			const data = JSON.parse(response);
+			console.log(data);
+		});*/
+
+
 	});
 
 	$(window).load(function(){
