@@ -360,6 +360,20 @@ a:hover {
   color: #222;
 }
 
+h1 span, h2 span, h3 span, h4 span {
+  padding: 0 5px;
+  color: hsl(132.9949202467deg, 50%, 50%);
+  border-radius: 0.5rem;
+}
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none;
+  color: hsl(132.9949202467deg, 50%, 50%);
+}
+h1 a:hover span, h2 a:hover span, h3 a:hover span, h4 a:hover span {
+  background-color: hsl(132.9949202467deg, 50%, 50%);
+  color: #000;
+}
+
 address {
   font-style: normal;
 }
@@ -1731,7 +1745,13 @@ td.visible-print {
   font-weight: 300;
 }
 .section-title span {
+  padding: 0 10px;
   color: hsl(132.9949202467deg, 50%, 50%);
+  border-radius: 1rem;
+}
+.section-title a:hover span {
+  background-color: hsl(132.9949202467deg, 50%, 50%);
+  color: #000;
 }
 
 .counter-wrap {
@@ -1832,16 +1852,17 @@ td.visible-print {
 }
 
 #calandy-button {
-  /*background-color: $menu-btn-bgcolor;*/
+  background-color: hsl(132.9949202467deg, 50%, 50%);
+}
+#calandy-button a {
+  color: #000 !important;
 }
 #calandy-button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #ffffff;
+  background-color: #fff;
 }
-#calandy-button a:hover {
-  color: #000;
+#calandy-button:hover a {
+  color: hsl(132.9949202467deg, 50%, 50%);
 }
-
 .contact-section {
   margin-bottom: 50px;
 }
