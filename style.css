@@ -654,7 +654,7 @@ form textarea {
 }
 @media only screen and (max-width: 1024px) {
   .menu__item {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 414px) {
