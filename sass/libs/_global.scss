@@ -98,6 +98,7 @@ a {
 	text-decoration: none;
 	color: $accent-color;
 }
+a:hover{color:$link-text-color-hover;}
 
 address { font-style: normal }
 
