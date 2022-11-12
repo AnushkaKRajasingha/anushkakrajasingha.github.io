@@ -57,6 +57,9 @@
 		})(window,document,'script','dataLayer','GTM-PP9XPGR');</script>
 		<!-- End Google Tag Manager -->
 		<style>
+			html {
+				scroll-behavior: smooth;
+			}
 			/*canvas {
 				position: absolute;
 				display: block;
@@ -70,6 +73,32 @@
 				background-color: rgb(0 0 0 / 50%);
 				padding: 10px;
 			} */
+			ul#social-media {display:flex;}
+			ul#social-media li{
+				/* background-color:#40bf5b45; */
+				margin:10px;
+				border-radius: 50px;
+				padding: 5px;
+			}
+			ul#social-media li a{}
+			ul#social-media li a em{display:none;}
+			ul#social-media li a img{
+				max-width:40px
+			}
+			ul#social-media li:hover{
+				margin:10px;
+				background-color:#40bf5b;
+				border-radius: 50px;
+				padding: 5px;
+			}
+			a[href="#mainctr"] span {
+				position:absolute;
+				bottom:0px;
+				display: inline-block;
+				font-size:72px;
+				transform: scaleX(2);
+				font-weight:bold;
+			}
 		</style>
 	</head>
 	<body>
@@ -79,14 +108,22 @@
 					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 		<div class="site-content">
-			
 			<header class="site-header">
 			</header> <!-- .site-header -->
-
-			<main class="main-content">
+            <div class="h-screen center-aligned flex justify-center" style="align-items: center;flex-direction: column;">
+                <h1 class="section-title center-aligned w-1/2">I'm <a target="_blank" href="/about.html"><span>Anushka</span></a>, Professional <a target="_blank" href="https://profiles.wordpress.org/anushkakr/"><span>WordPress</span></a> Developer in <a target="_blank" href="https://en.wikipedia.org/wiki/Sri_Lanka"><span>Sri Lanka</span></a></h1>
+            	<ul id="social-media" class="flex mt-5">
+					<li><a href="https://www.upwork.com/freelancers/anushkakrajasingha" title="Upwork" target="_blank" ><img src="/images/upwork_v1.png" alt="upwork" /> <em>Upwork</em></a></li>
+					<li><a href="https://www.linkedin.com/in/anushkakr/" title="Upwork" target="_blank" ><img src="/images/linkedin_v1.png" alt="linkedin" /> <em>Linkedin</em></a></li>
+					<li><a href="https://profiles.wordpress.org/anushkakr/" title="Upwork" target="_blank" ><img src="/images/wp_v1.png" alt="WordPress" /> <em>WordPress</em></a></li>
+					<li><a href="https://www.freelancer.com/u/AnushkaRaja" title="Freelancer" target="_blank" ><img src="/images/frrlancer_v1.png" alt="Freelancer" /> <em>Freelancer.com</em></a></li>
+				</ul>
+				<a href="#mainctr"><span>&#8964;</span></a>
+			</div>
+			<main class="main-content" id="mainctr">
 
 				<div class="container ">
-					<h1 class="section-title center-aligned">I'm <a target="_blank" href="/about.html"><span>Anushka</span></a>, Professional <a target="_blank" href="https://profiles.wordpress.org/anushkakr/"><span>WordPress</span></a> Developer in <a target="_blank" href="https://en.wikipedia.org/wiki/Sri_Lanka"><span>Sri Lanka</span></a></h1>
+
 
 
 
@@ -214,7 +251,7 @@
 				</div>	<!-- .container -->
 			</main> <!-- .main-content -->
 
-			<footer class="site-footer">
+			<footer id="footer" class="site-footer">
 			</footer>
 
 		</div>
