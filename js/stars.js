@@ -10,7 +10,7 @@
     flareCount = 10,
     motion = 0.05,
     tilt = 0.05,
-    color = '#000',
+    color = '#40BF5B',
     particleSizeBase = 1,
     particleSizeMultiplier = 0.5,
     flareSizeBase = 100,

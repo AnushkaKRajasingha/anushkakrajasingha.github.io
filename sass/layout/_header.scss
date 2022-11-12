@@ -3,9 +3,9 @@
  */
 
 .site-header,header[class^="site-header"]{
-	text-align: center;
+	/*text-align: center;
 	padding: 10px 0;
-	height: 5vh;
+	height: 5vh;*/
 	@include devices(tablet) {
 		height: initial;
 	}
@@ -108,4 +108,8 @@
 	.logo{
 		display: none;
 	}
+}
+
+.main-content{
+	padding-top: 5vh !important;
 }
