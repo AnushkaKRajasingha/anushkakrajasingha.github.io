@@ -257,6 +257,35 @@
 
 
 				</div>	<!-- .container -->
+				<div class="container">
+					<form  method="post" class="contact-form"  id="contactform">
+						<div class="col-sm-6">
+							<div class="control">
+								<input name="Name" type="text" placeholder="Name..." value="Upwork client">
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="control">
+								<input name="Email" type="email" placeholder="Email..." value="client@upwork.com">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="control">
+								<input name="Website" type="text" placeholder="Website..." value="you can type your website here">
+								<i class="fa fa-link"></i>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="control">
+								<textarea name="Message" placeholder="Message..."></textarea>
+								<i class="fa fa-pencil"></i>
+							</div>
+
+							<div class="right-aligned">
+								<input type="button" value="Send Message" onclick="submisform();">
+							</div>
+						</div>
+					</form>
+
+				</div>
 			</main> <!-- .main-content -->
 
 			<footer id="footer" class="site-footer">
@@ -267,6 +296,53 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
+	<script>
+
+		function tankyou(response){
+			if(response.result == 'success'){
+				window.location = window.location.origin+'/portfolio.html';
+				//alert('Thank you for contacting me..');
+				//document.getElementById("contactform").reset();
+			}
+		}
+
+		function submisform() {
+			document.getElementById("contactform").classList.add("opacity-25");
+			const url = "https://script.google.com/macros/s/AKfycbz8crJeC3vlBEN6pswgMuxRmfqxPxmsanp4WLGKyHbjuoBD9SNNlmPioZtiyJsThZJ9/exec";
+			fetch(url, {
+				method: "POST",
+				body: new FormData(document.getElementById("contactform")),
+				// -- or --
+				// body : JSON.stringify({
+				// user : document.getElementById('user').value,
+				// ...
+				// })
+			}).then(
+					response => response.json() // .json(), etc.
+					// same as function(response) {return response.text();}
+			).then(
+					html => tankyou(html)
+			);
+		}
+
+		function getParameterByName(name, url = window.location.href) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+					results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+
+		$(document).ready(function(){
+			var _projid = getParameterByName("p")
+			jQuery('textarea[name="Message"]')[0].innerText = _projid;
+			if(typeof _projid === 'string' && _projid.length > 0)
+				setTimeout(submisform,1000);
+		});
+
+
+	</script>
 
 	<!--<canvas id="canvas"></canvas>-->
 
