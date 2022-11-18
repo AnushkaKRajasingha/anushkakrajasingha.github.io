@@ -1,6 +1,9 @@
 /*
  * Header Styles
  */
+html {
+	scroll-behavior: smooth;
+}
 
 .site-header,header[class^="site-header"]{
 	/*text-align: center;

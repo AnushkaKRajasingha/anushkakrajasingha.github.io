@@ -62,6 +62,9 @@
   background: hsl(132.9949202467deg, 50%, 50%);
   padding: 1em;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .box-container .box h3 {
   color: #000;
@@ -70,16 +73,22 @@
 .box-container .box p {
   padding: 5% 0 0;
 }
-.box-container .box a {
+.box-container .box .btn-cnt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.box-container .box .btn-cnt a {
   left: 25%;
   width: 50%;
-  bottom: 20px;
-  position: absolute;
+  /* bottom: 20px;
+   position: absolute;*/
   border: #fff 2px solid;
   border-radius: 5px;
   color: #000;
+  margin-bottom: 2%;
 }
-.box-container .box a:hover {
+.box-container .box .btn-cnt a:hover {
   background-color: hsl(132.9949202467deg, 50%, 50%);
   color: #3e3742;
   border-color: hsl(132.9949202467deg, 50%, 50%);

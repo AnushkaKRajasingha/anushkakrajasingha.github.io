@@ -1666,6 +1666,10 @@ td.visible-print {
 /*
  * Header Styles
  */
+html {
+  scroll-behavior: smooth;
+}
+
 .site-header, header[class^=site-header] {
   /*text-align: center;
   padding: 10px 0;
