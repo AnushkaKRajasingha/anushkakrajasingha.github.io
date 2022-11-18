@@ -89,9 +89,11 @@
   margin-bottom: 2%;
 }
 .box-container .box .btn-cnt a:hover {
-  background-color: hsl(132.9949202467deg, 50%, 50%);
-  color: #3e3742;
-  border-color: hsl(132.9949202467deg, 50%, 50%);
+  /* background-color: $accent-color;
+   color: #3e3742;
+   border-color: $accent-color;*/
+  filter: invert(1);
+  color: #fbfbfb;
 }
 .box-container :hover .content {
   animation: slideup;
