@@ -84,9 +84,11 @@
         margin-bottom: 2%;
 
         &:hover {
-          background-color: $accent-color;
+         /* background-color: $accent-color;
           color: #3e3742;
-          border-color: $accent-color;
+          border-color: $accent-color;*/
+          filter: invert(1);
+          color: #fbfbfb;
         }
       }
     }
