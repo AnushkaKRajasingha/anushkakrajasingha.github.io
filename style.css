@@ -305,7 +305,7 @@ body {
   min-height: 100vh;
   color: #000;
   font-family: Museo, Raleway, "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   line-height: normal;
   /*	background-image: radial-gradient(circle, #39323e, #262029);
@@ -486,7 +486,7 @@ form textarea {
   border-top: 1px solid #817489;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   font-size: 18px;
-  font-size: 1em;
+  font-size: 1.2857142857em;
   position: relative;
   z-index: 1;
   overlfow: hidden;
@@ -1692,7 +1692,7 @@ html {
 @media screen and (max-width: 600px) {
   .site-header a.button, header[class^=site-header] a.button {
     font-size: 14px;
-    font-size: 0.7777777778em;
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 414px) {
@@ -1724,7 +1724,7 @@ html {
   font-family: "Deftone Stylus", Georgia, serif;
   font-weight: normal;
   font-size: 48px;
-  font-size: 2.6666666667em;
+  font-size: 3.4285714286em;
   transition: 0.3s ease;
   text-indent: -10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1750,7 +1750,7 @@ html {
     margin: 0 10px;
     padding-top: 40px;
     font-size: 40px;
-    font-size: 2.2222222222em;
+    font-size: 2.8571428571em;
   }
   .logo:before {
     width: 130px;
@@ -1786,7 +1786,7 @@ html {
 
 .section-title {
   font-size: 48px;
-  font-size: 2.6666666667em;
+  font-size: 3.4285714286em;
   font-weight: 300;
 }
 .section-title span {
@@ -1827,7 +1827,7 @@ html {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-size: 90px;
-  font-size: 5em;
+  font-size: 6.4285714286em;
   font-weight: 700;
   padding: 30px 0;
   margin-bottom: 20px;
@@ -1835,13 +1835,13 @@ html {
 @media screen and (max-width: 990px) {
   .counter-wrap .number {
     font-size: 70px;
-    font-size: 3.8888888889em;
+    font-size: 5em;
   }
 }
 @media screen and (max-width: 480px) {
   .counter-wrap .number {
     font-size: 40px;
-    font-size: 2.2222222222em;
+    font-size: 2.8571428571em;
   }
 }
 .counter-wrap .caption {
@@ -1850,7 +1850,7 @@ html {
   color: #7d7482;
   font-weight: 700;
   font-size: 14px;
-  font-size: 0.7777777778em;
+  font-size: 1em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -1892,7 +1892,7 @@ html {
 .team .team-name {
   color: #7d7482;
   font-size: 14px;
-  font-size: 0.7777777778em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -2062,7 +2062,7 @@ html {
   color: white;
   background-color: #262029;
   font-size: 18px;
-  font-size: 1em;
+  font-size: 1.2857142857em;
   transition: 0.3s ease;
 }
 .subscribe-form input[type=text]:focus, .subscribe-form input[type=text]:active, .subscribe-form input[type=email]:focus, .subscribe-form input[type=email]:active {
@@ -2099,7 +2099,7 @@ html {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   padding-top: 7px;
   font-size: 18px;
-  font-size: 1em;
+  font-size: 1.2857142857em;
   transition: 0.3s ease;
 }
 .social-links a:hover, .social-links a:focus {
