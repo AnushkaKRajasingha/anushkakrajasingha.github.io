@@ -1,67 +1,93 @@
-function loadmore_portf(){
-	$.getJSON( "../js/data/portfolio.json", function( data ) {
-		var items = [];
-		$counter = 0;
-		$.each( data, function( key, val ) {
-			if(key < $('#data-load-count').val()) return;
+var local_cache = [];
 
-			$image = val.image != "" ? "../"+val.image : "https://image.thum.io/get/width/350/"+val.site;
-			items.push( "<div class='box'><div class=\"image\"> <img src=\""+ $image + "\" alt=\"\" /></div>" );
-			items.push( " <div class=\"content\">\n" +
-				"                            <h3>"+val.title+"</h3>\n" +
-				"                            <p>"+val.desc+"</p>\n" +
-				"                            <a target='_blank' href=\""+val.site+"\" class=\"btn\">View Site</a>\n" +
-				"                        </div></div>" );
-			$('#data-load-count').val(key + 1);
-			if($counter == $('#data-load-step').val()){ return false;}
-			$counter++;
 
-		});
+function insertPortfolioItems(pfdata){
+	var items = [];
+	$counter = 0;
+	$.each( pfdata, function( key, val ) {
+		if(key < $('#data-load-count').val()) return;
 
-		$(items.join( "" )).insertBefore( "#more-btn-cnt" );
+		$image = val.image != "" ? "../"+val.image : "https://image.thum.io/get/width/350/"+val.site;
+		items.push( "<div class='box animate__animated animate__flipInX'><div class=\"image\"> <img src=\""+ $image + "\" alt=\"\" /></div>" );
+		items.push( " <div class=\"content\">\n" +
+			"                            <h3>"+val.title+"</h3>\n" +
+			"                            <p>"+val.desc+"</p>\n" +
+			"<div class='btn-cnt'>" +
+			"                            <a title='"+val.title+"'  href=\"testimonials.html?p="+val.title+"\" class=\"btn\">Client's Review</a>\n" +
+			"                            <a title='"+val.site+"' target='_blank' href=\""+val.site+"\" class=\"btn\">View Site</a>\n" +
+			"</div>"+
+			"                        </div></div>" );
+		$('#data-load-count').val(key + 1);
+		if($counter == $('#data-load-step').val()){ return false;}
+		$counter++;
+
 	});
+
+	$(items.join( "" )).insertBefore( "#more-btn-cnt" );
 }
 
-function loadmore_testimonials(){
-	$.getJSON( "../js/data/testimonials.json", function( data ) {
-		var items = [];
-		$counter = 0;
-		$.each( data, function( key, val ) {
-			if(key < $('#data-load-count').val()) return;
-
-			$image = val.tm_image != "" ? "../images/clients/"+val.tm_image : "../images/clients/avatar.png";
-
-			$animateddirection = (key % 2 == 1) ?"animate__backInLeft" : "animate__backInRight";
-			$clienttitle = val.tm_client_title == undefined ? "Upwork client" :  val.tm_client_title;
-
-			items.push("<div class=\"tm-item animate__animated "+$animateddirection+"\">\n" +
-				"<img alt=\"Client Name\" class=\"tm-image\" src=\""+$image+"\" />\n" +
-				"<div class=\"tm\">\n" +
-				"<h4 class=\"tm-title\">"+val.tm_title+"</h4>\n" +
-				"<p class=\"tm-word\">\n" +val.tm_word+
-				"</p>\n" +
-				"<div class=\"tm-client\">\n" +
-				"<span class=\"singature\">"+val.tm_client+"</span>\n" +
-				"<span class=\"name\">"+val.tm_client+"</span>\n" +
-				"<span class=\"title\">"+$clienttitle+"</span>\n" +
-				"</div>\n" +
-				"</div>\n" +
-				"</div>");
-			
-			$('#data-load-count').val(key + 1);
-			if($counter == $('#data-load-step').val()){ return false;}
-			$counter++;
-
-		});
-
-		$(items.join( "" )).insertBefore( "#more-btn-cnt" );
+async function loadmore_portf(){
+	if(local_cache['pfdata'] == undefined)
+	var res = await $.getJSON( "../js/data/portfolio.json", function( data ) {
+		local_cache['pfdata'] = data;
 	});
+	insertPortfolioItems(local_cache['pfdata']);
+}
+
+
+function insertTestimonialItem(data){
+	var items = [];
+	$counter = 0;
+	$.each( data, function( key, val ) {
+		if(key < $('#data-load-count').val()) return;
+
+		$image = val.tm_image != "" ? "../images/clients/"+val.tm_image : "../images/clients/avatar.png";
+
+		$animateddirection = (key % 2 == 1) ?"animate__backInLeft" : "animate__backInRight";
+		$clienttitle = val.tm_client_title == undefined ? "Upwork client" :  val.tm_client_title;
+
+		items.push("<div class=\"tm-item animate__animated "+$animateddirection+"\">\n" +
+			"<img alt=\"Client Name\" class=\"tm-image\" src=\""+$image+"\" />\n" +
+			"<div class=\"tm\">\n" +
+			"<h4 class=\"tm-title\">"+val.tm_title+"</h4>\n" +
+			"<p class=\"tm-word\">\n" +val.tm_word+
+			"</p>\n" +
+			"<div class=\"tm-client\">\n" +
+			"<span class=\"singature\">"+val.tm_client+"</span>\n" +
+			"<span class=\"name\">"+val.tm_client+"</span>\n" +
+			"<span class=\"title\">"+$clienttitle+"</span>\n" +
+			"</div>\n" +
+			"</div>\n" +
+			"</div>");
+
+		$('#data-load-count').val(key + 1);
+		if($counter == $('#data-load-step').val()){ return false;}
+		$counter++;
+
+	});
+	$(items.join( "" )).insertBefore( "#more-btn-cnt" );
+}
+
+async function loadmore_testimonials(){
+	if(local_cache['data'] == undefined)
+		var resulr = await $.getJSON( "../js/data/testimonials.json", function( data ) {
+			data.sort(function(a,b){
+				//if(a['tm_word'].split(' ').length > 5 && b['tm_word'].split(' ').length > 5)
+				return b['tm_word'].length - a['tm_word'].length;
+				//return b['tm_word'].length - a['tm_word'].length;
+			});
+			local_cache['data'] = data.filter(function(item){
+				return item['tm_word'].split(' ').length > 5;
+			});
+		});
+	insertTestimonialItem(local_cache['data'])
 }
 
 (function($, document, window){
 
 	function infocontent(param)
 	{
+		if(param.length <= 0 ) return ;
 		var contentViewTop = $(window).scrollTop();
 		var contentViewBottom = contentViewTop + $(window).height();
 
@@ -72,6 +98,11 @@ function loadmore_testimonials(){
 	}
 	
 	$(document).ready(function(){
+
+		var canvas = document.getElementById("stars");
+		var parent = document.getElementsByClassName("site-content");
+		canvas.width = parent[0].offsetWidth;
+		canvas.height = parent[0].offsetHeight + 200;
 
 		function setCountDown(){
 
@@ -132,6 +163,20 @@ function loadmore_testimonials(){
 				$('#load-more').click();
 			}
 		})
+
+
+		/*const settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": "https://type.fit/api/quotes",
+			"method": "GET"
+		}
+
+		jQuery.ajax(settings).done(function (response) {
+			const data = JSON.parse(response);
+			console.log(data);
+		});*/
+
 
 	});
 

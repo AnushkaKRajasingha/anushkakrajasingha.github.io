@@ -1,15 +1,33 @@
 [
   {
-    "image": "",
-    "title": "ATHENASIA Consulting",
-    "desc": "This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .",
-    "site": "https://www.athenasia.com/"
+    "image": "images/bricks-bubbles.png",
+    "title": "Bricks and Bubbles",
+    "desc": "WP Form Implementation on Siteground hosted , Astra Theme Based WordPress Website",
+    "site": "https://www.bricksandbubbles.com/"
   },
   {
-    "image": "images/autoblogging.png",
-    "title": "Auto bloging Plugin",
-    "desc": "Custom wordpress plugin to Automated blogging",
-    "site": "/plugins/autoblogging"
+    "image": "images/speedcomputers.ca.png",
+    "title": "Speed Computers",
+    "desc": "Digi theme based WordPress website bug fix and Optimization , Ajax base theme",
+    "site": "https://speedcomputers.ca/"
+  },
+  {
+    "image": "images/car-wash-traders.png",
+    "title": "Car Wash Traders",
+    "desc": "Custom WordPress theme development and Custom Plugin Development",
+    "site": "https://carwashtraders.com/"
+  },
+  {
+    "image": "",
+    "title": "The Housson Cente",
+    "desc": "Custom wordpress website development based on genisis framework",
+    "site": "https://thehoussoncenter.com/"
+  },
+  {
+    "image": "",
+    "title": "EM Law | Commercial Lawyers in Central London",
+    "desc": "Website development based on Wordpress and custom theme development and also few custom plugins developments",
+    "site": "https://emlaw.co.uk/"
   },
   {
   "image": "",
@@ -25,6 +43,15 @@
   },
   {
     "image": "",
+    "title": "Wordpress website modification ",
+    "desc": "My client had a enfold theme based wordpress website which needs some serious modifications  but the website core is having some bugs . and also the wp core is out dated.So I had to fix the bugs of the theme before do any modification and also update the theme without getting any issues to the current system.So I was able to deliver the project successfully and also I was able to improve the site performance about 50% by just doing that.",
+    "site": "http://www.tavacon.com/",
+    "theme": "",
+    "type": "Web Development",
+    "plugins": ""
+  },
+  {
+    "image": "",
     "title": "The Jhonnys.",
     "desc": "Custom WordPress website development by using Elementor Pro",
     "site": "https://www.thejhonnys.com.au/",
@@ -32,24 +59,14 @@
     "type": "Web Development",
     "plugins": "Elementor, Contact Form 7,JetPack"
   },
-  {
-    "image": "",
-    "title": "The Housson Cente",
-    "desc": "Custom wordpress website development based on genisis framework",
-    "site": "https://thehoussoncenter.com/"
-  },
+
   {
     "image": "images/plumdrop.png",
     "title": "E-commerce website based on Wordpress",
     "desc": "Custom e-commerce website for sporting goods and rental service, This website build with WordPress and Woocommerce and custom woocommerce module integration.",
     "site": "#"
   },
-  {
-    "image": "",
-    "title": "EM Law | Commercial Lawyers in Central London",
-    "desc": "Website development based on Wordpress and custom theme development and also few custom plugins developments",
-    "site": "https://emlaw.co.uk/"
-  },
+
   {
     "image": "images/childcare.jpg",
     "title": "PSD to WordPress website with Page customizer",
@@ -70,6 +87,12 @@
   },
   {
     "image": "",
+    "title": "ATHENASIA Consulting",
+    "desc": "This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .",
+    "site": "https://www.athenasia.com/"
+  },
+  {
+    "image": "",
     "title": "Amazon Web Services with the usage of Gumroad",
     "desc": "Implement Amazon store services and gumroad.",
     "site": "http://kelliottonline.com/"
@@ -85,6 +108,13 @@
     "title": "Custom Real estate Website Development",
     "desc": "Design and develop custom WordPress theme and page template. And also implement MLS API usage of  ACF",
     "site": "https://atrianyc.com/"
+  },
+
+  {
+    "image": "images/autoblogging.png",
+    "title": "Auto bloging Plugin",
+    "desc": "Custom wordpress plugin to Automated blogging",
+    "site": "/plugins/autoblogging"
   },
   {
     "image": "images/pointsology.png",
@@ -184,15 +214,7 @@
     "type": "Web optimization",
     "plugins": ""
   },
-  {
-    "image": "",
-    "title": "Wordpress website modification ",
-    "desc": "My client had a enfold theme based wordpress website which needs some serious modifications  but the website core is having some bugs . and also the wp core is out dated.So I had to fix the bugs of the theme before do any modification and also update the theme without getting any issues to the current system.So I was able to deliver the project successfully and also I was able to improve the site performance about 50% by just doing that.",
-    "site": "http://www.tavacon.com/",
-    "theme": "",
-    "type": "Web Development",
-    "plugins": ""
-  },
+
   {
     "image": "images/thumb3.png",
     "title": "Website for research journal publish",

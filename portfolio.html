@@ -2,10 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Anushka</title>
-    <meta http-equiv = "refresh" content = "url = /portfolio" />
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
+    <title>Portfolio - Anushka Rajasingha</title>
+
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="title"  content="Portfolio - Anushka Rajasingha - WordPress Developer / Fullstack Developer">
+    <meta name="description" content="WordPress Developer / Fullstack Developer | DIVI Developer | Elementor Developer.">
+    <meta name="keywords" content="WordPress,WordPress Developer,WordPress Theme,WordPress Plugin,DIVI Developer,Elementor Developer,WordPress Website,WordPress Optimization,WordPress Bugfix">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Portfolio - Anushka Rajasingha - WordPress Developer / Fullstack Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anushka.pro" />
+    <meta property="og:site_name" content="Anushka Rajasingha - WordPress Developer / Fullstack Developer">
+    <meta property="og:image" content="https://anushka.pro/images/profile.png" />
+    <meta property="og:description" content="Experienced WordPress Developer / Fullstack Developer based in Sri Lanka , Providing world wide service for web and mobile application development." />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="android-chrome-icon" type="image/png" sizes="16x16" href="/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <link rel="canonical" href="https://anushka.pro/portfolio.html">
+
+    <!-- Loading third party fonts -->
+    <link href="../fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- loading tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="../portfolio.css">
+
+    <!--[if lt IE 9]>
+    <script src="../js/ie-support/html5.js"></script>
+    <script src="../js/ie-support/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+<canvas id="stars"></canvas>
+<div class="site-content">
+
+    <header class="site-header-subpage">
+    </header> <!-- .site-header -->
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="section-title">Portfolio</span></h1>
+            <h2>Here is a selection of projects I have worked on in the recent years. Please <a href="contact.html" title="Contact Anushka"><span>contact</span></a> me if you’re interested in a longer list.</h2>
+
+            <div class="portfolio-container">
+                <input type="hidden" id="data-load-count" value="0">
+                <input type="hidden" id="data-load-step" value="5">
+                <div class="box-container animate__animated animate__zoomIn flex justify-evenly" >
+                    <div class="col-md-12 center-aligned mt-10" id="more-btn-cnt">
+                    <button id="load-more" type="button" value="Load more" class="button hover:bg-sky-700 "   onclick="loadmore_portf();">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>	<!-- .container -->
+    </main> <!-- .main-content -->
+
+    <footer class="site-footer-subpage">
+    </footer> <!-- .site-footer -->
+
+</div>
+
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/app.js"></script>
+<script src="https://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+<script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+<script src="js/stars.js"></script>
 </body>
+
 </html>

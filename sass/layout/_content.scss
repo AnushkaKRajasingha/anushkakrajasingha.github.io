@@ -3,8 +3,19 @@
 	font-weight: 300;
 
 	span{
+		padding: 0 10px;
 		color: $accent-color;
+		border-radius: 1rem;
 	}
+	a{
+		&:hover{
+			span{
+				background-color: $accent-color;
+				color: $body-color;
+			}
+		}
+	}
+
 }
 
 .counter-wrap{
@@ -49,8 +60,8 @@
 		float: right;
 		max-width: 30%;
 		border-radius: 50%;
-		border: 10px solid #7d7482;
-		box-shadow: 0 -1px 1px rgb(255 255 255 / 80%), 0 1px 1px rgb(0 0 0 / 60%);
+		/*border: 10px solid #7d7482;*/
+		box-shadow: 0 -1px 1px rgb(255 255 255 / 80%), 0 1px 1px $container-bg-colorv1;
 		margin-bottom: 10px;
 	}
 	h3{
@@ -83,16 +94,22 @@
 }
 
 #calandy-button{
-	background-color: $menu-btn-bgcolor;
-	&:hover{
-		background-color: $menu-btn-bgcolor-hover;
-		color: #ffffff;
-	}
+
+	background-color: $accent-color;
 	a{
-		&:hover{
-			color: #000;
+		color: $body-color !important;
+	}
+	&:hover{
+		background-color: #fff;
+		a{
+			color: $accent-color;
+
+			&:hover{
+
+			}
 		}
 	}
+
 }
 
 .contact-section{ margin-bottom: 50px }

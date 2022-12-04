@@ -1,6 +1,19 @@
 /*
 * Portfolio Styles
 */
+@font-face {
+  font-family: "Signatrue";
+  src: url("../../fonts/Signatrue.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Janelotus";
+  font-size: 10rem;
+  src: url("../../fonts/Janelotus.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Miama";
+  src: url("../../fonts/Miama.ttf") format("truetype");
+}
 .portfolio-container {
   text-align: center;
   padding-bottom: 100px;
@@ -17,6 +30,7 @@
   position: relative;
   flex: 0 0 31%;
   min-height: 300px;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 @media only screen and (max-width: 1024px) {
   .box-container .box {
@@ -29,7 +43,7 @@
   }
 }
 .box-container .box .image {
-  background-color: rgba(255, 255, 255, 0.6509803922);
+  /*background-color: $container-bg-color;*/
   height: 100%;
   display: flex;
   justify-content: center;
@@ -45,29 +59,41 @@
   opacity: 0.85;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: hsl(132.9949202467deg, 50%, 50%);
   padding: 1em;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .box-container .box h3 {
-  color: #61d8ba;
+  color: #000;
   padding: 5% 0 0;
 }
 .box-container .box p {
   padding: 5% 0 0;
 }
-.box-container .box a {
+.box-container .box .btn-cnt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.box-container .box .btn-cnt a {
   left: 25%;
   width: 50%;
-  bottom: 20px;
-  position: absolute;
+  /* bottom: 20px;
+   position: absolute;*/
   border: #fff 2px solid;
   border-radius: 5px;
+  color: #000;
+  margin-bottom: 2%;
 }
-.box-container .box a:hover {
-  background-color: #61d8ba;
-  color: #3e3742;
-  border-color: #61d8ba;
+.box-container .box .btn-cnt a:hover {
+  /* background-color: $accent-color;
+   color: #3e3742;
+   border-color: $accent-color;*/
+  filter: invert(1);
+  color: #fbfbfb;
 }
 .box-container :hover .content {
   animation: slideup;

@@ -63,5 +63,17 @@
 		}
 	}
 }
+.footer-links{
+	ul{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		li{
+			margin: 0.5rem 1rem;
+			a{
 
+			}
+		}
+	}
+}
 .colophon{color: #7d7482}

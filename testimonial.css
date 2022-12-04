@@ -17,13 +17,13 @@
   align-items: center;
 }
 .tm-item .tm-image {
-  max-width: 25%;
+  max-width: 15%;
   max-height: 250px;
 }
 .tm-item .tm {
   border-radius: 50px;
   backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.03);
   padding: 1.5em;
   width: -webkit-fill-available;
 }
@@ -73,7 +73,7 @@
 .tm-item:nth-child(2n+1) .tm {
   padding: 1.5em;
 }
-.tm-item:nth-child(2n+1) .tm .tm-client .singature {
+.tm-item:nth-child(4n+1) .tm .tm-client .singature {
   font-family: "Janelotus";
   font-size: 2rem;
 }

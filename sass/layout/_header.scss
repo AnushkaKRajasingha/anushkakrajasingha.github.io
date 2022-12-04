@@ -1,11 +1,14 @@
 /*
  * Header Styles
  */
+html {
+	scroll-behavior: smooth;
+}
 
 .site-header,header[class^="site-header"]{
-	text-align: center;
+	/*text-align: center;
 	padding: 10px 0;
-	height: 200px;
+	height: 5vh;*/
 	@include devices(tablet) {
 		height: initial;
 	}
@@ -31,7 +34,7 @@
 	}
 	@media screen and (max-width:600px){
 		white-space: nowrap;
-		padding: 50px 0;
+		padding: 30px 0;
 		a.button,.logo{
 
 		}
@@ -39,6 +42,7 @@
 }
 
 .logo{
+	position:relative;
 	width: 170px;
 	height: 170px;
 	border-radius: 50%;
@@ -56,26 +60,59 @@
 	border-top: 1px solid rgba(255,255,255,.1);
 	border-bottom: 1px solid rgba(0,0,0,.4);
 
+	&:before {
+		opacity: 0.3;
+		backdrop-filter: blur(5px);
+		background-image: url(https://anushka.pro/images/profile.png);
+		background-size: cover;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+	}
+
 	@media screen and (max-width: 600px){
 		width: 130px;
 		height: 130px;
 		margin: 0 10px;
 		padding-top: 40px;
 		@include em(40);
+		&:before {
+			width: 130px;
+			height: 130px;
+		}
 	}
 
 	&:hover {
 		box-shadow: inset 0 0 0 100px $menu-btn-bgcolor-hover;
 		color: $link-text-color-hover;
+		a{
+			color: black;
+		}
 	}
 
 
 	a{
+		font-family: $signaturefont2;
 		display: block;
-		color: $accent-color;
+		color: white;
 		&:hover {
-
-			color: $link-text-color-hover;
+						color: black;
 		}
 	}
+}
+.about{
+	.menu{
+		/*margin-top:70px;*/
+	}
+	.logo{
+		display: none;
+	}
+}
+
+.main-content{
+	padding-top: 5vh !important;
 }
