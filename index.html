@@ -1,342 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-<!--
-		<meta http-equiv="Cache-Control" content="no-cache" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Rajasingha — WordPress & Fullstack Developer</title>
 
-		<title>Anushka Rajasingha - WordPress Developer / Fullstack Developer</title>
+    <meta name="description" content="WordPress Developer / Fullstack Developer based in Sri Lanka. Over a decade of proven experience delivering world-class web solutions.">
+    <meta property="og:title" content="Anushka Rajasingha — WordPress & Fullstack Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anushka.pro" />
+    <meta property="og:image" content="https://anushka.pro/images/profile.png" />
+    <meta property="og:description" content="WordPress Developer / Fullstack Developer based in Sri Lanka. Over a decade of proven experience." />
 
-		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="canonical" href="https://anushka.pro/">
 
-		<meta name="title"  content="Anushka Rajasingha - WordPress Developer / Fullstack Developer">
-		<meta name="description" content="WordPress Developer / Fullstack Developer | DIVI Developer | Elementor Developer.">
-		<meta name="keywords" content="wordpress, wordpress developer, wordpress theme, wordpress plugin, divi developer, elementor developer, wordpress website, wordpress optimization, wordpress bugfix, web design, web development, web design, web development, wordpress developers, wordpress web designers, wordpress web developers, wordpress website development, wordpress plugin developers, freelance, freelance, wordpress freelancer, wordpress, web design company, web design colombo, web design kalutara, web design matara, web design galle, anushka rajasingha">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
-		<meta property="og:locale" content="en_US">
-		<meta property="og:title" content="Anushka Rajasingha - WordPress Developer / Fullstack Developer" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://anushka.pro" />
-		<meta property="og:site_name" content="Anushka Rajasingha - WordPress Developer / Fullstack Developer">
-		<meta property="og:image" content="https://anushka.pro/images/profile.png" />
-		<meta property="og:description" content="Experienced WordPress Developer / Fullstack Developer based in Sri Lanka , Providing world wide service for web and mobile application development." />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-		<link rel="android-chrome-icon" type="image/png" sizes="16x16" href="/images/android-chrome-192x192.png">
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-		<link rel="manifest" href="/images/site.webmanifest">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PP9XPGR');</script>
 
-		<link rel="canonical" href="https://anushka.pro/">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-		<!-- Loading third party fonts -->
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+        :root {
+            --bg: #F5F0EB;
+            --bg-warm: #EDE7DF;
+            --bg-card: #FFFFFF;
+            --text: #1a1a1a;
+            --text-body: #4a4440;
+            --text-muted: #8a827a;
+            --accent: #C45D3E;
+            --accent-light: #E8956F;
+            --border: #D8D0C8;
+            --border-light: #E8E2DB;
+            --display: 'Playfair Display', Georgia, serif;
+            --body: 'DM Sans', system-ui, sans-serif;
+            --max-w: 1280px;
+        }
 
-		<!-- loading tailwind -->
-		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--body);
+            font-weight: 300;
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* subtle paper grain */
+        body::before {
+            content: '';
+            position: fixed; inset: 0; z-index: 9998;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none; opacity: 0.5;
+        }
+        a { color: inherit; text-decoration: none; }
+        .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 3rem; }
 
-		<!-- loading loading animation -->
-		<link rel="stylesheet"
-			  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        /* ─── LOADER ─── */
+        .loader {
+            position: fixed; inset: 0; z-index: 9999; background: var(--bg);
+            display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.7s ease, visibility 0.7s ease;
+        }
+        .loader.done { opacity: 0; visibility: hidden; pointer-events: none; }
+        .loader-name {
+            font-family: var(--display); font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 400; color: var(--accent);
+            animation: breathe 1.4s ease-in-out infinite alternate;
+        }
+        @keyframes breathe { from { opacity: 0.3; } to { opacity: 1; } }
 
-		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+        /* ─── NAV ─── */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(245,240,235,0.85);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-light);
+            transition: transform 0.35s ease;
+        }
+        nav.hide { transform: translateY(-100%); }
+        .nav-inner {
+            max-width: var(--max-w); margin: 0 auto; padding: 1rem 3rem;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-brand { font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--accent); }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a {
+            font-size: 0.82rem; font-weight: 400;
+            letter-spacing: 0.06em; text-transform: uppercase;
+            color: var(--text-body); position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -3px; left: 0;
+            width: 0; height: 1.5px; background: var(--accent); transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--accent); }
 
-		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        .burger { display: none; cursor: pointer; width: 26px; height: 18px; position: relative; z-index: 200; }
+        .burger span { display: block; width: 100%; height: 1.5px; background: var(--text); position: absolute; left: 0; transition: 0.3s; }
+        .burger span:nth-child(1) { top: 0; }
+        .burger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+        .burger span:nth-child(3) { bottom: 0; }
+        .burger.open span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+        .burger.open span:nth-child(2) { opacity: 0; }
+        .burger.open span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
 
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
+        .mob-menu {
+            position: fixed; inset: 0; z-index: 150; background: var(--bg);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.8rem;
+            opacity: 0; visibility: hidden; transition: 0.4s;
+        }
+        .mob-menu.show { opacity: 1; visibility: visible; }
+        .mob-menu a { font-family: var(--display); font-size: clamp(1.8rem, 5vw, 3rem); color: var(--text); transition: color 0.3s; }
+        .mob-menu a:hover { color: var(--accent); }
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4972830032451681"
-                crossorigin="anonymous"></script>
+        /* ─── HERO ─── */
+        .hero {
+            min-height: 100vh; padding-top: 10rem; padding-bottom: 5rem;
+            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: end;
+        }
+        .hero-eyebrow {
+            font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 1.5rem;
+            display: flex; align-items: center; gap: 0.8rem;
+        }
+        .hero-eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--accent); }
+        .hero h1 {
+            font-family: var(--display); font-size: clamp(2.8rem, 6vw, 5.5rem);
+            font-weight: 400; line-height: 1.08; letter-spacing: -0.02em;
+        }
+        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero-right { padding-bottom: 0.5rem; }
+        .hero-desc { font-size: 1.05rem; line-height: 1.8; color: var(--text-body); max-width: 420px; margin-bottom: 2.5rem; }
+        .hero-cta {
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            background: var(--accent); color: #fff; padding: 0.9rem 2rem; border-radius: 6px;
+            font-size: 0.85rem; font-weight: 500; letter-spacing: 0.03em;
+            transition: 0.3s; cursor: pointer; border: none; font-family: var(--body);
+        }
+        .hero-cta:hover { background: #a9492e; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(196,93,62,0.25); }
+        .hero-cta .arr { transition: transform 0.3s; }
+        .hero-cta:hover .arr { transform: translateX(3px); }
+        .hero-divider { grid-column: 1 / -1; height: 1px; background: var(--border); margin-top: 2rem; }
 
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-					new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-PP9XPGR');</script>
-		<!-- End Google Tag Manager -->
-		<style>
-			ul#social-media {display:flex;}
-			ul#social-media li{
-				/* background-color:#40bf5b45; */
-				margin:10px;
-				border-radius: 50px;
-				padding: 5px;
-			}
-			ul#social-media li a{}
-			ul#social-media li a em{display:none;}
-			ul#social-media li a img{
-				max-width:40px
-			}
-			ul#social-media li:hover{
-				margin:10px;
-				background-color:#40bf5b;
-				border-radius: 50px;
-				padding: 5px;
-			}
-			a[href="#mainctr"] span {
-				position:absolute;
-				bottom:0px;
-				display: inline-block;
-				font-size:72px;
-				transform: scaleX(2);
-				font-weight:bold;
-			}
-		</style>
-	</head>
-	<body>
-	<canvas id="stars"></canvas>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9XPGR"
-					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-		<div class="site-content">
-			<header class="site-header">
-			</header> <!-- .site-header -->
-            <div class="h-screen center-aligned flex justify-center" style="align-items: center;flex-direction: column;">
-                <h1 class="section-title center-aligned w-1/2">I'm <a target="_blank" href="/about.html"><span>Anushka</span></a>, Professional <a target="_blank" href="https://profiles.wordpress.org/anushkakr/"><span>WordPress</span></a> Developer in <a target="_blank" href="https://en.wikipedia.org/wiki/Sri_Lanka"><span>Sri Lanka</span></a></h1>
-            	<ul id="social-media" class="flex mt-5 animate__animated animate__fadeInLeft">
-					<li><a href="https://www.upwork.com/freelancers/anushkakrajasingha" title="Upwork" target="_blank" ><img src="/images/upwork_v1.png" alt="upwork" /> <em>Upwork</em></a></li>
-					<li><a href="https://www.linkedin.com/in/anushkakr/" title="linkedin" target="_blank" ><img src="/images/linkedin_v1.png" alt="linkedin" /> <em>Linkedin</em></a></li>
-					<li><a href="https://profiles.wordpress.org/anushkakr/" title="wordpress" target="_blank" ><img src="/images/wp_v1.png" alt="WordPress" /> <em>WordPress</em></a></li>
-					<li><a href="https://www.freelancer.com/u/AnushkaRaja" title="Freelancer" target="_blank" ><img src="/images/frrlancer_v1.png" alt="Freelancer" /> <em>Freelancer.com</em></a></li>
-				</ul>
-				<a href="#mainctr"><span>&#8964;</span></a>
-				<div class="spacer"></div>
-				<a class="animate__animated animate__fadeInRight" href="https://www.buymeacoffee.com/anushkakr" title="buymeacoffee" >☕ Buy me a coffee</a>
-			</div>
-			<main class="main-content" id="mainctr">
+        /* ─── SECTION UTILS ─── */
+        section { padding: 6rem 0; }
+        .sec-label {
+            font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--accent); margin-bottom: 0.8rem;
+            display: flex; align-items: center; gap: 0.7rem;
+        }
+        .sec-label::before { content: ''; width: 20px; height: 2px; background: var(--accent); }
+        .sec-title {
+            font-family: var(--display); font-size: clamp(2rem, 3.5vw, 3.2rem);
+            font-weight: 400; line-height: 1.15; letter-spacing: -0.01em;
+            max-width: 600px; margin-bottom: 3rem;
+        }
 
-				<div class="container ">
-					<h2 class="center-aligned">Experienced <a target="_blank" href="https://profiles.wordpress.org/anushkakr/"><span>WordPress</span></a> Developer / Full stack Developer / Front-end Developer , Providing <span>world wide</span> service for <span>web</span> and <span>mobile</span> application development .<br/>More than decade proven track records as a freelance web developer in <a target="_blank" href="https://www.upwork.com/freelancers/anushkakrajasingha"><span>Upwork.com</span></a> and <a target="_blank" href="https://www.upwork.com/freelancers/anushkakrajasingha"><span>Freelancer.com</span></a></h2>
-					<div class="slider-container">
-						<div class="slider">
-							<div class="slide-track-1">
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/atria-logo-2.png" alt="atria" height="148" width="auto"><em>atria</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/gre-angola.png" alt="gre-angola" height="148" width="auto"><em>gre-angola</em></a>
-								</div>
+        /* ─── SERVICES ─── */
+        .services { border-top: 1px solid var(--border); }
+        .services-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+        .svc { padding: 2.5rem 2rem; border-right: 1px solid var(--border-light); transition: background 0.4s; }
+        .svc:last-child { border-right: none; }
+        .svc:hover { background: var(--bg-warm); }
+        .svc-num { font-family: var(--display); font-size: 2.5rem; font-weight: 600; color: var(--border); margin-bottom: 1.2rem; line-height: 1; }
+        .svc h3 { font-family: var(--display); font-size: 1.25rem; font-weight: 600; margin-bottom: 0.8rem; }
+        .svc p { font-size: 0.88rem; line-height: 1.7; color: var(--text-muted); }
 
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/kevin-elliot.png" alt="kevin-elliot" height="148" width="auto"><em>kevin-elliot</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/plumdrop.png" alt="plumdrop" height="148" width="auto"><em>plumdrop</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/Tavacon.png" alt="Tavacon" height="148" width="auto"><em>Tavacon</em></a>
-								</div>
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/logo.svg" alt="EM Law" height="148" width="auto"><em>EM Law</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/jis.png" alt="Jis3" height="148" width="auto"><em>Jis3</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/exrva-logo.png" alt="exrva" height="148" width="auto"><em>exrva</em></a>
-								</div>
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/tribes.svg" alt="tribes" height="148" width="auto"><em>tribes</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/logo-smashtap.svg" alt="smashtap" height="148" width="auto"><em>smashtap</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/pypestream.png" alt="pypestream" height="148" width="auto"><em>pypestream</em></a>
-								</div>
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/car_wash_traders.png" alt="carwashtraders.com" height="148" width="auto"><em>carwashtraders</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/cs_logo.svg" alt="contentsquare.com" height="148" width="auto"><em>contentsquare</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/visaduma-300x117.png" alt="Visaduma.lk" height="148" width="auto"><em>Visaduma.lk</em></a>
-								</div>
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/bb-logo.png" alt="bricksandbubbles.com" height="148" width="auto"><em>bricksandbubbles</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/speedcomputerslogo.png" alt="speedcomputers.ca" height="148" width="auto"><em>speedcomputers</em></a>
-								</div>
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/bim_logo.png" alt="Business In Mind" height="148" width="auto"><em>Business In Mind</em></a>
-								</div>
+        /* ─── PORTFOLIO ─── */
+        .portfolio { border-top: 1px solid var(--border); }
+        .port-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .port-card {
+            display: block; border-radius: 10px; overflow: hidden; position: relative;
+            background: var(--bg-card); box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .port-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+        .port-card-img { aspect-ratio: 16/10; overflow: hidden; background: var(--bg-warm); position: relative; }
+        .port-card-img::after {
+            content: 'Loading preview…';
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+            color: var(--text-muted); z-index: 0;
+        }
+        .port-card-img img { position: relative; z-index: 1; }
+        .port-card.thumb-failed .port-card-img { display: none; }
+        .port-card.thumb-failed { border-left: 3px solid var(--accent); }
+        .port-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .port-card:hover .port-card-img img { transform: scale(1.04); }
+        .port-card-body { padding: 1.5rem 1.8rem 1.8rem; }
+        .port-card-body h3 { font-family: var(--display); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .port-card-body p {
+            font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .port-tag {
+            display: inline-block; font-size: 0.62rem; font-weight: 500;
+            letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+            background: rgba(196,93,62,0.08); padding: 0.25rem 0.7rem; border-radius: 3px; margin-bottom: 0.6rem;
+        }
+        .port-card-text {
+            display: flex; flex-direction: column; justify-content: center;
+            border-radius: 10px; background: var(--bg-card); padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: transform 0.4s, box-shadow 0.4s;
+            border-left: 3px solid var(--accent); min-height: 180px;
+        }
+        .port-card-text:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+        .port-card-text h3 { font-family: var(--display); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .port-card-text p {
+            font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;
+            display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        .port-link {
+            font-size: 0.75rem; font-weight: 500; color: var(--accent); margin-top: 0.7rem;
+            display: inline-flex; align-items: center; gap: 0.3rem; transition: gap 0.3s;
+        }
+        .port-card:hover .port-link, .port-card-text:hover .port-link { gap: 0.6rem; }
 
-								<!-- first item again -->
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/atria-logo-2.png" alt="atria" height="148" width="auto"><em>atria</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/gre-angola.png" alt="gre-angola" height="148" width="auto"><em>gre-angola</em></a>
-								</div>
+        .load-btn {
+            display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 2.5rem;
+            padding: 0.75rem 2rem; border: 1.5px solid var(--border); border-radius: 6px;
+            background: transparent; color: var(--text-body); font-family: var(--body);
+            font-size: 0.82rem; font-weight: 500; cursor: pointer; transition: 0.3s;
+        }
+        .load-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-								<div class="slide">
-									<a href="testimonials.html"><img src="images/clients/kevin-elliot.png" alt="kevin-elliot" height="148" width="auto"><em>kevin-elliot</em></a>
-								</div>
-								<div class="slide">
-									<a href="contact.html"><img src="images/clients/plumdrop.png" alt="plumdrop" height="148" width="auto"><em>plumdrop</em></a>
-								</div>
-								<div class="slide">
-									<a href="portfolio.html"><img src="images/clients/Tavacon.png" alt="Tavacon" height="148" width="auto"><em>Tavacon</em></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<h4 class="center-aligned">Clients who achieve their goals with me! </h4>
-					<div class="spacer"></div>
-					<div class="row center-aligned">
+        /* ─── CLIENTS ─── */
+        .clients-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 0; overflow: hidden; }
+        .marquee { display: flex; animation: slide 35s linear infinite; }
+        .marquee img { height: 36px; margin: 0 2.5rem; opacity: 0.35; transition: opacity 0.3s; filter: grayscale(100%); }
+        .marquee img:hover { opacity: 0.8; filter: grayscale(0%); }
+        @keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
+        /* ─── TESTIMONIALS ─── */
+        .testimonials { border-top: 1px solid var(--border); }
+        .tm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .tm-card {
+            background: var(--bg-card); border-radius: 10px; padding: 2.2rem 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04); display: flex; flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tm-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.07); }
+        .tm-card blockquote {
+            font-family: var(--display); font-size: 1.05rem; font-style: italic;
+            line-height: 1.7; color: var(--text); flex: 1; margin-bottom: 1.5rem;
+            position: relative; padding-left: 1.2rem; border-left: 2px solid var(--accent-light);
+        }
+        .tm-author { display: flex; align-items: center; gap: 0.8rem; }
+        .tm-avatar { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; background: var(--bg-warm); flex-shrink: 0; }
+        .tm-avatar-ph {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--display); font-size: 1rem; color: #fff; flex-shrink: 0; font-weight: 600;
+        }
+        .tm-author .name { font-size: 0.88rem; font-weight: 500; color: var(--text); }
+        .tm-author .role { font-size: 0.72rem; color: var(--text-muted); margin-top: 1px; }
 
-					<h3 class="font-thin">Maybe you have been in business for years. Or you just started a new business. Either way, every company needs a professional website to stay competitive. If your current site needs a refresh or you are starting from scratch. My job is to elevate YOUR company with a website that is secure, beautiful, loads fast and represents your brand.</h3>
-						<!-- Calendly link widget begin -->
-						<h2 id="calandy-button" class="p-2 inline-block border border-indigo-200 rounded-md"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anushkapro?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=39323e&text_color=ffffff&primary_color=ffffff'});return false;">Make an appointment</a></h2>
-						<!-- Calendly link widget end -->
+        /* ─── ABOUT ─── */
+        .about-sec { border-top: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+        .about-text p { font-size: 1rem; line-height: 1.85; color: var(--text-body); margin-bottom: 1.2rem; }
+        .about-text strong { color: var(--text); font-weight: 500; }
+        .about-text a.resume-link {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            color: var(--accent); font-weight: 500; font-size: 0.85rem; letter-spacing: 0.03em; margin-top: 0.5rem;
+            transition: gap 0.3s;
+        }
+        .about-text a.resume-link:hover { gap: 0.7rem; }
+        .stats-strip { display: flex; gap: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-light); margin-top: 2rem; }
+        .st .st-n { font-family: var(--display); font-size: 2.8rem; font-weight: 600; color: var(--accent); line-height: 1; }
+        .st .st-l { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.3rem; }
 
-					</div>
+        /* ─── CONTACT ─── */
+        .contact-sec { border-top: 1px solid var(--border); }
+        .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+        .contact-left .sec-title { margin-bottom: 1.5rem; }
+        .contact-left .blurb { font-size: 0.95rem; color: var(--text-body); line-height: 1.8; margin-bottom: 2rem; }
+        .contact-left .book-btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            background: var(--accent); color: #fff; padding: 0.85rem 2rem; border-radius: 6px;
+            font-size: 0.85rem; font-weight: 500; border: none; cursor: pointer; font-family: var(--body); transition: 0.3s;
+        }
+        .contact-left .book-btn:hover { background: #a9492e; transform: translateY(-2px); }
+        .social-row { display: flex; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap; }
+        .social-row a {
+            font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+            color: var(--text-muted); padding: 0.4rem 0; border-bottom: 1px solid transparent; transition: 0.3s;
+        }
+        .social-row a:hover { color: var(--accent); border-color: var(--accent); }
+        .contact-form .fm { margin-bottom: 1.3rem; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; background: var(--bg-card); border: 1.5px solid var(--border-light); border-radius: 6px;
+            padding: 0.85rem 1rem; font-family: var(--body); font-size: 0.9rem; color: var(--text);
+            outline: none; transition: border-color 0.3s;
+        }
+        .contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); }
+        .contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--text-muted); }
+        .contact-form textarea { resize: vertical; min-height: 110px; }
+        .send-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: var(--text); color: var(--bg); padding: 0.85rem 2rem; border-radius: 6px;
+            border: none; font-family: var(--body); font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: 0.3s; margin-top: 0.5rem;
+        }
+        .send-btn:hover { background: var(--accent); color: #fff; }
 
-					<div class="spacer"></div>
-					<div class="row  hp-services">
+        /* ─── FOOTER ─── */
+        footer { border-top: 1px solid var(--border); padding: 2rem 0; }
+        .foot-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 3rem; display: flex; justify-content: space-between; align-items: center; }
+        .foot-brand { font-family: var(--display); font-size: 1.1rem; color: var(--accent); font-weight: 600; }
+        .foot-copy { font-size: 0.72rem; color: var(--text-muted); }
 
+        /* ─── REVEAL ─── */
+        .rv { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .rv.vis { opacity: 1; transform: translateY(0); }
 
-						<p>Other Professional WordPress services which I can do for you are:</p>
-						<ul>
-							<li>Installation, Customizations (Add content, menu/page or widgets, Change color, Background, Logo/ Favicon or any CSS changes), Updates</li>
-							<li>Set up an online shop with WooCommerce (eCommerce solution)</li>
-							<li>Custom Theme Development</li>
-							<li>Website maintenance. and much more.</li>
-						</ul>
-						<p>I'm Anushka, I would like to have an opportunity to collaborate with you and help you bring your product to life!</p>
-						<div class="spacer"></div>
-						<div class="center-aligned">
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 900px) {
+            .wrap { padding: 0 1.5rem; }
+            .nav-inner { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+            .burger { display: block; }
+            section { padding: 4rem 0; }
+            .hero { grid-template-columns: 1fr; padding-top: 8rem; padding-bottom: 3rem; gap: 2rem; }
+            .services-row { grid-template-columns: 1fr 1fr; }
+            .svc { border-right: none; border-bottom: 1px solid var(--border-light); }
+            .port-grid { grid-template-columns: 1fr; }
+            .tm-grid { grid-template-columns: 1fr; }
+            .about-sec { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+            .stats-strip { gap: 2rem; }
+            .foot-inner { flex-direction: column; gap: 0.8rem; text-align: center; padding: 0 1.5rem; }
+        }
+        @media (max-width: 550px) {
+            .services-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
 
-							<!-- Calendly link widget begin -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP9XPGR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-							<h2 id="calandy-button" class="p-2 inline-block border border-indigo-200 rounded-md"><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anushkapro?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=39323e&text_color=ffffff&primary_color=ffffff'});return false;">Get a Quote</a></h2>
-							<!-- Calendly link widget end -->
+<div class="loader" id="loader"><div class="loader-name">Anushka Rajasingha</div></div>
 
-						</div>
-					</div>
+<nav id="nav">
+    <div class="nav-inner">
+        <a href="/" class="nav-brand">A.R.</a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Work</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Kind Words</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="burger" id="burger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+    </div>
+</nav>
+<div class="mob-menu" id="mob">
+    <a href="#services" onclick="closeMob()">Services</a>
+    <a href="#portfolio" onclick="closeMob()">Work</a>
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#testimonials" onclick="closeMob()">Kind Words</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
 
+<div class="wrap">
 
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow rv">WordPress & Fullstack Developer</div>
+            <h1 class="rv">Crafting <em>digital</em> experiences with heart &amp; code</h1>
+        </div>
+        <div class="hero-right">
+            <p class="hero-desc rv">Over a decade of experience designing, developing, and optimizing WordPress websites and custom web applications for clients across the globe — from Sri Lanka to the world.</p>
+            <button class="hero-cta rv" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anushkapro?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Let's Talk <span class="arr">→</span></button>
+        </div>
+        <div class="hero-divider rv"></div>
+    </section>
 
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="sec-label rv">What I Do</div>
+        <h2 class="sec-title rv">From concept to code, every detail considered</h2>
+        <div class="services-row rv">
+            <div class="svc"><div class="svc-num">01</div><h3>WordPress Development</h3><p>Custom themes, plugins, WooCommerce stores, Elementor & DIVI builds, and tailored solutions for any WordPress challenge.</p></div>
+            <div class="svc"><div class="svc-num">02</div><h3>Fullstack Development</h3><p>End-to-end web applications from database design to polished, responsive front-end interfaces using modern tools.</p></div>
+            <div class="svc"><div class="svc-num">03</div><h3>Performance &amp; SEO</h3><p>Core Web Vitals optimization, speed audits, caching strategies, and search-engine tuning that delivers measurable results.</p></div>
+            <div class="svc"><div class="svc-num">04</div><h3>Ongoing Support</h3><p>Maintenance, security hardening, plugin updates, backups, and reliable long-term partnership for your digital presence.</p></div>
+        </div>
+    </section>
 
-				</div>	<!-- .container -->
-				<div class="container">
-					<form  method="post" class="contact-form"  id="contactform">
-						<div class="col-sm-6">
-							<div class="control">
-								<input name="Name" type="text" placeholder="Name..."  required>
-								<i class="fa fa-user"></i>
-							</div>
-							<div class="control">
-								<input name="Email" type="email" placeholder="Email..."  required>
-								<i class="fa fa-envelope"></i>
-							</div>
-							<div class="control">
-								<input name="Website" type="text" placeholder="Please enter reference to your Website..."   required>
-								<i class="fa fa-link"></i>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="control">
-								<textarea name="Message" placeholder="Message..."></textarea>
-								<i class="fa fa-pencil"></i>
-							</div>
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <div class="sec-label rv">Selected Work</div>
+        <h2 class="sec-title rv">Projects that made an impact</h2>
+        <div class="port-grid rv" id="portGrid"></div>
+        <div style="text-align:center;" id="portMore">
+            <button class="load-btn" onclick="loadMoreWork()">Load More Projects →</button>
+        </div>
+    </section>
 
-							<div class="right-aligned">
-								<input type="button" value="Send Message" onclick="submisform();">
-							</div>
-						</div>
-					</form>
+</div><!-- /wrap -->
 
-				</div>
-			</main> <!-- .main-content -->
+<!-- CLIENTS -->
+<section class="clients-strip">
+    <div class="marquee">
+        <img src="images/clients/atria-logo-2.png" alt="Atria"><img src="images/clients/gre-angola.png" alt="GRE Angola"><img src="images/clients/kevin-elliot.png" alt="Kevin Elliot"><img src="images/clients/plumdrop.png" alt="Plumdrop"><img src="images/clients/Tavacon.png" alt="Tavacon"><img src="images/clients/jis.png" alt="JIS"><img src="images/clients/exrva-logo.png" alt="EXRVA"><img src="images/clients/pypestream.png" alt="Pypestream"><img src="images/clients/car_wash_traders.png" alt="Car Wash Traders">
+        <img src="images/clients/atria-logo-2.png" alt="Atria"><img src="images/clients/gre-angola.png" alt="GRE Angola"><img src="images/clients/kevin-elliot.png" alt="Kevin Elliot"><img src="images/clients/plumdrop.png" alt="Plumdrop"><img src="images/clients/Tavacon.png" alt="Tavacon"><img src="images/clients/jis.png" alt="JIS"><img src="images/clients/exrva-logo.png" alt="EXRVA"><img src="images/clients/pypestream.png" alt="Pypestream"><img src="images/clients/car_wash_traders.png" alt="Car Wash Traders">
+    </div>
+</section>
 
-			<footer id="footer" class="site-footer">
-			</footer>
+<div class="wrap">
 
-		</div>
+    <!-- ABOUT -->
+    <section class="about-sec" id="about">
+        <div>
+            <div class="sec-label rv">About</div>
+            <h2 class="sec-title rv">A decade of building for the web</h2>
+            <div class="stats-strip rv">
+                <div class="st"><div class="st-n">10+</div><div class="st-l">Years Experience</div></div>
+                <div class="st"><div class="st-n">1000+</div><div class="st-l">Projects Delivered</div></div>
+                <div class="st"><div class="st-n">100%</div><div class="st-l">Job Success</div></div>
+            </div>
+        </div>
+        <div class="about-text rv">
+            <p>I'm <strong>Anushka Rajasingha</strong>, a WordPress & Fullstack Developer based in Sri Lanka. My career began in system engineering — managing networks, servers, and cloud databases — before I transitioned into development.</p>
+            <p>With deep roots in <strong>ASP.NET, C#, PL/SQL, and T-SQL</strong>, I bring serious backend expertise. Over the years I've specialized in WordPress, building custom themes, plugins, and complex solutions with <strong>Elementor, DIVI, and WooCommerce</strong>.</p>
+            <p>I've maintained a proven track record on <strong>Upwork</strong> and <strong>Freelancer.com</strong> for over a decade, consistently delivering beyond expectations.</p>
+            <a href="/anushka_rajasingha_resume.pdf" target="_blank" class="resume-link">Download Resume →</a>
+        </div>
+    </section>
 
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
-	<script>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="sec-label rv">Kind Words</div>
+        <h2 class="sec-title rv">Words from clients</h2>
+        <div class="tm-grid rv" id="tmGrid"></div>
+        <div style="text-align:center;" id="tmMore">
+            <button class="load-btn" onclick="loadMoreTm()">Load More Kind Words →</button>
+        </div>
+    </section>
 
-		function tankyou(response){
-			if(response.result == 'success'){
-				window.location = window.location.origin+'/portfolio.html';
-				//alert('Thank you for contacting me..');
-				//document.getElementById("contactform").reset();
-			}
-		}
+    <!-- CONTACT -->
+    <section class="contact-sec" id="contact">
+        <div class="contact-inner">
+            <div class="contact-left">
+                <div class="sec-label rv">Get in Touch</div>
+                <h2 class="sec-title rv">Let's build something <em style="font-family:var(--display);font-style:italic;color:var(--accent);">great</em> together</h2>
+                <p class="blurb rv">Whether you need a brand-new website, a complex plugin, or help with optimization — I'd love to hear about your project.</p>
+                <button class="book-btn rv" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anushkapro?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Book a Free Call →</button>
+                <div class="social-row rv">
+                    <a href="https://www.upwork.com/freelancers/anushkakrajasingha" target="_blank">Upwork</a>
+                    <a href="https://www.linkedin.com/in/anushkakr/" target="_blank">LinkedIn</a>
+                    <a href="https://profiles.wordpress.org/anushkakr/" target="_blank">WordPress</a>
+                    <a href="https://github.com/AnushkaKRajasingha" target="_blank">GitHub</a>
+                    <a href="https://www.freelancer.com/u/AnushkaRaja" target="_blank">Freelancer</a>
+                </div>
+            </div>
+            <div class="contact-form rv">
+                <form method="post" id="contactform">
+                    <div class="fm"><input name="Name" type="text" placeholder="Your Name" required></div>
+                    <div class="fm"><input name="Email" type="email" placeholder="Your Email" required></div>
+                    <div class="fm"><input name="Website" type="text" placeholder="Your Website (optional)"></div>
+                    <div class="fm"><textarea name="Message" placeholder="Tell me about your project..."></textarea></div>
+                    <button type="button" class="send-btn" onclick="submitForm()">Send Message →</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-		function submisform() {
-			var isValid = $('#contactform')[0].reportValidity();
-			if(!isValid) return;
-			document.getElementById("contactform").classList.add("opacity-25");
-			const url = "https://script.google.com/macros/s/AKfycbz8crJeC3vlBEN6pswgMuxRmfqxPxmsanp4WLGKyHbjuoBD9SNNlmPioZtiyJsThZJ9/exec";
-			fetch(url, {
-				method: "POST",
-				body: new FormData(document.getElementById("contactform")),
-				// -- or --
-				// body : JSON.stringify({
-				// user : document.getElementById('user').value,
-				// ...
-				// })
-			}).then(
-					response => response.json() // .json(), etc.
-					// same as function(response) {return response.text();}
-			).then(
-					html => tankyou(html)
-			);
-		}
+</div><!-- /wrap -->
 
-		function getParameterByName(name, url = window.location.href) {
-			name = name.replace(/[\[\]]/g, '\\$&');
-			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-					results = regex.exec(url);
-			if (!results) return null;
-			if (!results[2]) return '';
-			return decodeURIComponent(results[2].replace(/\+/g, ' '));
-		}
+<footer><div class="foot-inner"><div class="foot-brand">Anushka Rajasingha</div><div class="foot-copy">© 2026 All rights reserved.</div></div></footer>
 
-		$(document).ready(function(){
-			var _projid = getParameterByName("p")
+<script>
+    const PORTFOLIO_DATA = [{"image":"images/bricks-bubbles.png","title":"Bricks and Bubbles","desc":"WP Form Implementation on Siteground hosted , Astra Theme Based WordPress Website","site":"https://www.bricksandbubbles.com/"},{"image":"images/speedcomputers.ca.png","title":"Speed Computers","desc":"Digi theme based WordPress website bug fix and Optimization , Ajax base theme","site":"https://speedcomputers.ca/"},{"image":"images/car-wash-traders.png","title":"Car Wash Traders","desc":"Custom WordPress theme development and Custom Plugin Development","site":"https://carwashtraders.com/"},{"image":"","title":"The Housson Cente","desc":"Custom wordpress website development based on genisis framework","site":"https://thehoussoncenter.com/"},{"image":"","title":"EM Law | Commercial Lawyers in Central London","desc":"Website development based on Wordpress and custom theme development and also few custom plugins developments","site":"https://emlaw.co.uk/"},{"image":"","title":"Elementor based website Development","desc":"Custom Elementor module development plus integration with JETBlocks","site":"https://thementalhealthdirectory.com"},{"image":"","title":"Paraguay Residency","desc":"Development in Wordpress custom theme and bug fix on Google Search Console.","site":"https://paraguayresidency.com/"},{"image":"","title":"Wordpress website modification ","desc":"My client had a enfold theme based wordpress website which needs some serious modifications  but the website core is having some bugs . and also the wp core is out dated.So I had to fix the bugs of the theme before do any modification and also update the theme without getting any issues to the current system.So I was able to deliver the project successfully and also I was able to improve the site performance about 50% by just doing that.","site":"http://www.tavacon.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"The Jhonnys.","desc":"Custom WordPress website development by using Elementor Pro","site":"https://www.thejhonnys.com.au/","theme":"","type":"Web Development","plugins":"Elementor, Contact Form 7,JetPack"},{"image":"images/plumdrop.png","title":"E-commerce website based on Wordpress","desc":"Custom e-commerce website for sporting goods and rental service, This website build with WordPress and Woocommerce and custom woocommerce module integration.","site":"#"},{"image":"images/childcare.jpg","title":"PSD to WordPress website with Page customizer","desc":"client wanted to built a wordpress website according to his perspective with his given photoshop design .","site":"#"},{"image":"images/adweber_pluginl.png","title":"Aweber Integration","desc":"Custom Wordpress plugin for Aweber Integration with additional features","site":"/plugins/wp-adweber"},{"image":"","title":"Gomes Rocha Engenharia","desc":"This is a custom WordPress development project which is based on the premium porto theme, implement the website with a custom child theme, and luanch website through several modifications to the plugins.","site":"http://www.gre-angola.com/"},{"image":"","title":"ATHENASIA Consulting","desc":"This is a custom WordPress development project which is based on the premium Avada theme , I did contribute to optimize the website through several modification to the plugins and the theme .","site":"https://www.athenasia.com/"},{"image":"","title":"Amazon Web Services with the usage of Gumroad","desc":"Implement Amazon store services and gumroad.","site":"http://kelliottonline.com/"},{"image":"","title":"Tavacon LLC official website","desc":"Revamp enfold theme based WordPress website which needs some serious modifications","site":"https://tavacon.com/"},{"image":"","title":"Custom Real estate Website Development","desc":"Design and develop custom WordPress theme and page template. And also implement MLS API usage of  ACF","site":"https://atrianyc.com/"},{"image":"images/autoblogging.png","title":"Auto bloging Plugin","desc":"Custom wordpress plugin to Automated blogging","site":"/plugins/autoblogging"},{"image":"images/pointsology.png","title":"WordPress with xpro theme","desc":"Customized wordpress website with xpro theme, with cornerstone integration.","site":"http://pointsology.com/"},{"image":"","title":"Web site for The Institute for Interdisciplinary Research","desc":"Custom WordPress theme and  plugin development for Web site for The Institute for Interdisciplinary Research","site":"https://www.jis3.org"},{"image":"","title":"Web site for a RV-based travel company","desc":"Custom WordPress Web site for The Extreme RV Adventure","site":"http://www.exrva.com/","theme":"Extra"},{"image":"","title":"InteliVideo is aplatform for class video subscriptions","desc":"Web site development for Online Fitness Class Platform for Video Subscription, And used avada premium theme for this","site":"https://www.intelivideo.com/","theme":"Avada","type":"Web Development"},{"image":"","title":"Web site for brisbane\u2019s leading bookkeeping experts and\ncertified specialists in xero","desc":"Create modern WordPress multi-site with DIVI theme. Developed a DIVI child theme according to the client requirement .","site":"http://businessinmind.com.au/","theme":"Divi","type":"Web Development"},{"image":"images/erosscia.png","title":"WordPress based website with Elementor support","desc":"Official website for the Erosscia product , so  maintain and optimize the website for security issues as well .","site":"http://businessinmind.com.au/","theme":"Airi","type":"Web Development","plugins":"Elementor"},{"image":"","title":"WordPress based website with Elementor support","desc":"Figma to WordPress implementation with the usage of Elemntor Pro plugin.","site":"https://cloudassess.co/au/","theme":"Custom","type":"Web Development","plugins":"Elementor"},{"image":"","title":"WordPress based website Optimizing","desc":"optimized pagespeed by optimizing score (page speed insights) 59/100 to 95/100  .","site":"https://cloudkb.co.uk","theme":"","type":"Web optimization","plugins":""},{"image":"images/thumb.png","title":"Wordpress plugin for DIVI theme","desc":"Developed a wordpress plugin for DIVI theme to extend the feature of the DIVI contact form module.","site":"https://github.com/AnushkaKRajasingha/divi-contactform-extender","theme":"Divi","type":"Web Development","plugins":""},{"image":"images/Day Hiking Plumdrop.png","title":"Wordpress theme development and Woocomerce customization ","desc":"Several modification to the ecommerce website which has been developed with woocommerce .","site":"http://www.plumdrop.co","theme":"","type":"Web Development","plugins":"Woocomerce"},{"image":"images/thumb2.png","title":"Tutoring and Consulting for the web application development","desc":"My client need consultation for his ongoing application development process which is conducted by him self","site":"https://anushka.pro/contact.html","theme":"","type":"Web Development","plugins":""},{"image":"","title":"WordPress Web site optimization","desc":"Improve the speed rating of the wordpress website /score 73/100 to 99/100","site":"http://paraguayresidency.com/","theme":"","type":"Web optimization","plugins":""},{"image":"images/thumb3.png","title":"Website for research journal publish","desc":"Developed a wordpress based custom website with custom theme implementation .","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb4.png","title":"Travel website with Woocommerce ","desc":"Develop a travel website with woocomerce integration.This project needs additional woocommerce customization according to the client requirement . And also implemented custom post types according to the client requirement .","site":"https://www.exrva.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Setup wordpress website on Amazon Web Service ","desc":"According to a client custom requirement Setup wordpress website on Amazon Web Service with apache and mysql And also configure the website to a landing page for lead conversion.","site":"https://web.archive.org/web/20170215112113/http://cromwellgallery.com.au/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Create Modern website with DIVI theme","desc":"Create modern WordPress multi-site with DIVI theme.Developed a DIVI child theme according to the client requirement .","site":"http://businessinmind.com.au/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Wordpress uplift theme customization","desc":"Customize wordpress uplift theme according to the clients requirement. And fixed some issues along with it .","site":"https://www.cpeconferences.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb6.png","title":"Wordpress Theme Setup","desc":"Setup and configure wordpress theme","site":"","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Landing Page Development ","desc":"Custom design for mobile landing page and optimize it","site":"http://www.dengoderygg.no","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb7.jpg","title":"Wordpress Bug Fix","desc":"Fix errors on wordpress website","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb8.jpg","title":"Linux shell scripting","desc":"Write linux shell scripting to accomplish custom user requirement","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb9.png","title":"Develop a wordpress theme ","desc":"Develop custom wordpress theme according to the client requirement.The project is more convertion of the static website to wordpress theme","site":"http://mats.energy/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb10.jpg","title":"Custom DIVI theme module development","desc":"Develop a custom module for the  divi theme .","site":"http://www.anushkar.com/divi-module","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb11.png","title":"Develop wordpress multi-site theme","desc":"Develop wordpress multi-site theme and implement it on two identical websites and main parent website that offer two different services.","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb12.jpg","title":"Developer Aweber form integration plugin with InstaBuilder","desc":"Develop a custom wordpress pluginto integrate Aweber form with extra features in to wordpress InstaBuilder","site":"https://github.com/AnushkaKRajasingha/SWF","theme":"","type":"Plugin Development","plugins":""},{"image":"images/thumb13.jpg","title":"Woocommerce Customization","desc":"Woocommerce Customization for multi language site .","site":"https://airport-munich-transfer.com","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Rich & Co Pty ","desc":"Rich & Co Pty specialises in business valuation, succession planning, and buy/sell transactions.Ken Rich is a senior specialist motor industry services director with over 35 years experience in the retail motor vehicle industry and 24 years experience in practice providing professional services to clients. He recommenced Rich & Co Pty in 2007 having previously been a specialist director with Horwath.","site":"http://richandco.com.au/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb14.png","title":"YourDriver24 Website Modification ","desc":"Wocommerce and Wordpress Theme modification for YourDriver24","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb15.png","title":"Three Leaf Cannabis Logistics ","desc":"Official website of the Three Leaf Cannabis Logistics , doveloped by using wordpress","site":"http://threeleafglobal.anushkar.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Official Website of Institute for Interdisciplinary Research","desc":"Design and Develop the official website of the  Institute for Interdisciplinary Research which is  founded in 1983.","site":"http://www.jis3.org/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb16.png","title":"InAppBI Documentation ","desc":"Integrate Documentation framework with the existing wordpress by customizing the  'Manual' wordpress theme using wordpress child theme.","site":"https://goo.gl/8QdZEJ","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb17.png","title":"NoTriangleStudio.com","desc":"NoTriangle is a 3D rendering studio dedicated to the fine art of building architectural visualization stories. We specialize in developing renderings, which facilitate the communication of designs, concepts, and ideas between architectural companies, interior designers, real estate developers, and marketing agencies.","site":"http://dev.notrianglestudio.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb18.jpg","title":"Wordpress Plugin For Visitir Tracking","desc":"The custom visiter tracking by ip , cookiea  and settion and notify to the given email address about the user visit history when visitor reach to thr spesific page previously defined.","site":"https://github.com/AnushkaKRajasingha/henrytrack","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb19.jpg","title":"Wordpress Website Responsive Redesign","desc":"Customize and make responsive existing web site according to the client requirement","site":"http://elizabethlaroseart.com/#mobile","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb20.png","title":"Contact Form 7 Modification to Premium Wordpress Theme ","desc":"Customization and Configuration to a Contact form 7 plugin to achieve the client target .","site":"http://www.fliteairtaxi.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb21.jpg","title":"Custom IDX API implementation for SEO ","desc":"According to the client requirement , customize the IDX API inquiry and results.","site":"http://findwinehomes.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb22.png","title":"Avada wordpress theme customization","desc":"Config and Customize Avada premium wordpress theme according to the client requirement .","site":"http://jcurveshop.site/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb23.png","title":"Slider Revolution Customization ","desc":"Setup , configure and Customize the Avada wordpress theme with slider revolution according to the client need .","site":"http://jcurveshop.site/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb24.png","title":"Two Wordpress Websites","desc":"Two private jet booking website s","site":"http://www.flitejets.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb25.png","title":"IDX Widget Customization","desc":"Customize IDX search widget according to the client requirement.","site":"http://www.findwinehomes.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb26.png","title":"Art Gallery Web Site","desc":"Make few changes to the art gallery web site.  and modification to the plugin NextGEN Gallery .","site":"http://elizabethlaroseart.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Wordpress Mobile Frontend integration ","desc":"Integrate mobile plugin with customized wordpress theme and bug fix","site":"https://www.spursdynasty.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb27.png","title":"Wordpress Modification","desc":"Wordpress theme modification for a custom theme","site":"http://development.lauterbachgroup.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb28.png","title":"Wordpress Whoa theme Customization","desc":"Start with bug fixing for 1) CSS issues, 2) image web size (for faster download), 3) changing references to the old server on the code (And replacing the hard coded values),4) Plugin parameters changing","site":"http://illumineto.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb29.png","title":"MaidQuote","desc":"","site":"http://www.mymaidquote.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb30.png","title":"Strategic Insurance Agency ","desc":"Wordpres custom theme development and setup and plugin configuration","site":"http://www.need-insurance.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Spurs Dynasty","desc":"Wordpress Bug fix and theme / plugin customization","site":"https://www.spursdynasty.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Soolmaz Entrepreneurship hub","desc":"Wordpress theme and plugin customization with content management .","site":"http://www.soolmaz.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"KB Realty Inc","desc":"Wordpress installation and theme customization.","site":"https://kbbrokerage.ca/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Business in Mind Computer Repairs & Bookkeeping ","desc":"Wordpress theme development and web site optimization.","site":"http://businessinmind.com.au/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Becky Bacon Certified Life Coach ","desc":"Wordpress optimization and theme / plugin customization","site":"https://beckybacon.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Brier & Dunn ","desc":"Wordpress optimization and theme customization .","site":"http://www.brierdunn.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Attlee Realty ","desc":"Wordpress theme customization and IDX integration","site":"https://attleerealty.com/index.html","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Big Bash Entertainment ","desc":"Wordpress theme modification and plugin modification","site":"https://www.afternic.com/forsale/BIGBASHENTERTAINMENT.COM?utm_source=TDFS&utm_medium=sn_affiliate_click&utm_campaign=TDFS_GoDaddy_DLS&traffic_type=TDFS&traffic_id=GoDaddy_DLS","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Confused Girl in the City ","desc":"Client wanted to customize the default theme and integrated with woocommerce and amazon store.","site":"https://confusedgirlinthecity.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Wesellkingstonhomes.com ","desc":"Official web site of Danielle Ambrose and Mary Ambrose who are the real estate agents in Canada","site":"https://wesellkingstonhomes.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb31.png","title":"PortandManor.com","desc":"New design of the web site PortandManor.com","site":"PortandManor.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb32.png","title":"Conservativesupport.com ","desc":"I did few modifications to the web site to speedup the web site , so I had to do integrate a compression method manually due to the use of other plugins. ","site":"http://conservativesupport.com/home/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb33.png","title":"4urage","desc":"I designed the application architecture , and database with MySql .And I used  CodeIgniter as a latest MVC framework in PHP. For the front end I used HTML5 with the CSS3 and jQuery javascript framework.","site":"http://4urage.b1connect.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Godfirst.co.za","desc":"I contribute to develop this wordpress website and continue the development and modifications.","site":"http://godfirst.co.za/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Usdardloan.com ","desc":"I contribute to implement most of the important part of this wordpress web site , So I used PHP, MySql, HTML5, CSS3 and jQuery for the development .","site":"https://usdardloan.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Stickypod.com","desc":"Develop the woocomerce based wordpress web site","site":"https://portfolio.static-upwork.com/agora.profile.projects%3A617950587975602176%3A617950588688633856","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Bigmanwashes.com ","desc":"I did designed and develop this web site using PHP,MySql, HTML, CSS and jQuery","site":"https://bigmanwashes.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb34.png","title":"Allimcwhinney.com ","desc":"I designed tand developed his web site with ColdFusion , HTML, CSS with jQuery  ","site":"http://www.allimcwhinney.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb35.png","title":"Astoriasport.ma","desc":"I did designed and develop this web site using zen cart framework . so I used PHP, MySql, HTML,CSS and jQuery","site":"http://www.astoriasport.ma","theme":"","type":"Web Development","plugins":""},{"image":"","title":"bmgcommercial.com","desc":"I did most of important modifications to this site , So I used PHP, MySql, HTML, CSS and jQuery","site":"http://bmgcommercial.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"eimacs.com","desc":"Wordpress theme design","site":"https://www.eimacs.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Showtimecaraudio.net","desc":"Designed and developed Woocommerce based wordpress web site","site":"https://showtimeelectronics.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb36.png","title":"Erikhornung.com ","desc":"I did design and develp this web site with ColdFusion , MySql, HTML, CSS and jQuery","site":"http://www.erikhornung.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Goldenappleorganics.com","desc":"This is a Volusion baesd classic asp web site , I did modification to the template using Classic ASP, VBScript, HTML5, CSS3 and jQuery","site":"https://www.goldenappleorganics.com/Default.asp","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Apriloharephotography.com ","desc":"I designed and develop this web site for a us photograper by using ColdFusion, MySql, HTML, CSS and jQuery","site":"https://apriloharephotography.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Naturopathaustralia.com ","desc":"Develop a simple wordpress web site","site":"https://www.naturopathaustralia.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Advance.org.za","desc":"Did some modifications to the wordpress web site ","site":"https://www.advancemovement.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb37.png","title":"Renewreview ","desc":"Wordpress theme for review web site","site":"http://renewreview.com.au/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb39.png","title":"Mypetappointments.com","desc":"Online veterinarians and pet professionals finder, and book appointments.","site":"http://mypetappointments.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb40.png","title":"brambleco.com","desc":"Revamp the brambleco.com web site","site":"http://anushkar.com/brambleco.com_rev1/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"Mohammed Imran Alam's blog ","desc":"Mohammed Imran Alam's official blog","site":"http://reportgurus.com/imran/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"thepartyconnect.com ","desc":"I design this web site for one of my elance client","site":"https://www.thepartyconnect.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb41.png","title":"Superroofer.net","desc":"Official web site of Roofing company in Texas","site":"http://www.superroofer.net/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb42.jpg","title":"howtobuildsolarpanelinfo.com ","desc":"","site":"http://howtobuildsolarpanelinfo.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb43.png","title":"Sri Lankan Great Musician Rohana Weerasinghe","desc":"Official web site of Sri Lankan Great Musician Rohana Weerasinghe","site":"http://rohanaweerasingheonline.com","theme":"","type":"Web Development","plugins":""},{"image":"","title":"startmychildcarebusiness.com ","desc":"Official web site of Sri Lankan Great Musician Rohana Weerasinghe","site":"https://www.startmychildcarebusiness.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb44.jpg","title":"llc.com","desc":"","site":"http://wpdemo.silvercodesolutions.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb45.png","title":"sneakerfield.com ","desc":"Wordpress theme design","site":"http://sneakerfield.com/clean/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"expertinsights.net ","desc":"Theme design","site":"https://www.expertinsights.net/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb46.png","title":"organicseoranking.com ","desc":"Wordpress","site":"http://organicseoranking.com/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"bullandhorse.com","desc":"Wordpress theme design","site":"http://bullandhorse.com","theme":"","type":"Web Development","plugins":""},{"image":"","title":"broadwayexterminating.com ","desc":"Wordpress theme design","site":"http://broadwayexterminating.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb47.png","title":"mysticwatergardensblog.com ","desc":"Wordpress theme design","site":"http://mysticwatergardensblog.com/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb48.png","title":"fmsimplified.co","desc":"Wordpress theme design","site":"http://www.fmsimplified.co/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb49.png","title":"limosetc.net ","desc":"Wordpress theme design","site":"http://www.limosetc.net/blog/","theme":"","type":"Web Development","plugins":""},{"image":"","title":"mission maids.com ","desc":"Wordpress theme design","site":"https://mission-maids.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb51.png","title":"bigbeardreamcabinsblog.com ","desc":"Wordpress theme design","site":"http://bigbeardreamcabinsblog.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb52.png","title":"fixautowhittierblog.com","desc":"Wordpress theme design","site":"http://fixautowhittierblog.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb53.png","title":"westernloanblog.com","desc":"Wordpress theme design","site":"http://www.westernloanblog.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb54.png","title":"harmonymaids.com ","desc":"Wordpress theme design","site":"http://harmonymaids.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb55.png","title":"Child Rights ","desc":"Child Rights","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb56.jpg","title":"Fibre Container ","desc":"Fibre Container","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb57.jpg","title":"JD Consultant","desc":"JD Consultant ","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb58.jpg","title":"Small Business","desc":"Small Business","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb59.jpg","title":"Discount web","desc":"Discount","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb60.jpg","title":"Easy Time Share ","desc":"Easy Time Share ","site":"","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb61.png","title":"priority1electricandservice.com ","desc":"Modifications","site":"http://priority1electricandservice.com","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb62.png","title":"aftondental.com","desc":"Modifications","site":"http://aftondental.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb63.png","title":"efficientelectricinc.com ","desc":"Wordpress theme design","site":"http://www.efficientelectricinc.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb64.png","title":"innontheblvd.com ","desc":"Wordpress theme design","site":"http://www.innontheblvd.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb65.png","title":"hixsonlawfirm.com ","desc":"Wordpress theme design","site":"http://www.hixsonlawfirm.com/blog/","theme":"","type":"Web Development","plugins":""},{"image":"images/thumb66.png","title":"Tier1air.com ","desc":"tier1air.com","site":"http://tier1air.com","theme":"","type":"Web Development","plugins":""}];
+    const TESTIMONIALS_DATA = [{"tm_title":"very skilled","tm_word":"Absolutely fantastic! Anushka is very skilled in a variety of Woocommerce and WordPress tasks. Will rehire right away, actually","tm_client":"Anastasia Visotsky","tm_image":"av.jfif","tm_client_title":"Founder at ZERO TABOOS"},{"tm_title":"good at getting the idea and implementing","tm_word":"A very good experience with Anushka to develop/adapt a wordpress plugin, he's been very good at getting the idea and implementing it.Looking forward to the next step!","tm_client":"Luc Jonveaux","tm_image":"lj.jfif","tm_client_title":"Independant consultant / Upwork client"},{"tm_title":"promptly and professionally!","tm_word":"Developer delivered promptly and professionally!","tm_client":"Von Mwen","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"really good, fast, effective","tm_word":"really good, fast, effective. nice to work with !","tm_client":"Francois Dubreuil","tm_image":"fd.jfif","tm_client_title":"Qu\u00e9bec inc / Upwork client"},{"tm_title":"satisfactorily and on time","tm_word":"Anushka was very responsive and completed the word press project satisfactorily and on time.","tm_client":"Chuma Chukwujama","tm_image":"cc.jfif","tm_client_title":"Founder  - Xceed365 Limited"},{"tm_title":"Exactly what I wanted","tm_word":"Did an amazing job. Exactly what I wanted.","tm_client":"Ryan Persad","tm_image":"rp.jfif","tm_client_title":"Founder & Chief Executive Officer  - Stock Brew"},{"tm_title":"quickly and efficiently","tm_word":"Anushka did a great job on a project that was puzzling us for some time. And better yet he did it quickly and efficiently, we would recommend him to anyone looking for a talented developer.","tm_client":"Thomas Corbin","tm_image":"tc.jfif","tm_client_title":"RH-Software - / Upwork client"},{"tm_title":"Most important quality","tm_word":"I have been working with Anushka for many years now. What about him? Competant, professional, good communicator, the list goes on. Most important quality. You can contact Anushka anytime even month or year after he finished your work and he will help you. That is customer service at it's best. Highly recoomended.","tm_client":"Edouard Alleman","tm_image":"bim-edouard.jpg","tm_client_title":"Business in Mind - / Upwork client"},{"tm_title":"lucky to have him as part of our team!","tm_word":"Anushka is a great Wordpress developer and super responsive to all our requests. Highly recommended and we're lucky to have him as part of our team!","tm_client":"Janeece Keller","tm_image":"jk.jfif","tm_client_title":"Problem Solver | Transformation specialist - familytravel.com.au"},{"tm_title":"key factor in the success","tm_word":"Anushka was a key factor in the success of our instant quote system. He has done a great job for us. He is a good communicator and excellent programmer. He was able to take my \"what I want done\" text and translate that into a working system that meets my needs.","tm_client":"Emily Watkins","tm_image":"ew.jfif","tm_client_title":"Licensed Realtor at Watkins Home Sales"},{"tm_title":"as usual he did an outstanding job","tm_word":"have worked with Anushka before on several projects and because of his good work ethic I hired him again for this project and as usual he did an outstanding job. Highly recommended for anyone looking to hire experienced Wordpress professional","tm_client":"Praveena Sarathchandra","tm_image":"ps.jfif","tm_client_title":"Founder/CEO - SmashTaps (Pvt) Ltd"},{"tm_title":"exceeds my expectations","tm_word":"I have worked with Anushka on several projects. With each project he exceeds my expectations and delivers a great product.","tm_client":"Joe Jackson","tm_image":"jj.jfif","tm_client_title":"Branch Manager at HomeVantage Mortgage"},{"tm_title":"extremely responsive, efficient, and completely professional","tm_word":"Anushka is such a pleasure to work with. He not only finished the project a day early, but went above and beyond what was in the original job posting. He is extremely responsive, efficient, and completely professional. I enjoyed working with him so much after he finished the first job I hired him for three more and will definitely keep him at the top of my list for future jobs. He has been the best programmer I've had the pleasure of working with.","tm_client":"Victoria Edmondson","tm_image":"ve.jfif","tm_client_title":"ESG Program Manager"},{"tm_title":"detail oriented and produced great results","tm_word":"Anushka is very detail oriented and produced great results for my company. He is honest, quick and skilled. I will continue to use his services and highly recommend him to anyone. ","tm_client":"Giovanna Silvestre","tm_image":"js.jfif","tm_client_title":"Founder - Confused Girl in the City"},{"tm_title":"smart and easy to work with!","tm_word":"He is so smart and easy to work with! Suggested and implemented a much better solution to my problem than the one I had originally in mind. 100% would rehire. ","tm_client":"Anastasia Visotsky","tm_image":"av.jfif","tm_client_title":"Upwork client"},{"tm_title":"Appreciate the wide range of skills","tm_word":"Appreciate the wide range of skills Anushka has, which makes it great to hire him to work on any type of project. This was a smaller one but he has done others for me as well.","tm_client":"Nelson Miller","tm_image":"nm.jfif","tm_client_title":"Owner & Designer | Pee-Aye Creative | The Divi Teacher"},{"tm_title":"very talented","tm_word":"I'm very happy working with this guy, He's very talented, and he gave me the work on time!","tm_client":"Ziad Bourhim","tm_image":"zb.jpg","tm_client_title":"Founder at Mega Media"},{"tm_title":"completed all the objectives quickly","tm_word":"Anushka was very easy to deal with and completed all the objectives quickly. I have no hesitation in recommending him for future jobs. A great experience and credit to the Upwork community.","tm_client":"Andrew Mizzi","tm_image":"aw.jfif","tm_client_title":"Upwork client"},{"tm_title":"Good communication and cooperation","tm_word":"Good communication and cooperation to get the job done.","tm_client":"Marcus Matthews","tm_image":"mm.jfif","tm_client_title":"Upwork client"},{"tm_title":"exactly as requested","tm_word":"Anushka Rajasingha completed the task exactly as requested, and in good time.","tm_client":"Marcus Matthews","tm_image":"mm.jfif","tm_client_title":"Upwork client"},{"tm_title":"High quality work","tm_word":"High quality work, we always like working with Anushka","tm_client":"Kevin Bird","tm_image":"kb.jpg","tm_client_title":"CEO at CloudKB - Cloud Intelligence for Energy Data Management. CLOUD KB LIMITED"},{"tm_title":"Very happy","tm_word":"Very happy with the work that Anushka did for us.","tm_client":"Neil Williamson","tm_image":"nw.jpg","tm_client_title":"Upwork client"},{"tm_title":"tight deadline. Good job.","tm_word":"Hard worker. Really appreciate him working to meet a tight deadline. Good job.","tm_client":"Shaun Winn","tm_image":"sw.jpg","tm_client_title":"Upwork client"},{"tm_title":"Very impressed","tm_word":"Very impressed with the results from our web optimization. Anushka brought our desktop speed results on Google from a 48 to a 90! I would highly recommend him and will be using him again in the future.","tm_client":"Laura Hamrick","tm_image":"lh.jpg","tm_client_title":"Owner of the lhwebdesigns"},{"tm_title":"quality is phenomenal","tm_word":"Anushka is an excellent individual to work with. I enjoyed working with him on the project I hired him for. His customer service, communication, skills, and quality of work he produces is phenomenal. I will 100% be hiring Anushka in future for future projects.","tm_client":"Chris Pambos","tm_image":"cp.jpg","tm_client_title":"Upwork client"},{"tm_title":"excellent at coding","tm_word":"Anushka is excellent at coding. Nothing is too much trouble is only weakness is that he is not an artist making a website design difficult. However I have been working with him before and will again.","tm_client":"Edouard Alleman","tm_image":"bim-edouard.jpg","tm_client_title":"Upwork client"},{"tm_title":"accurately delivers work","tm_word":"A pleasure to work with. Understands the requirements, communicates well and accurately delivers work. Highly recommended.","tm_client":"Kevin Bird","tm_image":"kb.jpg","tm_client_title":"Upwork client"},{"tm_title":"Very fast worker","tm_word":"Anushka was a pleasure to work with. Very fast worker and easy to communicate with. Did the job to our satisfaction.","tm_client":"Tarjei Aarrestad","tm_image":"ta.jpg","tm_client_title":"Upwork client"},{"tm_title":"amazing job!","tm_word":"He did an amazing job! Highly recommended!","tm_client":"Daryl Lawson","tm_image":"dl.jfif","tm_client_title":"Upwork client"},{"tm_title":"very satisfied with it","tm_word":"I had a very technical developer in San Francisco review Anushka's work and was very satisfied with it. Anushka did a fantastic job and we were able to work together in a cooperative manner. Hopefully this project will pay off and in that case I will hire Anushka again.","tm_client":"Tyler Rustin","tm_image":"tr.jfif","tm_client_title":"Upwork client"},{"tm_title":"Very good work","tm_word":"The second time i am working with Anushka . And i am looking forward for the next times. Very good work.","tm_client":"Navid Ehre","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"done with no worries","tm_word":"It's always easy to work with Anushka.\nAt time in life, it's good to know that the job will be done with no worries.","tm_client":"Navid Ehre","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"done with no worries","tm_word":"It's always easy to work with Anushka.\nAt time in life, it's good to know that the job will be done with no worries.","tm_client":"Edouard Alleman","tm_image":"bim-edouard.jpg","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"The second time i am working with Anushka . And i am looking forward for the next times. Very good work.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"It's always easy to work with Anushka.\\r\\nAt time in life, it's good to know that the job will be done with no worries.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"deal with my frustrations","tm_word":"I had a great experience with Anushka, he was able to deal with my frustrations and assist me in understanding what he did to improve my website.","tm_client":"Courtenay Rufus","tm_image":"cr.jpg","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Good Job. I'm satisfied.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"task was done smoothly","tm_word":"Anushka improved out website as we requested and the whole task was done smoothly and without any problems. Highly Recommend. \\r\\nI look forward to work with him in the future.","tm_client":"lukas berezowiec","tm_image":"lb.jfif","tm_client_title":"Upwork client"},{"tm_title":"very committed","tm_word":"Great dev, very committed and delivered what we needed in time.","tm_client":"Amit Gupta","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"hard worker who has a lot of technical knowledge","tm_word":"Anushka is a hard worker who has a lot of technical knowledge. He is friendly, helpful and reliable. I am very pleased with the job he has done.","tm_client":"Jeffry C. Davis, Ph.D","tm_image":"jd.jpg","tm_client_title":"Professor of English; Director of Interdisciplinary Studies; Dean of Humanities"},{"tm_title":"listened to direction well","tm_word":"Anushka did a great job and listened to direction well.  He is patient when changes are needed and executes.","tm_client":"Veronica A","tm_image":"va.jfif","tm_client_title":"Upwork client"},{"tm_title":"did amazing","tm_word":"Anushka did amazing with our project, and we would recommend him for other jobs.","tm_client":"Veronica Attleer","tm_image":"va.jfif","tm_client_title":"Upwork client"},{"tm_title":"Fast and quality work!","tm_word":"Did more then expected. Fast and quality work! Very nice. Looking forward to hire him again","tm_client":"navid Ehre","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"great work","tm_word":"Anushka did great work in taking in a mock from us and building out an entire wordpress site using a wordpress template. He was quick, responsive as well as willing and listen and accomodate any changes. Great work!","tm_client":"Amit Guptha","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"completed on time","tm_word":"Job was completed on time and successfully with great communication. I will definitely use again.","tm_client":"Michael Holvoet","tm_image":"mh.jfif","tm_client_title":"Out Of The Box Consultants"},{"tm_title":"","tm_word":"Always timely and helpful.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"Fabulous experience","tm_word":"Fabulous experience working with Anushka. Did the job very quickly and with minimal attention required by us. All done with minimal input from us, fantastic experience, highly recommended","tm_client":"David Imrie","tm_image":"","tm_client_title":"Owner of Pistachio Media"},{"tm_title":"speedy and efficient services","tm_word":"excellent experience, without us knowing Anushka found additional issues within the project, identified them and brought them to the surface for management to consult on and Anushka provided the end solution for items that were lacking in the brief and also components that were necessary in the application. for someone to do this off their own back demonstrates willingness to attend to not only the task at hand, but also to ensure that the job is done efficiently and correctly the first time round. We dont see this too much here on upWork, so Im very greatful for the speedy and efficient services provided.","tm_client":"David Imrie","tm_image":"di.jfif","tm_client_title":"Owner of Pistachio Media"},{"tm_title":"Very happy","tm_word":"Very happy with search bar and real estate website, we will definitely use again.","tm_client":"Michael Holvoet","tm_image":"mh.jfif","tm_client_title":"Out Of The Box Consultants"},{"tm_title":"","tm_word":"Great and fast work! Thanks!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"joy to work with","tm_word":"Anushka again was a joy to work with. All work was well done and on time, actually done right away. I'd highly recommend him and plan to work with him again in the future. He's great.","tm_client":"Elizabeth Larose","tm_image":"el.jpg","tm_client_title":"Upwork client - Elizabeth Larose Art"},{"tm_title":"IDX search bar!","tm_word":"Great work and communication. Thank you for the IDX search bar!","tm_client":"Michael Holvoet","tm_image":"mh.jfif","tm_client_title":"Out Of The Box Consultants"},{"tm_title":"job beautifully","tm_word":"AnushkA did my job beautifully. He was patient and steady even when I changed things. He worked quickly and accurately and made my website much better. I would definitely work with him again. Thank you AnushkA!","tm_client":"Elizabeth Larose","tm_image":"el.jpg","tm_client_title":"Upwork client - Elizabeth Larose Art"},{"tm_title":"efficiently","tm_word":"He did a great job even though we had a lot of changes.  He handled them all efficiently.","tm_client":"Melissa Croll","tm_image":"mc.jfif","tm_client_title":"Upwork client - ATTLEE REALTY, LLC."},{"tm_title":"Very communicative","tm_word":"It was a pleasure working with Anushka. The project was not a simple project and he did a great job with it. I checked his coding and it appears to be very commented and follow the standards I asked him to follow. Quality programmer. Very communicative. I will use him again.","tm_client":"Devon Watkins","tm_image":"dw.jfif","tm_client_title":"Owner of Watkins Home Sales"},{"tm_title":"timely manner","tm_word":"Anushka takes direction well and completes tasks in a timely manner.","tm_client":"Veronica Attleer","tm_image":"va.jfif","tm_client_title":"Upwork client - Owner of Attlee Realty"},{"tm_title":"Great work","tm_word":"Great work, and does it in a timely manner.","tm_client":"Veronica Attleer","tm_image":"va.jfif","tm_client_title":"Upwork client - Owner of Attlee Realty"},{"tm_title":"As always","tm_word":"As always, Anushka does great work, on time and beyond our expectations. We look forward to working together again soon.","tm_client":"Daniel Strickland ","tm_image":"ds.jfif","tm_client_title":"Creative Event Producer & Artist Manager"},{"tm_title":"He does exceptional work","tm_word":"We couldn't be happier with Anushka. He does exceptional work, on time and on budget. His professionalism, communication and attention to detail make us look forward to working with him. Highly recommended!","tm_client":"Daniel Strickland ","tm_image":"ds.jfif","tm_client_title":"Creative Event Producer & Artist Manager"},{"tm_title":"exceeded expectations","tm_word":"Once again, Anushka has exceeded expectations. He always does great work for us. We look forward to continuing our business relationship for many years to come.","tm_client":"Daniel Strickland ","tm_image":"ds.jfif","tm_client_title":"Creative Event Producer & Artist Manager"},{"tm_title":"awesome !","tm_word":"Anushka is awesome! We always enjoy working with him because he is attentive, professional and willing to work with our schedules and budgets. Highly recommended!","tm_client":"Daniel Strickland ","tm_image":"ds.jfif","tm_client_title":"Creative Event Producer & Artist Manager"},{"tm_title":"As always","tm_word":"As always, Anushka delivers, on time and above expectations. We look forward to working together again soon.","tm_client":"Daniel Strickland ","tm_image":"ds.jfif","tm_client_title":"Creative Event Producer & Artist Manager"},{"tm_title":"","tm_word":"I highly recommend him.Thank you","tm_client":"solmaz mch","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Good job.thank you","tm_client":"solmaz mch","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"great","tm_word":"Anushka did a great job.","tm_client":"solmaz mch","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"quality work in a timely fashion","tm_word":"Once again, Anushka delivers quality work in a timely fashion. If you're looking for a developer, I highly recommend Anushka.","tm_client":"Tom Hicks","tm_image":"th.jpg","tm_client_title":"Attorney at Law"},{"tm_title":"","tm_word":"Great to work with!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very easy to deal with Anushka.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"He was great to work with.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Excellent job. Can highly recommend. Thank you.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Once again, Anushka gets the job done, quickly, efficiently and effectively. He's always professional and a pleasure to work with. Thanks, Anushka!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Overall, a good experience and good value. I hope to work with Anushka again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka is great to work with -- capable, professional, great communicator. We look forward to working with him on many more projects.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"excellent and quick!  Would hire again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"I can't say enough good things about Anushka's work. He created a professional popup email subscription for my site. He is quick, easy to work with and always delivers quality work.  I will continue to work with him in the future. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great to work with and made changes very fast as they were requested.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"As always, Anushka has been a pleasure to work with. He is highly competent, professional and an excellent communicator. Thanks.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"He is professional,  quick, knowledgeable and honest. I will continue to work with Anushka. Highly recommend him to anyone.  ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Working with Anushka has been amazing. He is quick, efficient and easy to get a hold of. He is extremely professional and knowledgeable. I have worked with many web developers in the US and it has always been a nightmare. They are either too slow, no responsive or too expensive. I will continue to work with Anushka in the future. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka is a pleasure to work with - prompt, professional and an excellent communicator. We look forward to working with him again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Once again, Anushka delivers! Anushka does great work and is always a pleasure to work with. If you need help with your Wordpress-based website, I highly recommend hiring him.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Awesome Developer. He exceeded all of my expectation in this project. I will hire again this contractor for future projects. A+++++ contractor","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"One of the best coders I ever worked with :) I have a ton of projects for Anushka. 100% Recommended.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Thanks again for such a quick turnaround.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great freelancer.  This was second Wordpress website construction he helped me with. A+","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka was very aptient and worked hard to complete this JOB. Solid developer -  will certanly hire him again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Another very quick and effective job.  Thanks so much.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Excellent job, will hire again.  Great communication, very patient and completed promptly.  Highly recommend!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very satisfied, did exactly what we asked for! Thanks again!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great work! Reduced site load time from 11s to 4s/2s quickly and to budget and explained clearly what further steps could be taken.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"great work again. thanks for all your help","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"great job! thanks","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Thanks for a great, quick turnaround!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great job once again","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very Smart Guy, I will rehire without any doubt.\\n\\nIf you are willing to have an issue sorted out and you are willing to pay someone that really deserve it, Anushka is you guy.\\n\\nThanks a lot man:)\\n\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"third job i have hired him for, great work every time\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"thanks again","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very high level, very smart guy, awesome...","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great job.  Thank you for your help!  I would highly recommend this individual.  He finished the job ahead of schedule and he responded to all of my inquiries quickly.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"He is a good client , provide his requirement very detailed , Easy to to work with him A+","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great!! Job super recommended  ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka once again performed exceptionally and I will continue doing business with him. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"\\nThanks again for such a timeous turnaround.  Will continue to use.\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka did a wonderful job, he is very professional, timely, and helpful. I definitely recommend him and will hire him again in the future. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka did a wonderful job, he is very professional, timely, and helpful. I definitely recommend him and will hire him again in the future. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka did a wonderful job, he is very professional, timely, and helpful. I definitely recommend him and will hire him again in the future. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"did the job but overpriced for the small job performed.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Anushka has now done several projects for us and we will continue to use.  Very responsive and adept at what they do.\\nThanks again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"100% Satisfied - again!!  Quick turnaround.  Will keep using!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"very good freelancer","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Did a great job.  Delivered it in a day and the end product was on target.  ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"What a pleasure to work with such a knowledgeable and efficient vendor.  I have used many different vendors on Elance and I have to say, I think I have found the one.  \\n\\nHighly commended and recommended!!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Excellent Work ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"very good work ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very professional and knowledgable provider. Highly recommended. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Wonderful provider! Excellent work on data driven form validation for my site's contest entry form. We will work together again for sure.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"thanks!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"thanks","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"very well done this guy does excellent work ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"none","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"awesome","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"This guy is awesome!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"this guy is awesome","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Web sight was very well done.  He went the extra mile to complete project !  I would recommend his services !","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very satisfied","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Finished earlier than required.  Very responsive.  ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Awesome!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"I would recommend this contractor. Quick turn around time, reliable and will definitely use his services again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Thanks for your help Anushka. 100% recommended!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Project was completed to an appropriate standing","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Thanks for the work done on getting our site done. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Did a very good Job, and a pleasure to work with.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Always does a great job and quality work!\\n\\nThank you very much for your help! Highly recommend this contractor!\\n\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Always a hard worker and always does a great job. I would highly recommend this contractor. Thank you!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very professional.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great contact. Will definatly work with him again. Friendly and doesnt need much explanation. Fast,too! ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"iGreat Developer! Highly Recommend Anushka, hope to work with him on a number of projects. \\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"A great job.  Impressed that we were able to do all of this via the email and web.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"I am very happy with both quality and short time he has taken to deliver this work.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Good to work with.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Quick responses, thank you.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very responsive and well organized vendor. Will be hiring him again.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great work, very responsive, very responsible, always has a clear understanding of what we need. Thank you!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great job, I would definitely recommend! ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"AnushkaRajasingha builds great websites. Thank You very mush Anushka ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Did a great Job.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Quick response time, great work. Thank you very much. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"did an amazing job","tm_word":"Anushka is an amazing man! I had a custom piece of software I wanted to be developed, and he made it happen. It took longer than expected, but I was picky because this was something just for me. But Anushka stuck with me and did an amazing job. This is not my first project him and it definitely won't be my last. If I could keep him and his skills to myself, trust me I would! Again he followed every single one of my requests, and made changes where I wanted without any questions. He also gave me some of his ideas for the project that worked out extremely well. His expertise was shown in many ways during this project, as it this software had many different aspects to it. I would recommend Anushka to anyone. His rates are very affordable, and his finished projects are incredible! Thank you again Anushka, Talk to you again soon - Adam","tm_client":"Adam","tm_image":"dd.jpeg","tm_client_title":"Founder and CEO of HBS Central-Upwork client"},{"tm_title":"","tm_word":"I have enjoy to the cooperate, very professional and I have receive a great service. Thanks","tm_client":"Peter","tm_image":"dd.png","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great to work with you, thanks!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Made changes quickly and followed my requests. Did a great job and will continue to hire.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great service","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Job well done. We did have a few little problems but nothing that Anushka could not resolve. Quick response and professionalism made this job very enjoyable.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very good understandable client for work forever ... ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Fantastic work, makes everything so easy, would definitely hire again.\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"I will alway look to hire him for all my future projects.\\r\\nGreat job!!","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very Quick. Very Efficient. Very Good.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"AnushkaRajasingha did an absolutely amazing job with my coding conversion from CSS to HTML.  His labor was cost effective and he responded to any adjustments within an hour of my request.  I will be working with him again and in the future.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very Resourceful. It wasn't an easy task, but he found a way to do it.\\n","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Quality work as usual.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Did a very nice Job. A pleasure to work with.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very Quick and efficient. ","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very good Experience. A pleasure to work with.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"Ultimately he came through","tm_word":"Task completed successfully. Some determining factors in rating may have indeed been caused by unforeseeable acts of god entirely outside of his control. Ultimately he came through.","tm_client":"Sheila Cole","tm_image":"sc.jfif","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Unfortunately, I never heard back from this freelancer. I think he got busy and moved on. He was good when he did work on the project.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Very good communication and work.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"","tm_word":"Great experience.","tm_client":"","tm_image":"","tm_client_title":"Upwork client"},{"tm_title":"creative and smart","tm_word":"Anushka worked at FDK just after his higher education. He is a talented, creative and smart executive grade employee who reported to me. He has completed almost all the targets we set timely and creatively. I have no doubt that he is a very high skill individual we find very rarely.","tm_client":"Walter C","tm_image":"wc.jfif","tm_client_title":"Business Process Re-Engineering Manager at FDK"},{"tm_title":"he is a giant in the field","tm_word":"We all have high hopes and start something new. So am I. But in an instant my hopes were dashed, shattering everything. That's where I meet the giant promoter of this website .. His name is Anushka. Anushka R. My broken solution. He takes the smallest effort to VISADUMA LK. That\u2019s because he\u2019s the giant in the field. Thank you for never having seen it yet. You always win.","tm_client":"Dr Ronaka S","tm_image":"rs.jfif","tm_client_title":"Founder & CEO - Visaduma.lk"}];
+</script>
 
-			if(typeof _projid === 'string' && _projid.length > 0)
-			{
-				jQuery('textarea[name="Message"]')[0].innerText = _projid;
-				jQuery('input[name="Name"]').val('From a lead');
-				jQuery('input[name="Email"]').val('lead@anushka.pro');
-				jQuery('input[name="Website"]').val('https://example.com');
-				setTimeout(submisform,3000);
-			}
-		});
+<script>
+    window.addEventListener('load', () => setTimeout(() => document.getElementById('loader').classList.add('done'), 700));
 
+    function toggleMob() {
+        document.getElementById('burger').classList.toggle('open');
+        document.getElementById('mob').classList.toggle('show');
+        document.body.style.overflow = document.getElementById('mob').classList.contains('show') ? 'hidden' : '';
+    }
+    function closeMob() {
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('mob').classList.remove('show');
+        document.body.style.overflow = '';
+    }
 
-	</script>
+    let lastY = 0;
+    window.addEventListener('scroll', () => {
+        const y = window.pageYOffset;
+        document.getElementById('nav').classList.toggle('hide', y > lastY && y > 80);
+        lastY = y;
+    });
 
-	<!--<canvas id="canvas"></canvas>-->
+    const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); }), { threshold: 0.12 });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 
+    // PORTFOLIO
+    let portData = [], workPg = 0;
+    const WORK_N = 8;
+    // Data embedded for reliability; falls back to fetch on live site
+    function initPortfolio(d) { portData = d; loadMoreWork(); }
+    try { if (typeof PORTFOLIO_DATA !== 'undefined') initPortfolio(PORTFOLIO_DATA); else throw 0; }
+    catch(e) { fetch('js/data/portfolio.json').then(r => r.json()).then(initPortfolio).catch(() => console.warn('portfolio.json not found')); }
 
-	<script src="https://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
-	<script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
-	<script src="js/stars.js"></script>
-	</body>
+    function renderPort(item) {
+        const hasImg = item.image && item.image.trim();
+        const href = (item.site && item.site !== '#' && item.site !== '') ? item.site : '';
+        const tgt = href ? ' target="_blank"' : '';
+        const linkHref = href || '#';
+        const tag = item.type || 'Web Development';
+        const safeTitle = (item.title||'').replace(/'/g,'&#39;').replace(/"/g,'&quot;');
+        const safeDesc = (item.desc||'').replace(/'/g,'&#39;').replace(/"/g,'&quot;');
 
+        // Has a local image — use it directly
+        if (hasImg) {
+            return '<a class="port-card" href="'+linkHref+'"'+tgt+'>'
+                + '<div class="port-card-img"><img src="'+item.image+'" alt="'+safeTitle+'" loading="lazy"></div>'
+                + '<div class="port-card-body"><div class="port-tag">'+tag+'</div><h3>'+safeTitle+'</h3><p>'+safeDesc+'</p><span class="port-link">View Project →</span></div></a>';
+        }
+
+        // No local image but has a valid URL — use thum.io to generate a live thumbnail
+        if (href && (href.startsWith('http://') || href.startsWith('https://'))) {
+            var thumbSrc = 'https://image.thum.io/get/width/350/' + href;
+            return '<a class="port-card" href="'+linkHref+'"'+tgt+'>'
+                + '<div class="port-card-img"><img src="'+thumbSrc+'" alt="'+safeTitle+'" loading="lazy" onerror="this.closest(\'.port-card\').classList.add(\'thumb-failed\');this.style.display=\'none\'"></div>'
+                + '<div class="port-card-body"><div class="port-tag">'+tag+'</div><h3>'+safeTitle+'</h3><p>'+safeDesc+'</p><span class="port-link">View Project →</span></div></a>';
+        }
+
+        // No image and no valid URL — text-only card
+        return '<a class="port-card-text" href="'+linkHref+'"'+tgt+'><div class="port-tag">'+tag+'</div><h3>'+safeTitle+'</h3><p>'+safeDesc+'</p>'+(href?'<span class="port-link">View Project →</span>':'')+'</a>';
+    }
+
+    // Fallback if thum.io image fails to load
+    function renderPortFallback(json) {
+        var item = JSON.parse(json);
+        var href = (item.site && item.site !== '#' && item.site !== '') ? item.site : '#';
+        var tgt = href !== '#' ? ' target="_blank"' : '';
+        var tag = item.type || 'Web Development';
+        return '<a class="port-card-text" href="'+href+'"'+tgt+'><div class="port-tag">'+tag+'</div><h3>'+item.title+'</h3><p>'+(item.desc||'')+'</p><span class="port-link">View Project →</span></a>';
+    }
+
+    function loadMoreWork() {
+        const g = document.getElementById('portGrid');
+        portData.slice(workPg * WORK_N, (workPg + 1) * WORK_N).forEach(i => g.insertAdjacentHTML('beforeend', renderPort(i)));
+        workPg++;
+        if (workPg * WORK_N >= portData.length) document.getElementById('portMore').style.display = 'none';
+    }
+
+    // TESTIMONIALS
+    let tmData = [], tmPg = 0;
+    const TM_N = 6;
+    function initTestimonials(d) {
+        tmData = d.filter(t => t.tm_client && t.tm_client.trim() && t.tm_word && t.tm_word.length > 30);
+        loadMoreTm();
+    }
+    try { if (typeof TESTIMONIALS_DATA !== 'undefined') initTestimonials(TESTIMONIALS_DATA); else throw 0; }
+    catch(e) { fetch('js/data/testimonials.json').then(r => r.json()).then(initTestimonials).catch(() => console.warn('testimonials.json not found')); }
+
+    function renderTm(t) {
+        const init = t.tm_client.charAt(0).toUpperCase();
+        const av = t.tm_image && t.tm_image.trim()
+            ? '<img class="tm-avatar" src="images/clients/'+t.tm_image+'" alt="'+t.tm_client+'" onerror="this.outerHTML=\'<div class=\\\'tm-avatar-ph\\\'>'+init+'</div>\'">'
+            : '<div class="tm-avatar-ph">'+init+'</div>';
+        const w = t.tm_word.replace(/\\\\r\\\\n|\\\\n|\\r\\n|\\n/g, ' ').replace(/"/g, '&quot;');
+        return '<div class="tm-card"><blockquote>"'+w+'"</blockquote><div class="tm-author">'+av+'<div><div class="name">'+t.tm_client+'</div><div class="role">'+(t.tm_client_title||'Client')+'</div></div></div></div>';
+    }
+
+    function loadMoreTm() {
+        const g = document.getElementById('tmGrid');
+        tmData.slice(tmPg * TM_N, (tmPg + 1) * TM_N).forEach(t => g.insertAdjacentHTML('beforeend', renderTm(t)));
+        tmPg++;
+        if (tmPg * TM_N >= tmData.length) document.getElementById('tmMore').style.display = 'none';
+    }
+
+    // CONTACT FORM
+    function submitForm() {
+        const f = document.getElementById('contactform');
+        if (!f.reportValidity()) return;
+        f.style.opacity = '0.4'; f.style.pointerEvents = 'none';
+        fetch("https://script.google.com/macros/s/AKfycbz8crJeC3vlBEN6pswgMuxRmfqxPxmsanp4WLGKyHbjuoBD9SNNlmPioZtiyJsThZJ9/exec", {
+            method: "POST", body: new FormData(f)
+        }).then(r => r.json()).then(d => {
+            if (d.result === 'success') f.innerHTML = '<p style="text-align:center;font-family:var(--display);font-size:1.3rem;padding:2rem 0;color:var(--accent);">Thank you! I\'ll be in touch soon.</p>';
+        }).catch(() => { f.style.opacity = '1'; f.style.pointerEvents = ''; });
+    }
+
+    const _p = new URLSearchParams(window.location.search).get('p');
+    if (_p) {
+        document.querySelector('textarea[name="Message"]').value = _p;
+        document.querySelector('input[name="Name"]').value = 'From a lead';
+        document.querySelector('input[name="Email"]').value = 'lead@anushka.pro';
+        document.querySelector('input[name="Website"]').value = 'https://example.com';
+        setTimeout(submitForm, 3000);
+    }
+</script>
+</body>
 </html>
