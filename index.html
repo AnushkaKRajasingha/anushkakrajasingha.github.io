@@ -9,8 +9,13 @@
     <meta property="og:title" content="Anushka Rajasingha — Senior Full-Stack Developer | WordPress & .NET Expert | MSc Data Science | 20 Years Building Enterprise Web Solutions | MCTS Certified" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://anushka.pro" />
-    <meta property="og:image" content="https://anushka.pro/images/profile_rev2.png" />
+    <meta property="og:image" content="https://anushka.pro/images/new_profile.png" />
     <meta property="og:description" content="Senior Full-Stack Developer | WordPress & .NET Expert | MSc Data Science | 20 Years Building Enterprise Web Solutions | MCTS Certifiedbased in Sri Lanka. Over a decade of proven experience." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anushka Rajasingha — Senior Full-Stack Developer | WordPress & .NET Expert | MSc Data Science | 20 Years Building Enterprise Web Solutions | MCTS Certified" />
+    <meta name="twitter:description" content="Senior Full-Stack Developer | WordPress & .NET Expert | MSc Data Science | 20 Years Building Enterprise Web Solutions | MCTS Certified based in Sri Lanka. Over a decade of proven experience delivering world-class web solutions." />
+    <meta name="twitter:image" content="https://anushka.pro/images/new_profile.png" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -276,6 +281,13 @@
 
         /* ─── ABOUT ─── */
         .about-sec { border-top: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+        .about-top-row { display: flex; align-items: center; gap: 1.75rem; margin-bottom: 2rem; }
+        .about-photo-wrap { flex-shrink: 0; }
+        .about-photo-wrap img {
+            min-width: 250px; width: 250px; aspect-ratio: 1 / 1; border-radius: 20px; object-fit: cover;
+            box-shadow: 0 14px 34px rgba(0,0,0,0.18); border: 1px solid var(--border-light); display: block;
+        }
+        .about-heading { display: flex; flex-direction: column; justify-content: center; }
         .about-text p { font-size: 1rem; line-height: 1.85; color: var(--text-body); margin-bottom: 1.2rem; }
         .about-text strong { color: var(--text); font-weight: 500; }
         .about-text a.resume-link {
@@ -453,9 +465,16 @@
 
     <!-- ABOUT -->
     <section class="about-sec" id="about">
-        <div>
+        <div class="about-col">
             <div class="sec-label rv">About</div>
-            <h2 class="sec-title rv">A decade of building for the web</h2>
+            <div class="about-top-row">
+                <div class="about-photo-wrap rv">
+                    <img src="images/new_profile.png" alt="Anushka Rajasingha, WordPress & Fullstack Developer" loading="lazy">
+                </div>
+                <div class="about-heading">
+                    <h2 class="sec-title rv">A decade of building for the web</h2>
+                </div>
+            </div>
             <div class="stats-strip rv">
                 <div class="st"><div class="st-n">15+</div><div class="st-l">Years Experience</div></div>
                 <div class="st"><div class="st-n">1000+</div><div class="st-l">Projects Delivered</div></div>
@@ -466,7 +485,7 @@
             <p>I'm <strong>Anushka Rajasingha</strong>, a WordPress & Fullstack Developer based in Sri Lanka. My career began in system engineering, managing networks, servers, and cloud databases, before I transitioned into development.</p>
             <p>With deep roots in <strong>ASP.NET, C#, PL/SQL, and T-SQL</strong>, I bring serious backend expertise. Over the years I've specialized in WordPress, building custom themes, plugins, and complex solutions with <strong>Elementor, DIVI, and WooCommerce</strong>.</p>
             <p>I've maintained a proven track record on <strong>Upwork</strong> and <strong>Freelancer.com</strong> for over a decade, consistently delivering beyond expectations.</p>
-            <a href="/anushka_rajasingha_resume.pdf" target="_blank" class="resume-link">Download Resume →</a>
+            <a href="/Anushka-Rajasingh_2026.pdf" target="_blank" class="resume-link">Download Resume →</a>
         </div>
     </section>
 
