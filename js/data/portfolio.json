@@ -1,5 +1,14 @@
 [
   {
+    "image": "",
+    "title": "Blue Spruce Insurance Agency, LLC",
+    "desc": "100% Custom wordpress theme and custom plugin development",
+    "site": "https://bluespruceinsurance.com/",
+    "theme": "Custom Theme",
+    "type": "Web Development,Theme Development,Plugin Development",
+    "plugins": "Custom Insurance Rate Calculation Plugin"
+  },
+  {
     "image": "images/bricks-bubbles.png",
     "title": "Bricks and Bubbles",
     "desc": "WP Form Implementation on Siteground hosted , Astra Theme Based WordPress Website",
